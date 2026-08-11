@@ -1,0 +1,41 @@
+﻿{
+  "version": "1.0.0",
+  "ranking": {
+    "learning_value": 25,
+    "contribution_value": 20,
+    "networking_value": 20,
+    "career_value": 15,
+    "portfolio_value": 10,
+    "access_value": 5,
+    "financial_value": 5
+  },
+  "penalties": {
+    "high_commute_cost": 15,
+    "high_time_cost": 10,
+    "unclear_role": 15,
+    "unverified_benefit": 10,
+    "low_learning_value": 20,
+    "low_networking_value": 15,
+    "pay_to_attend_without_contribution_route": 30,
+    "suspicious_or_unverified_organizer": 100
+  },
+  "rank_thresholds": {
+    "S": 85,
+    "A": 70,
+    "B": 55,
+    "C": 40,
+    "D": 0
+  },
+  "special_rules": {
+    "learning_is_primary": true,
+    "networking_is_secondary": true,
+    "money_is_not_required": true,
+    "free_access_is_not_sufficient_by_itself": true,
+    "normal_events_can_rank_high": true,
+    "hackathons_get_team_friendly_bonus": true,
+    "solo_participant_friendly_bonus": true,
+    "open_source_pathway_bonus": true,
+    "certificate_alone_is_low_value": true,
+    "evidence_required_for_factual_claims": true
+  }
+}

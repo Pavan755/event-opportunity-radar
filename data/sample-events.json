@@ -1,0 +1,428 @@
+﻿{
+  "schema_version": "1.0.0",
+  "events": [
+    {
+      "event_id": "test-meetup-001",
+      "title": "Test Local Technology Meetup",
+      "organizer": {
+        "name": "Test Community",
+        "website": "https://example.com",
+        "verified": false
+      },
+      "category": ["meetup", "technology", "community"],
+      "event": {
+        "date_start": "2099-01-10T10:00:00+05:30",
+        "date_end": "2099-01-10T16:00:00+05:30",
+        "application_deadline": null,
+        "status": "sample"
+      },
+      "location": {
+        "region": "Andhra Pradesh",
+        "city": "Visakhapatnam",
+        "venue": "Test Venue",
+        "format": "physical"
+      },
+      "opportunity": {
+        "participation_available": true,
+        "volunteer_available": false,
+        "student_ambassador_available": false,
+        "hackathon": false,
+        "open_source": false,
+        "roles": ["participant"]
+      },
+      "skills": {
+        "required": ["Python"],
+        "preferred": ["Git/GitHub"],
+        "user_matches": ["Python", "Git/GitHub"],
+        "skill_gaps": [],
+        "learn_first": []
+      },
+      "benefits": {
+        "free_access": "unknown",
+        "certificate": "unknown",
+        "stipend": "unknown",
+        "food": "unknown",
+        "accommodation": "not_applicable",
+        "travel_support": "not_applicable",
+        "networking": "high",
+        "learning_value": "high",
+        "portfolio_value": "medium",
+        "open_source_value": "low"
+      },
+      "verification": {
+        "status": "unverified",
+        "confidence": 0,
+        "sources": []
+      },
+      "ranking": {
+        "score": 0,
+        "rank": "D",
+        "reasons": []
+      },
+      "user_journey": {
+        "status": "discovered",
+        "applied": false,
+        "contacted": false,
+        "accepted": false,
+        "registered": false,
+        "attended": false,
+        "contributed": false,
+        "certificate_received": false,
+        "github_updated": false,
+        "linkedin_updated": false,
+        "networking_followup_completed": false
+      },
+      "follow_up": {
+        "required": false,
+        "due_date": null,
+        "items": []
+      },
+      "evidence": []
+    },
+    {
+      "event_id": "test-volunteer-001",
+      "title": "Test Technical Volunteer Event",
+      "organizer": {
+        "name": "Test Technology Organization",
+        "website": "https://example.com",
+        "verified": false
+      },
+      "category": ["conference", "volunteer", "event_support"],
+      "event": {
+        "date_start": "2099-02-10T09:00:00+05:30",
+        "date_end": "2099-02-11T18:00:00+05:30",
+        "application_deadline": "2099-01-20T23:59:00+05:30",
+        "status": "sample"
+      },
+      "location": {
+        "region": "Telangana",
+        "city": "Hyderabad",
+        "venue": "Test Conference Center",
+        "format": "physical"
+      },
+      "opportunity": {
+        "participation_available": true,
+        "volunteer_available": true,
+        "student_ambassador_available": true,
+        "hackathon": false,
+        "open_source": false,
+        "roles": [
+          "technical volunteer",
+          "event support",
+          "documentation"
+        ]
+      },
+      "skills": {
+        "required": ["Communication", "Git/GitHub"],
+        "preferred": ["Technical Writing/Documentation", "Python"],
+        "user_matches": [
+          "Communication",
+          "Git/GitHub",
+          "Technical Writing/Documentation",
+          "Python"
+        ],
+        "skill_gaps": [],
+        "learn_first": []
+      },
+      "benefits": {
+        "free_access": "verified",
+        "certificate": "verified",
+        "stipend": "unknown",
+        "food": "unknown",
+        "accommodation": "unknown",
+        "travel_support": "unknown",
+        "networking": "high",
+        "learning_value": "high",
+        "portfolio_value": "high",
+        "open_source_value": "medium"
+      },
+      "verification": {
+        "status": "unverified",
+        "confidence": 0,
+        "sources": []
+      },
+      "ranking": {
+        "score": 0,
+        "rank": "D",
+        "reasons": []
+      },
+      "user_journey": {
+        "status": "discovered",
+        "applied": false,
+        "contacted": false,
+        "accepted": false,
+        "registered": false,
+        "attended": false,
+        "contributed": false,
+        "certificate_received": false,
+        "github_updated": false,
+        "linkedin_updated": false,
+        "networking_followup_completed": false
+      },
+      "follow_up": {
+        "required": false,
+        "due_date": null,
+        "items": []
+      },
+      "evidence": []
+    },
+    {
+      "event_id": "test-hackathon-001",
+      "title": "Test AI Hackathon",
+      "organizer": {
+        "name": "Test Hackathon Community",
+        "website": "https://example.com",
+        "verified": false
+      },
+      "category": ["hackathon", "ai_ml", "community"],
+      "event": {
+        "date_start": "2099-03-15T09:00:00+05:30",
+        "date_end": "2099-03-16T20:00:00+05:30",
+        "application_deadline": "2099-03-01T23:59:00+05:30",
+        "status": "sample"
+      },
+      "location": {
+        "region": "Karnataka",
+        "city": "Bengaluru",
+        "venue": "Test Innovation Hub",
+        "format": "physical"
+      },
+      "opportunity": {
+        "participation_available": true,
+        "volunteer_available": true,
+        "student_ambassador_available": false,
+        "hackathon": true,
+        "open_source": false,
+        "roles": [
+          "participant",
+          "volunteer",
+          "team formation"
+        ]
+      },
+      "skills": {
+        "required": ["Python", "Git/GitHub"],
+        "preferred": ["AI/ML", "JavaScript"],
+        "user_matches": [
+          "Python",
+          "Git/GitHub",
+          "AI/ML",
+          "JavaScript"
+        ],
+        "skill_gaps": [],
+        "learn_first": []
+      },
+      "benefits": {
+        "free_access": "unknown",
+        "certificate": "unknown",
+        "stipend": "unknown",
+        "food": "unknown",
+        "accommodation": "unknown",
+        "travel_support": "unknown",
+        "networking": "very_high",
+        "learning_value": "very_high",
+        "portfolio_value": "very_high",
+        "open_source_value": "medium"
+      },
+      "verification": {
+        "status": "unverified",
+        "confidence": 0,
+        "sources": []
+      },
+      "ranking": {
+        "score": 0,
+        "rank": "D",
+        "reasons": []
+      },
+      "user_journey": {
+        "status": "discovered",
+        "applied": false,
+        "contacted": false,
+        "accepted": false,
+        "registered": false,
+        "attended": false,
+        "contributed": false,
+        "certificate_received": false,
+        "github_updated": false,
+        "linkedin_updated": false,
+        "networking_followup_completed": false
+      },
+      "follow_up": {
+        "required": false,
+        "due_date": null,
+        "items": []
+      },
+      "evidence": []
+    },
+    {
+      "event_id": "test-oss-001",
+      "title": "Test Open Source Contribution",
+      "organizer": {
+        "name": "Test Open Source Project",
+        "website": "https://github.com/example/example",
+        "verified": false
+      },
+      "category": ["open_source", "community", "developer"],
+      "event": {
+        "date_start": null,
+        "date_end": null,
+        "application_deadline": null,
+        "status": "ongoing"
+      },
+      "location": {
+        "region": "International",
+        "city": "Virtual",
+        "venue": null,
+        "format": "virtual"
+      },
+      "opportunity": {
+        "participation_available": true,
+        "volunteer_available": false,
+        "student_ambassador_available": false,
+        "hackathon": false,
+        "open_source": true,
+        "roles": [
+          "documentation",
+          "testing",
+          "good first issue"
+        ]
+      },
+      "skills": {
+        "required": ["Git/GitHub"],
+        "preferred": ["Python", "Technical Writing/Documentation"],
+        "user_matches": [
+          "Git/GitHub",
+          "Python",
+          "Technical Writing/Documentation"
+        ],
+        "skill_gaps": [],
+        "learn_first": []
+      },
+      "benefits": {
+        "free_access": "verified",
+        "certificate": "unknown",
+        "stipend": "not_applicable",
+        "food": "not_applicable",
+        "accommodation": "not_applicable",
+        "travel_support": "not_applicable",
+        "networking": "high",
+        "learning_value": "very_high",
+        "portfolio_value": "very_high",
+        "open_source_value": "very_high"
+      },
+      "verification": {
+        "status": "unverified",
+        "confidence": 0,
+        "sources": []
+      },
+      "ranking": {
+        "score": 0,
+        "rank": "D",
+        "reasons": []
+      },
+      "user_journey": {
+        "status": "discovered",
+        "applied": false,
+        "contacted": false,
+        "accepted": false,
+        "registered": false,
+        "attended": false,
+        "contributed": false,
+        "certificate_received": false,
+        "github_updated": false,
+        "linkedin_updated": false,
+        "networking_followup_completed": false
+      },
+      "follow_up": {
+        "required": false,
+        "due_date": null,
+        "items": []
+      },
+      "evidence": []
+    },
+    {
+      "event_id": "test-international-001",
+      "title": "Test International Virtual AI Event",
+      "organizer": {
+        "name": "Test International Community",
+        "website": "https://example.com",
+        "verified": false
+      },
+      "category": ["conference", "ai_ml", "international"],
+      "event": {
+        "date_start": "2099-04-20T18:00:00+05:30",
+        "date_end": "2099-04-20T22:00:00+05:30",
+        "application_deadline": "2099-04-15T23:59:00+05:30",
+        "status": "sample"
+      },
+      "location": {
+        "region": "International",
+        "city": "Virtual",
+        "venue": null,
+        "format": "virtual"
+      },
+      "opportunity": {
+        "participation_available": true,
+        "volunteer_available": true,
+        "student_ambassador_available": false,
+        "hackathon": false,
+        "open_source": false,
+        "roles": [
+          "participant",
+          "virtual volunteer"
+        ]
+      },
+      "skills": {
+        "required": ["Communication"],
+        "preferred": ["AI/ML", "Technical Writing/Documentation"],
+        "user_matches": [
+          "Communication",
+          "AI/ML",
+          "Technical Writing/Documentation"
+        ],
+        "skill_gaps": [],
+        "learn_first": []
+      },
+      "benefits": {
+        "free_access": "unknown",
+        "certificate": "unknown",
+        "stipend": "unknown",
+        "food": "not_applicable",
+        "accommodation": "not_applicable",
+        "travel_support": "not_applicable",
+        "networking": "high",
+        "learning_value": "high",
+        "portfolio_value": "medium",
+        "open_source_value": "low"
+      },
+      "verification": {
+        "status": "unverified",
+        "confidence": 0,
+        "sources": []
+      },
+      "ranking": {
+        "score": 0,
+        "rank": "D",
+        "reasons": []
+      },
+      "user_journey": {
+        "status": "discovered",
+        "applied": false,
+        "contacted": false,
+        "accepted": false,
+        "registered": false,
+        "attended": false,
+        "contributed": false,
+        "certificate_received": false,
+        "github_updated": false,
+        "linkedin_updated": false,
+        "networking_followup_completed": false
+      },
+      "follow_up": {
+        "required": false,
+        "due_date": null,
+        "items": []
+      },
+      "evidence": []
+    }
+  ]
+}

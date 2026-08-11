@@ -1,0 +1,158 @@
+﻿{
+  "version": "1.0.0",
+  "query_groups": [
+    {
+      "id": "volunteer",
+      "priority": 100,
+      "terms": [
+        "volunteer",
+        "event volunteer",
+        "technical volunteer",
+        "student volunteer",
+        "event support",
+        "event staff",
+        "community volunteer"
+      ]
+    },
+    {
+      "id": "ambassador",
+      "priority": 90,
+      "terms": [
+        "student ambassador",
+        "community ambassador",
+        "event ambassador",
+        "campus ambassador"
+      ]
+    },
+    {
+      "id": "media",
+      "priority": 85,
+      "terms": [
+        "videography volunteer",
+        "video editing volunteer",
+        "media volunteer",
+        "event photography",
+        "event coverage",
+        "content volunteer"
+      ]
+    },
+    {
+      "id": "technical_support",
+      "priority": 90,
+      "terms": [
+        "technical support",
+        "developer volunteer",
+        "technical volunteer",
+        "documentation volunteer",
+        "developer community"
+      ]
+    },
+    {
+      "id": "hackathon",
+      "priority": 100,
+      "terms": [
+        "hackathon",
+        "hackathon volunteer",
+        "hackathon organizer",
+        "hackathon mentor",
+        "hackathon community",
+        "team formation"
+      ]
+    },
+    {
+      "id": "open_source",
+      "priority": 100,
+      "terms": [
+        "open source",
+        "good first issue",
+        "first contribution",
+        "beginner friendly contribution",
+        "contributor",
+        "documentation issue",
+        "help wanted"
+      ]
+    },
+    {
+      "id": "events",
+      "priority": 80,
+      "terms": [
+        "technology meetup",
+        "developer meetup",
+        "AI meetup",
+        "data meetup",
+        "software conference",
+        "technology conference",
+        "developer workshop",
+        "AI workshop"
+      ]
+    },
+    {
+      "id": "learning",
+      "priority": 75,
+      "terms": [
+        "free workshop",
+        "free meetup",
+        "student workshop",
+        "student conference",
+        "developer workshop",
+        "community event"
+      ]
+    },
+    {
+      "id": "funding",
+      "priority": 70,
+      "terms": [
+        "stipend",
+        "travel grant",
+        "travel support",
+        "accommodation",
+        "fully funded",
+        "student grant"
+      ]
+    },
+    {
+      "id": "fellowship",
+      "priority": 70,
+      "terms": [
+        "fellowship",
+        "student fellowship",
+        "developer fellowship",
+        "community fellowship",
+        "research fellowship"
+      ]
+    }
+  ],
+  "query_modifiers": {
+    "locations": [
+      "Visakhapatnam",
+      "Vizianagaram",
+      "Srikakulam",
+      "Kakinada",
+      "Vijayawada",
+      "Tirupati",
+      "Hyderabad",
+      "Bengaluru"
+    ],
+    "remote_terms": [
+      "online",
+      "virtual",
+      "remote",
+      "hybrid"
+    ],
+    "audience_terms": [
+      "student",
+      "students",
+      "fresher",
+      "beginner",
+      "developer",
+      "community"
+    ]
+  },
+  "search_policy": {
+    "combine_query_group_with_location": true,
+    "combine_query_group_with_remote_terms": true,
+    "prefer_exact_phrases": true,
+    "deduplicate_similar_queries": true,
+    "do_not_search_every_combination": true
+  }
+}

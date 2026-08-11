@@ -1,0 +1,90 @@
+﻿{
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "level": "strong",
+      "categories": ["technical", "automation", "data", "ai_ml"]
+    },
+    {
+      "id": "ai_ml",
+      "name": "AI/ML",
+      "level": "working",
+      "categories": ["technical", "research", "hackathon"]
+    },
+    {
+      "id": "data_analysis",
+      "name": "Data Analysis",
+      "level": "working",
+      "categories": ["technical", "data", "research"]
+    },
+    {
+      "id": "html_css",
+      "name": "HTML/CSS",
+      "level": "working",
+      "categories": ["web", "technical"]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "level": "working",
+      "categories": ["web", "technical"]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "level": "basic",
+      "categories": ["web", "technical"]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "level": "basic",
+      "categories": ["web", "technical"]
+    },
+    {
+      "id": "git_github",
+      "name": "Git/GitHub",
+      "level": "working",
+      "categories": ["open_source", "technical", "collaboration"]
+    },
+    {
+      "id": "technical_writing",
+      "name": "Technical Writing/Documentation",
+      "level": "working",
+      "categories": ["documentation", "open_source", "content"]
+    },
+    {
+      "id": "editing",
+      "name": "Video/Image Editing",
+      "level": "working",
+      "categories": ["media", "content", "event_support"]
+    },
+    {
+      "id": "videography",
+      "name": "Videography",
+      "level": "working",
+      "categories": ["media", "content", "event_support"]
+    },
+    {
+      "id": "communication",
+      "name": "Communication and Coordination",
+      "level": "working",
+      "categories": ["event_support", "community", "networking"]
+    },
+    {
+      "id": "cse_foundations",
+      "name": "General Computer Science Foundations",
+      "level": "working",
+      "categories": ["technical", "learning", "hackathon"]
+    }
+  ],
+  "learning_policy": {
+    "principle": "learn_first",
+    "allow_apply_with_skill_gap": true,
+    "never_claim_unverified_expertise": true,
+    "prioritize_realistic_skill_gaps": true,
+    "recommend_learning_before_contact_when_gap_is_material": true
+  }
+}

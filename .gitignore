@@ -1,0 +1,14 @@
+﻿# Apps Script local configuration
+apps-script/.clasp.json
+
+# Local/system files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example

@@ -1,0 +1,67 @@
+﻿{
+  "version": "1.0.0",
+  "priority_order": [
+    {
+      "tier": 1,
+      "region": "Andhra Pradesh",
+      "priority": 100,
+      "locations": [
+        "Visakhapatnam",
+        "Vizianagaram",
+        "Srikakulam",
+        "Kakinada",
+        "Vijayawada",
+        "Tirupati"
+      ]
+    },
+    {
+      "tier": 2,
+      "region": "Telangana",
+      "priority": 90,
+      "locations": [
+        "Hyderabad"
+      ]
+    },
+    {
+      "tier": 3,
+      "region": "Karnataka",
+      "priority": 80,
+      "locations": [
+        "Bengaluru"
+      ]
+    },
+    {
+      "tier": 4,
+      "region": "India",
+      "priority": 60,
+      "locations": [
+        "Other Indian locations"
+      ]
+    },
+    {
+      "tier": 5,
+      "region": "International",
+      "priority": 50,
+      "locations": [
+        "Virtual",
+        "Hybrid"
+      ]
+    }
+  ],
+  "format_preferences": [
+    "Local physical",
+    "Nearby physical",
+    "Virtual",
+    "Hybrid",
+    "International virtual",
+    "International hybrid"
+  ],
+  "passport_constraint": {
+    "currently_available": false,
+    "international_preference": [
+      "Virtual",
+      "Hybrid"
+    ],
+    "physical_international_priority": "low_until_updated"
+  }
+}
