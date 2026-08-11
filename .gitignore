@@ -12,3 +12,6 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Apps Script local configuration
+apps-script/.clasp.json
