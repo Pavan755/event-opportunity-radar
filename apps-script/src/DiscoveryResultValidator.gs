@@ -38,6 +38,7 @@
     'adapter_unavailable',
     'adapter_invalid',
     'execution_invalid',
+    'http_error',
     'failed'
   ];
 
