@@ -1,90 +1,1161 @@
-﻿{
-  "version": "1.0.0",
-  "skills": [
-    {
-      "id": "python",
-      "name": "Python",
-      "level": "strong",
-      "categories": ["technical", "automation", "data", "ai_ml"]
-    },
-    {
-      "id": "ai_ml",
-      "name": "AI/ML",
-      "level": "working",
-      "categories": ["technical", "research", "hackathon"]
-    },
-    {
-      "id": "data_analysis",
-      "name": "Data Analysis",
-      "level": "working",
-      "categories": ["technical", "data", "research"]
-    },
-    {
-      "id": "html_css",
-      "name": "HTML/CSS",
-      "level": "working",
-      "categories": ["web", "technical"]
-    },
-    {
-      "id": "javascript",
-      "name": "JavaScript",
-      "level": "working",
-      "categories": ["web", "technical"]
-    },
-    {
-      "id": "react",
-      "name": "React",
-      "level": "basic",
-      "categories": ["web", "technical"]
-    },
-    {
-      "id": "typescript",
-      "name": "TypeScript",
-      "level": "basic",
-      "categories": ["web", "technical"]
-    },
-    {
-      "id": "git_github",
-      "name": "Git/GitHub",
-      "level": "working",
-      "categories": ["open_source", "technical", "collaboration"]
-    },
-    {
-      "id": "technical_writing",
-      "name": "Technical Writing/Documentation",
-      "level": "working",
-      "categories": ["documentation", "open_source", "content"]
-    },
-    {
-      "id": "editing",
-      "name": "Video/Image Editing",
-      "level": "working",
-      "categories": ["media", "content", "event_support"]
-    },
-    {
-      "id": "videography",
-      "name": "Videography",
-      "level": "working",
-      "categories": ["media", "content", "event_support"]
-    },
-    {
-      "id": "communication",
-      "name": "Communication and Coordination",
-      "level": "working",
-      "categories": ["event_support", "community", "networking"]
-    },
-    {
-      "id": "cse_foundations",
-      "name": "General Computer Science Foundations",
-      "level": "working",
-      "categories": ["technical", "learning", "hackathon"]
-    }
-  ],
-  "learning_policy": {
-    "principle": "learn_first",
-    "allow_apply_with_skill_gap": true,
-    "never_claim_unverified_expertise": true,
-    "prioritize_realistic_skill_gaps": true,
-    "recommend_learning_before_contact_when_gap_is_material": true
-  }
+{
+    "version":  "2.0.0",
+    "profile":  {
+                    "profile_type":  "student_early_career",
+                    "learning_mode":  true,
+                    "public_profile":  true
+                },
+    "skill_levels":  {
+                         "strong":  {
+                                        "score":  1.0,
+                                        "description":  "Can use independently and has practical evidence."
+                                    },
+                         "working":  {
+                                         "score":  0.8,
+                                         "description":  "Can contribute practically with limited supervision."
+                                     },
+                         "basic":  {
+                                       "score":  0.55,
+                                       "description":  "Understands fundamentals and can handle beginner-level tasks."
+                                   },
+                         "learning":  {
+                                          "score":  0.35,
+                                          "description":  "Currently learning; may qualify for beginner-friendly opportunities but should not be treated as fully proficient."
+                                      },
+                         "planned":  {
+                                         "score":  0.15,
+                                         "description":  "Intended future learning; do not treat as an existing skill."
+                                     }
+                     },
+    "skills":  [
+                   {
+                       "id":  "python",
+                       "name":  "Python",
+                       "category":  "technical",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "python",
+                                       "python programming",
+                                       "python development"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "internships",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "scripting",
+                                                  "automation",
+                                                  "data_processing",
+                                                  "ai_ml",
+                                                  "technical_support"
+                                              ]
+                   },
+                   {
+                       "id":  "ai_ml",
+                       "name":  "AI/ML",
+                       "category":  "ai_ml",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "artificial intelligence",
+                                       "machine learning",
+                                       "ai",
+                                       "ml"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "internship",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "ai_workshops",
+                                                  "technical_support",
+                                                  "ml_projects",
+                                                  "research_support"
+                                              ]
+                   },
+                   {
+                       "id":  "data_analysis",
+                       "name":  "Data Analysis",
+                       "category":  "data",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "data analysis",
+                                       "data analytics",
+                                       "analytics"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "data_analysis",
+                                                  "surveys",
+                                                  "attendee_analytics",
+                                                  "reporting"
+                                              ]
+                   },
+                   {
+                       "id":  "html_css",
+                       "name":  "HTML/CSS",
+                       "category":  "web",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "html",
+                                       "css",
+                                       "html5",
+                                       "css3"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "internship"
+                                    ],
+                       "contribution_types":  [
+                                                  "website_support",
+                                                  "event_pages",
+                                                  "registration_pages"
+                                              ]
+                   },
+                   {
+                       "id":  "javascript",
+                       "name":  "JavaScript",
+                       "category":  "web",
+                       "level":  "working",
+                       "aliases":  [
+                                       "javascript",
+                                       "js"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "internship"
+                                    ],
+                       "contribution_types":  [
+                                                  "frontend_support",
+                                                  "website_testing",
+                                                  "event_web_support"
+                                              ]
+                   },
+                   {
+                       "id":  "git_github",
+                       "name":  "Git/GitHub",
+                       "category":  "development",
+                       "level":  "working",
+                       "aliases":  [
+                                       "git",
+                                       "github",
+                                       "version control"
+                                   ],
+                       "evidence":  [
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "technical_contribution",
+                                                  "open_source",
+                                                  "documentation"
+                                              ]
+                   },
+                   {
+                       "id":  "technical_documentation",
+                       "name":  "Technical Documentation",
+                       "category":  "communication",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "technical writing",
+                                       "documentation",
+                                       "technical documentation"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "internships",
+                                        "reports"
+                                    ],
+                       "contribution_types":  [
+                                                  "documentation",
+                                                  "reports",
+                                                  "event_summaries",
+                                                  "community_support"
+                                              ]
+                   },
+                   {
+                       "id":  "react",
+                       "name":  "React",
+                       "category":  "web",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "react",
+                                       "react.js",
+                                       "reactjs"
+                                   ],
+                       "evidence":  [
+                                        "learning",
+                                        "basic_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "frontend_support",
+                                                  "beginner_web_projects"
+                                              ]
+                   },
+                   {
+                       "id":  "typescript",
+                       "name":  "TypeScript",
+                       "category":  "web",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "typescript",
+                                       "ts"
+                                   ],
+                       "evidence":  [
+                                        "internship",
+                                        "learning"
+                                    ],
+                       "contribution_types":  [
+                                                  "frontend_support",
+                                                  "web_development"
+                                              ]
+                   },
+                   {
+                       "id":  "nodejs",
+                       "name":  "Node.js",
+                       "category":  "backend",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "node.js",
+                                       "nodejs",
+                                       "node"
+                                   ],
+                       "evidence":  [
+                                        "learning",
+                                        "basic_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "backend_support",
+                                                  "web_development"
+                                              ]
+                   },
+                   {
+                       "id":  "flask",
+                       "name":  "Flask",
+                       "category":  "backend",
+                       "level":  "working",
+                       "aliases":  [
+                                       "flask",
+                                       "python flask"
+                                   ],
+                       "evidence":  [
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "backend",
+                                                  "api_support"
+                                              ]
+                   },
+                   {
+                       "id":  "tensorflow",
+                       "name":  "TensorFlow/Keras",
+                       "category":  "ai_ml",
+                       "level":  "working",
+                       "aliases":  [
+                                       "tensorflow",
+                                       "keras"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "ml_projects",
+                                                  "ai_support"
+                                              ]
+                   },
+                   {
+                       "id":  "pytorch",
+                       "name":  "PyTorch",
+                       "category":  "ai_ml",
+                       "level":  "working",
+                       "aliases":  [
+                                       "pytorch"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "ml_projects",
+                                                  "research_support"
+                                              ]
+                   },
+                   {
+                       "id":  "opencv",
+                       "name":  "OpenCV",
+                       "category":  "computer_vision",
+                       "level":  "working",
+                       "aliases":  [
+                                       "opencv",
+                                       "computer vision"
+                                   ],
+                       "evidence":  [
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "computer_vision",
+                                                  "image_processing"
+                                              ]
+                   },
+                   {
+                       "id":  "pandas",
+                       "name":  "Pandas",
+                       "category":  "data",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "pandas",
+                                       "python pandas"
+                                   ],
+                       "evidence":  [
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "data_analysis",
+                                                  "data_processing"
+                                              ]
+                   },
+                   {
+                       "id":  "scikit_learn",
+                       "name":  "Scikit-learn",
+                       "category":  "ai_ml",
+                       "level":  "working",
+                       "aliases":  [
+                                       "scikit-learn",
+                                       "sklearn"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "machine_learning",
+                                                  "data_analysis"
+                                              ]
+                   },
+                   {
+                       "id":  "streamlit",
+                       "name":  "Streamlit",
+                       "category":  "development",
+                       "level":  "working",
+                       "aliases":  [
+                                       "streamlit"
+                                   ],
+                       "evidence":  [
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "dashboards",
+                                                  "prototypes",
+                                                  "data_apps"
+                                              ]
+                   },
+                   {
+                       "id":  "sql",
+                       "name":  "SQL/Databases",
+                       "category":  "database",
+                       "level":  "working",
+                       "aliases":  [
+                                       "sql",
+                                       "sqlite",
+                                       "postgresql",
+                                       "databases"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "coursework"
+                                    ],
+                       "contribution_types":  [
+                                                  "data",
+                                                  "database_support",
+                                                  "backend_support"
+                                              ]
+                   },
+                   {
+                       "id":  "linux",
+                       "name":  "Linux",
+                       "category":  "systems",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "linux",
+                                       "linux commands",
+                                       "ubuntu"
+                                   ],
+                       "evidence":  [
+                                        "coursework",
+                                        "practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "technical_support",
+                                                  "development"
+                                              ]
+                   },
+                   {
+                       "id":  "cloud",
+                       "name":  "Cloud Fundamentals",
+                       "category":  "cloud",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "cloud",
+                                       "cloud computing",
+                                       "aws basics",
+                                       "cloud fundamentals"
+                                   ],
+                       "evidence":  [
+                                        "coursework",
+                                        "learning"
+                                    ],
+                       "contribution_types":  [
+                                                  "beginner_cloud_support",
+                                                  "learning"
+                                              ]
+                   },
+                   {
+                       "id":  "video_editing",
+                       "name":  "Video Editing",
+                       "category":  "media",
+                       "level":  "working",
+                       "aliases":  [
+                                       "video editing",
+                                       "video editor",
+                                       "video content",
+                                       "short form video",
+                                       "reels editing"
+                                   ],
+                       "evidence":  [
+                                        "hands_on_practice"
+                                    ],
+                       "tools":  [
+                                     "VN",
+                                     "InShot",
+                                     "CapCut"
+                                 ],
+                       "contribution_types":  [
+                                                  "event_video",
+                                                  "event_recaps",
+                                                  "short_videos",
+                                                  "reels",
+                                                  "content_editing"
+                                              ]
+                   },
+                   {
+                       "id":  "image_editing",
+                       "name":  "Image Editing",
+                       "category":  "media",
+                       "level":  "working",
+                       "aliases":  [
+                                       "image editing",
+                                       "photo editing",
+                                       "image enhancement",
+                                       "photo enhancement"
+                                   ],
+                       "evidence":  [
+                                        "hands_on_practice"
+                                    ],
+                       "tools":  [
+                                     "PicsArt"
+                                 ],
+                       "contribution_types":  [
+                                                  "event_media",
+                                                  "social_media",
+                                                  "photo_editing",
+                                                  "promotional_content"
+                                              ]
+                   },
+                   {
+                       "id":  "poster_design",
+                       "name":  "Poster Design",
+                       "category":  "design",
+                       "level":  "working",
+                       "aliases":  [
+                                       "poster design",
+                                       "event poster",
+                                       "poster creation",
+                                       "graphic poster"
+                                   ],
+                       "evidence":  [
+                                        "hands_on_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_promotion",
+                                                  "social_media_creatives",
+                                                  "event_materials"
+                                              ]
+                   },
+                   {
+                       "id":  "social_media_content",
+                       "name":  "Social Media Content",
+                       "category":  "media",
+                       "level":  "working",
+                       "aliases":  [
+                                       "social media content",
+                                       "social media creatives",
+                                       "social media",
+                                       "content creation"
+                                   ],
+                       "evidence":  [
+                                        "hands_on_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_promotion",
+                                                  "event_coverage",
+                                                  "social_media_support"
+                                              ]
+                   },
+                   {
+                       "id":  "videography",
+                       "name":  "Videography",
+                       "category":  "media",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "videography",
+                                       "event videography",
+                                       "video coverage",
+                                       "event coverage"
+                                   ],
+                       "evidence":  [
+                                        "practical_interest",
+                                        "hands_on_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_coverage",
+                                                  "session_recording",
+                                                  "speaker_documentation"
+                                              ]
+                   },
+                   {
+                       "id":  "event_planning",
+                       "name":  "Event Planning",
+                       "category":  "event",
+                       "level":  "working",
+                       "aliases":  [
+                                       "event planning",
+                                       "event plan",
+                                       "event organization",
+                                       "event preparation"
+                                   ],
+                       "evidence":  [
+                                        "planning_experience",
+                                        "practical_interest"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_support",
+                                                  "event_coordination",
+                                                  "volunteer_support"
+                                              ]
+                   },
+                   {
+                       "id":  "event_coordination",
+                       "name":  "Event Coordination",
+                       "category":  "event",
+                       "level":  "working",
+                       "aliases":  [
+                                       "event coordination",
+                                       "event coordinator",
+                                       "coordination",
+                                       "event operations"
+                                   ],
+                       "evidence":  [
+                                        "practical_experience"
+                                    ],
+                       "contribution_types":  [
+                                                  "attendee_support",
+                                                  "session_support",
+                                                  "volunteer_coordination"
+                                              ]
+                   },
+                   {
+                       "id":  "community_support",
+                       "name":  "Community Support",
+                       "category":  "community",
+                       "level":  "working",
+                       "aliases":  [
+                                       "community support",
+                                       "community engagement",
+                                       "community volunteer",
+                                       "developer community"
+                                   ],
+                       "evidence":  [
+                                        "community_interest",
+                                        "technical_background"
+                                    ],
+                       "contribution_types":  [
+                                                  "community_events",
+                                                  "developer_communities",
+                                                  "attendee_support"
+                                              ]
+                   },
+                   {
+                       "id":  "communication",
+                       "name":  "Communication",
+                       "category":  "soft_skill",
+                       "level":  "working",
+                       "aliases":  [
+                                       "communication",
+                                       "written communication",
+                                       "verbal communication"
+                                   ],
+                       "evidence":  [
+                                        "academic",
+                                        "project",
+                                        "application"
+                                    ],
+                       "contribution_types":  [
+                                                  "coordination",
+                                                  "outreach",
+                                                  "attendee_support"
+                                              ]
+                   },
+                   {
+                       "id":  "research",
+                       "name":  "Research",
+                       "category":  "soft_skill",
+                       "level":  "working",
+                       "aliases":  [
+                                       "research",
+                                       "technical research",
+                                       "information research"
+                                   ],
+                       "evidence":  [
+                                        "academic",
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "research_support",
+                                                  "technical_documentation",
+                                                  "event_research"
+                                              ]
+                   },
+                   {
+                       "id":  "problem_solving",
+                       "name":  "Problem Solving",
+                       "category":  "soft_skill",
+                       "level":  "strong",
+                       "aliases":  [
+                                       "problem solving",
+                                       "troubleshooting",
+                                       "technical troubleshooting"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "technical_work"
+                                    ],
+                       "contribution_types":  [
+                                                  "technical_support",
+                                                  "event_support",
+                                                  "troubleshooting"
+                                              ]
+                   },
+                   {
+                       "id":  "presentation",
+                       "name":  "Presentation",
+                       "category":  "soft_skill",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "presentation",
+                                       "presentations",
+                                       "presentation skills"
+                                   ],
+                       "evidence":  [
+                                        "academic",
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_support",
+                                                  "student_events",
+                                                  "technical_presentations"
+                                              ]
+                   },
+                   {
+                       "id":  "content_writing",
+                       "name":  "Content Writing",
+                       "category":  "communication",
+                       "level":  "working",
+                       "aliases":  [
+                                       "content writing",
+                                       "writing",
+                                       "technical writing",
+                                       "event writing"
+                                   ],
+                       "evidence":  [
+                                        "technical_documentation",
+                                        "projects"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_summaries",
+                                                  "social_posts",
+                                                  "documentation"
+                                              ]
+                   },
+                   {
+                       "id":  "qa_testing",
+                       "name":  "Basic QA/Testing",
+                       "category":  "software",
+                       "level":  "working",
+                       "aliases":  [
+                                       "qa",
+                                       "testing",
+                                       "software testing",
+                                       "quality assurance",
+                                       "bug testing"
+                                   ],
+                       "evidence":  [
+                                        "projects",
+                                        "technical_practice"
+                                    ],
+                       "contribution_types":  [
+                                                  "website_testing",
+                                                  "event_platform_testing",
+                                                  "bug_reporting"
+                                              ]
+                   },
+                   {
+                       "id":  "spreadsheets",
+                       "name":  "Spreadsheet Handling",
+                       "category":  "productivity",
+                       "level":  "working",
+                       "aliases":  [
+                                       "spreadsheets",
+                                       "excel",
+                                       "google sheets",
+                                       "data entry"
+                                   ],
+                       "evidence":  [
+                                        "project_work",
+                                        "automation_work"
+                                    ],
+                       "contribution_types":  [
+                                                  "registration_support",
+                                                  "attendee_tracking",
+                                                  "data_collection"
+                                              ]
+                   },
+                   {
+                       "id":  "file_organization",
+                       "name":  "File and Asset Organization",
+                       "category":  "productivity",
+                       "level":  "working",
+                       "aliases":  [
+                                       "file management",
+                                       "file organization",
+                                       "asset organization",
+                                       "digital organization"
+                                   ],
+                       "evidence":  [
+                                        "project_work"
+                                    ],
+                       "contribution_types":  [
+                                                  "event_media",
+                                                  "documentation",
+                                                  "content_operations"
+                                              ]
+                   },
+                   {
+                       "id":  "registration_support",
+                       "name":  "Registration Support",
+                       "category":  "event",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "registration desk",
+                                       "registration assistance",
+                                       "check-in support"
+                                   ],
+                       "contribution_types":  [
+                                                  "registration",
+                                                  "attendee_checkin",
+                                                  "event_support",
+                                                  "volunteer_support"
+                                              ]
+                   },
+                   {
+                       "id":  "attendee_support",
+                       "name":  "Attendee Support",
+                       "category":  "event",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "attendee assistance",
+                                       "participant support",
+                                       "visitor assistance"
+                                   ],
+                       "contribution_types":  [
+                                                  "attendee_support",
+                                                  "event_support",
+                                                  "community_support",
+                                                  "information_desk"
+                                              ]
+                   },
+                   {
+                       "id":  "event_logistics",
+                       "name":  "Event Logistics",
+                       "category":  "event",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "event logistics",
+                                       "logistics assistance",
+                                       "event setup"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_setup",
+                                                  "logistics_support",
+                                                  "venue_support",
+                                                  "volunteer_support"
+                                              ]
+                   },
+                   {
+                       "id":  "event_documentation",
+                       "name":  "Event Documentation",
+                       "category":  "communication",
+                       "level":  "working",
+                       "aliases":  [
+                                       "event documentation",
+                                       "event notes",
+                                       "session documentation"
+                                   ],
+                       "contribution_types":  [
+                                                  "documentation",
+                                                  "session_notes",
+                                                  "event_summaries",
+                                                  "speaker_documentation"
+                                              ]
+                   },
+                   {
+                       "id":  "photography",
+                       "name":  "Photography",
+                       "category":  "media",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "event photography",
+                                       "photo coverage",
+                                       "photography"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_photography",
+                                                  "event_coverage",
+                                                  "photo_documentation",
+                                                  "social_media_content"
+                                              ]
+                   },
+                   {
+                       "id":  "content_repurposing",
+                       "name":  "Content Repurposing",
+                       "category":  "media",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "content repurposing",
+                                       "short-form content",
+                                       "content adaptation"
+                                   ],
+                       "contribution_types":  [
+                                                  "short_videos",
+                                                  "reels",
+                                                  "social_media_content",
+                                                  "event_recaps"
+                                              ]
+                   },
+                   {
+                       "id":  "captioning",
+                       "name":  "Captioning and Subtitling",
+                       "category":  "media",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "captions",
+                                       "subtitles",
+                                       "video subtitles",
+                                       "captioning"
+                                   ],
+                       "contribution_types":  [
+                                                  "captioning",
+                                                  "subtitling",
+                                                  "accessibility",
+                                                  "video_editing"
+                                              ]
+                   },
+                   {
+                       "id":  "proofreading",
+                       "name":  "Proofreading",
+                       "category":  "communication",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "proofreading",
+                                       "content review",
+                                       "text review"
+                                   ],
+                       "contribution_types":  [
+                                                  "documentation",
+                                                  "content_review",
+                                                  "editing",
+                                                  "reports"
+                                              ]
+                   },
+                   {
+                       "id":  "outreach_assistance",
+                       "name":  "Outreach Assistance",
+                       "category":  "community",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "outreach",
+                                       "community outreach",
+                                       "participant outreach"
+                                   ],
+                       "contribution_types":  [
+                                                  "community_outreach",
+                                                  "event_promotion",
+                                                  "volunteer_outreach",
+                                                  "communication"
+                                              ]
+                   },
+                   {
+                       "id":  "community_moderation",
+                       "name":  "Community Moderation",
+                       "category":  "community",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "community moderation",
+                                       "moderation",
+                                       "online community support"
+                                   ],
+                       "contribution_types":  [
+                                                  "community_support",
+                                                  "moderation",
+                                                  "developer_communities",
+                                                  "event_communities"
+                                              ]
+                   },
+                   {
+                       "id":  "survey_data_collection",
+                       "name":  "Survey and Data Collection",
+                       "category":  "data",
+                       "level":  "basic",
+                       "aliases":  [
+                                       "survey collection",
+                                       "data collection",
+                                       "participant surveys"
+                                   ],
+                       "contribution_types":  [
+                                                  "surveys",
+                                                  "data_collection",
+                                                  "attendee_analytics",
+                                                  "research_support"
+                                              ]
+                   },
+                   {
+                       "id":  "event_reporting",
+                       "name":  "Event Reporting",
+                       "category":  "communication",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "event report",
+                                       "event reporting",
+                                       "post-event report"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_reports",
+                                                  "event_summaries",
+                                                  "documentation",
+                                                  "research_support"
+                                              ]
+                   },
+                   {
+                       "id":  "advanced_video_editing",
+                       "name":  "Advanced Video Editing",
+                       "category":  "media",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "advanced video editing",
+                                       "professional video editing"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_video",
+                                                  "video_postproduction",
+                                                  "long_form_video",
+                                                  "content_editing"
+                                              ]
+                   },
+                   {
+                       "id":  "motion_graphics",
+                       "name":  "Motion Graphics",
+                       "category":  "design",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "motion graphics",
+                                       "animated graphics",
+                                       "visual animation"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_promotion",
+                                                  "social_media_creatives",
+                                                  "video_content",
+                                                  "visual_design"
+                                              ]
+                   },
+                   {
+                       "id":  "advanced_graphic_design",
+                       "name":  "Advanced Graphic Design",
+                       "category":  "design",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "graphic design",
+                                       "advanced poster design",
+                                       "visual design"
+                                   ],
+                       "contribution_types":  [
+                                                  "poster_design",
+                                                  "event_materials",
+                                                  "social_media_creatives",
+                                                  "branding_support"
+                                              ]
+                   },
+                   {
+                       "id":  "advanced_git_github",
+                       "name":  "Advanced Git/GitHub",
+                       "category":  "development",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "advanced git",
+                                       "github workflow",
+                                       "pull requests",
+                                       "open source workflow"
+                                   ],
+                       "contribution_types":  [
+                                                  "open_source",
+                                                  "pull_requests",
+                                                  "issue_management",
+                                                  "technical_contribution"
+                                              ]
+                   },
+                   {
+                       "id":  "docker",
+                       "name":  "Docker",
+                       "category":  "development",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "docker",
+                                       "containerization",
+                                       "containers"
+                                   ],
+                       "contribution_types":  [
+                                                  "development",
+                                                  "deployment",
+                                                  "devops",
+                                                  "technical_support"
+                                              ]
+                   },
+                   {
+                       "id":  "api_integration",
+                       "name":  "API Integration",
+                       "category":  "development",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "API integration",
+                                       "REST API integration",
+                                       "API development"
+                                   ],
+                       "contribution_types":  [
+                                                  "api_support",
+                                                  "automation",
+                                                  "backend_support",
+                                                  "integration"
+                                              ]
+                   },
+                   {
+                       "id":  "automation",
+                       "name":  "Automation",
+                       "category":  "development",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "workflow automation",
+                                       "automation",
+                                       "task automation"
+                                   ],
+                       "contribution_types":  [
+                                                  "automation",
+                                                  "workflow_automation",
+                                                  "technical_support",
+                                                  "data_processing"
+                                              ]
+                   },
+                   {
+                       "id":  "public_speaking",
+                       "name":  "Public Speaking",
+                       "category":  "communication",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "public speaking",
+                                       "speaking",
+                                       "technical speaking"
+                                   ],
+                       "contribution_types":  [
+                                                  "presentations",
+                                                  "speaker_support",
+                                                  "technical_presentations",
+                                                  "community_events"
+                                              ]
+                   },
+                   {
+                       "id":  "event_production",
+                       "name":  "Event Production",
+                       "category":  "event",
+                       "level":  "learning",
+                       "aliases":  [
+                                       "event production",
+                                       "conference production",
+                                       "program production"
+                                   ],
+                       "contribution_types":  [
+                                                  "event_production",
+                                                  "session_support",
+                                                  "speaker_support",
+                                                  "event_operations"
+                                              ]
+                   }
+               ],
+    "learning":  {
+                     "enabled":  true,
+                     "rules":  {
+                                   "learning_skills_can_match_beginner_opportunities":  true,
+                                   "learning_skills_cannot_be_treated_as_full_proficiency":  true,
+                                   "learning_skills_can_improve_match_over_time":  true,
+                                   "planned_skills_do_not_count_as_current_skills":  true,
+                                   "completed_learning_can_be_promoted_to_basic":  true,
+                                   "practical_evidence_can_promote_skill_level":  true
+                               },
+                     "promotion_path":  [
+                                            "planned",
+                                            "learning",
+                                            "basic",
+                                            "working",
+                                            "strong"
+                                        ],
+                     "promotion_evidence":  [
+                                                "course_completed",
+                                                "certificate",
+                                                "quiz_completed",
+                                                "project_completed",
+                                                "real_world_use",
+                                                "internship_use",
+                                                "volunteer_use",
+                                                "portfolio_evidence"
+                                            ]
+                 },
+    "skill_gap_policy":  {
+                             "allow_apply_with_skill_gap":  true,
+                             "prioritize_realistic_skill_gaps":  true,
+                             "never_claim_unverified_expertise":  true,
+                             "do_not_reject_beginner_learning_opportunities":  true,
+                             "reject_only_when_core_requirements_are_missing":  true
+                         },
+    "future_skill_updates":  {
+                                 "instruction":  "New skills may be added without changing the matching engine.",
+                                 "required_fields":  [
+                                                         "id",
+                                                         "name",
+                                                         "category",
+                                                         "level",
+                                                         "aliases",
+                                                         "contribution_types"
+                                                     ]
+                             }
 }

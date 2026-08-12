@@ -1,4 +1,4 @@
-﻿# Apps Script local configuration
+# Apps Script local configuration
 apps-script/.clasp.json
 
 # Local/system files
@@ -15,3 +15,6 @@ node_modules/
 
 # Apps Script local configuration
 apps-script/.clasp.json
+
+# Local development backups
+*.backup
