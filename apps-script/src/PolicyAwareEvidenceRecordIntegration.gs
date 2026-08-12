@@ -5,14 +5,34 @@
 ) {
   if (!record || typeof record !== 'object') {
     throw new Error(
-      'Discovery record is required.'
+      'Discovery record must be an object.'
     );
   }
 
-  if (!evidenceInput ||
-      typeof evidenceInput !== 'object') {
+  if (!record.discovery_id) {
     throw new Error(
-      'Evidence input is required.'
+      'Discovery record is missing discovery_id.'
+    );
+  }
+
+  if (!evidenceInput || typeof evidenceInput !== 'object') {
+    throw new Error(
+      'Verification evidence input must be an object.'
+    );
+  }
+
+  if (!evidenceInput.discovery_id) {
+    throw new Error(
+      'Verification evidence requires discovery_id.'
+    );
+  }
+
+  if (
+    evidenceInput.discovery_id !==
+    record.discovery_id
+  ) {
+    throw new Error(
+      'Verification evidence discovery_id does not match record discovery_id.'
     );
   }
 
@@ -23,83 +43,81 @@
     );
 
   if (
-    record.discovery_id &&
-    evidence.discovery_id &&
-    record.discovery_id !==
-      evidence.discovery_id
+    evidence.discovery_id !==
+    record.discovery_id
   ) {
     throw new Error(
-      'Evidence discovery_id does not match record.'
+      'Created evidence discovery_id does not match record discovery_id.'
     );
   }
 
-  const updated =
-    Object.assign({}, record);
+  const updated = Object.assign(
+    {},
+    record
+  );
 
-  updated.discovery_id =
-    record.discovery_id ||
-    evidence.discovery_id;
+  updated.verification_evidence =
+    Array.isArray(record.verification_evidence)
+      ? record.verification_evidence.slice()
+      : [];
 
-  if (
-    !Array.isArray(
-      updated.verification_evidence
+  updated.verification =
+    record.verification &&
+    typeof record.verification === 'object'
+      ? Object.assign(
+          {},
+          record.verification
+        )
+      : {
+          status: 'unverified',
+          confidence: 0,
+          sources: []
+        };
+
+  updated.verification.sources =
+    Array.isArray(
+      updated.verification.sources
     )
-  ) {
-    updated.verification_evidence = [];
-  }
+      ? updated.verification.sources.slice()
+      : [];
 
   updated.verification_evidence.push(
     evidence
   );
 
-  if (!updated.verification) {
-    updated.verification = {
-      status: 'unverified',
-      confidence: 0,
-      sources: []
-    };
-  }
-
-  if (
-    !Array.isArray(
-      updated.verification.sources
-    )
-  ) {
-    updated.verification.sources = [];
-  }
-
   updated.verification.sources.push({
-    evidence_id:
-      evidence.evidence_id,
-
-    url:
-      evidence.url || null,
-
-    source_id:
-      evidence.source_id || null,
-
-    source_type:
-      evidence.source_type || null,
-
-    source_class:
-      evidence.source_class || null,
-
-    authority:
-      evidence.authority || 'unknown',
-
-    captured_at:
-      evidence.captured_at ||
-      new Date().toISOString()
+    url: evidence.url,
+    source_id: evidence.source_id,
+    source_type: evidence.source_type,
+    source_class: evidence.source_class,
+    evidence_id: evidence.evidence_id,
+    authority: evidence.authority,
+    captured_at: evidence.captured_at
   });
+
+  const validation =
+    validatePolicyAwareRecordEvidence(
+      updated
+    );
+
+  if (!validation.valid) {
+    throw new Error(
+      'Policy-aware record evidence validation failed: ' +
+      validation.errors.join(' ')
+    );
+  }
 
   return updated;
 }
 
+
 function validatePolicyAwareRecordEvidence(
   record
 ) {
-  if (!record ||
-      typeof record !== 'object') {
+  if (
+    !record ||
+    typeof record !== 'object'
+  ) {
     return {
       valid: false,
       errors: [
@@ -153,11 +171,14 @@ function validatePolicyAwareRecordEvidence(
   ) {
     record.verification_evidence.forEach(
       function(evidence, index) {
-        if (!evidence ||
-            typeof evidence !== 'object') {
+        if (
+          !evidence ||
+          typeof evidence !== 'object'
+        ) {
           errors.push(
             'Invalid evidence at index ' +
-            index + '.'
+            index +
+            '.'
           );
           return;
         }
@@ -194,6 +215,59 @@ function validatePolicyAwareRecordEvidence(
             'Evidence at index ' +
             index +
             ' is missing authority.'
+          );
+        }
+
+        const evidenceValidation =
+          validateVerificationEvidence(
+            evidence
+          );
+
+        if (
+          !evidenceValidation.valid
+        ) {
+          evidenceValidation.errors.forEach(
+            function(error) {
+              errors.push(
+                'Evidence at index ' +
+                index +
+                ': ' +
+                error
+              );
+            }
+          );
+        }
+      }
+    );
+  }
+
+  if (
+    record.verification &&
+    Array.isArray(
+      record.verification.sources
+    ) &&
+    Array.isArray(
+      record.verification_evidence
+    )
+  ) {
+    record.verification_evidence.forEach(
+      function(evidence, index) {
+        const matchingSource =
+          record.verification.sources.some(
+            function(source) {
+              return (
+                source &&
+                source.evidence_id ===
+                evidence.evidence_id
+              );
+            }
+          );
+
+        if (!matchingSource) {
+          errors.push(
+            'Evidence at index ' +
+            index +
+            ' is missing a matching verification source.'
           );
         }
       }
