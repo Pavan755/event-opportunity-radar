@@ -81,8 +81,33 @@
         }
       );
 
+    const source =
+      selectedSources.filter(
+        function(candidate) {
+          return candidate &&
+            candidate.id === plan.source_id;
+        }
+      )[0];
+
+    if (!source) {
+      throw new Error(
+        'Selected source metadata not found for plan source_id: ' +
+        plan.source_id
+      );
+    }
+
     records.forEach(function(record) {
-      normalizedRecords.push(record);
+      const evidenceAttachedRecord =
+        attachPolicyAwareDiscoveryEvidence(
+          record,
+          plan,
+          source,
+          policy
+        );
+
+      normalizedRecords.push(
+        evidenceAttachedRecord
+      );
     });
   });
 

@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const vm = require('vm');
 
 const context = {
@@ -29,6 +29,11 @@ const files = [
   'apps-script/src/DiscoveryPlanExecutor.gs',
   'apps-script/src/DiscoveryResultValidator.gs',
   'apps-script/src/DiscoveryRecordNormalizer.gs',
+  'apps-script/src/VerificationEvidence.gs',
+  'apps-script/src/VerificationAuthorityPolicy.gs',
+  'apps-script/src/PolicyAwareVerificationEvidence.gs',
+  'apps-script/src/PolicyAwareEvidenceRecordIntegration.gs',
+  'apps-script/src/PolicyAwareDiscoveryEvidenceIntegration.gs',
   'apps-script/src/DiscoveryPipeline.gs',
   'apps-script/src/FullProductionDiscoveryPipelineTest.gs'
 ];
