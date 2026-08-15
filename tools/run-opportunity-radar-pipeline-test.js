@@ -54,6 +54,7 @@ const intelligenceFiles = [
   'apps-script/src/SkillIntelligence.gs',
   'apps-script/src/OpportunityIntelligence.gs',
   'apps-script/src/OpportunityScoring.gs',
+  'apps-script/src/OpportunityIdentity.gs',
   'apps-script/src/OpportunityIntelligenceScoringPipeline.gs',
   'apps-script/src/OpportunityRadarPipeline.gs'
 ];
@@ -265,6 +266,86 @@ assert(
   'Every discovery record must receive intelligence + scoring.'
 );
 
+/*
+ * STEP 7.15E - canonical opportunity identity integration
+ *
+ * Verify that opportunity_id survives the complete
+ * discovery -> identity -> intelligence -> scoring -> ranking path.
+ */
+
+const originalRecordsByDiscoveryId = {};
+
+result.records.forEach(function(record) {
+  assert(
+    record &&
+    typeof record === 'object',
+    'Original result record must be an object.'
+  );
+
+  assert(
+    typeof record.discovery_id === 'string' &&
+    record.discovery_id.length > 0,
+    'Every original result record must preserve discovery_id.'
+  );
+
+  assert(
+    typeof record.opportunity_id === 'string' &&
+    /^o-[0-9a-f]{8}$/.test(record.opportunity_id),
+    'Every original result record must contain a valid opportunity_id.'
+  );
+
+  originalRecordsByDiscoveryId[record.discovery_id] = record;
+});
+
+result.ranked_records.forEach(function(record) {
+  assert(
+    record &&
+    typeof record === 'object',
+    'Every ranked result record must be an object.'
+  );
+
+  assert(
+    typeof record.discovery_id === 'string' &&
+    record.discovery_id.length > 0,
+    'Every ranked record must preserve discovery_id.'
+  );
+
+  assert(
+    typeof record.opportunity_id === 'string' &&
+    /^o-[0-9a-f]{8}$/.test(record.opportunity_id),
+    'Every ranked record must preserve a valid opportunity_id.'
+  );
+
+  const originalRecord =
+    originalRecordsByDiscoveryId[record.discovery_id];
+
+  assert(
+    originalRecord,
+    'Every ranked record must correspond to an original discovery record.'
+  );
+
+  assert(
+    record.opportunity_id ===
+      originalRecord.opportunity_id,
+    'opportunity_id must remain unchanged through ranking.'
+  );
+});
+
+console.log(
+  'OPPORTUNITY IDENTITY ATTACHMENT: PASSED'
+);
+
+console.log(
+  'OPPORTUNITY IDENTITY RANKING PRESERVATION: PASSED'
+);
+
+console.log(
+  'DISCOVERY ID + OPPORTUNITY ID LINKAGE: PASSED'
+);
+
+console.log(
+  'INTEGRATION OPPORTUNITY IDENTITY: PASSED'
+);
 console.log(
   'FULL DISCOVERY EXECUTION: PASSED'
 );

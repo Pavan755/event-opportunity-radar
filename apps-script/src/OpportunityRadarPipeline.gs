@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Event Opportunity Radar - Production Opportunity Pipeline
  *
  * Composition layer between:
@@ -72,9 +72,19 @@ function runOpportunityRadarPipeline(
     );
   }
 
+  const identityRecords =
+    attachOpportunityIdentities(
+      discoveryResult.records
+    );
+
+  const identityAwareDiscoveryResult = {
+    ...discoveryResult,
+    records: identityRecords
+  };
+
   const rankedResult =
     runOpportunityIntelligenceScoringPipeline(
-      discoveryResult,
+      identityAwareDiscoveryResult,
       skillProfile,
       skillModel,
       scoringConfig
