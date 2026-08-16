@@ -2,6 +2,46 @@
 
 An open-source event discovery and contribution radar for finding verified learning, volunteering, hackathon, networking, open-source, and career opportunities.
 
+## Public dashboard preview
+
+The project includes a lightweight public dashboard in [dashboard/index.html](dashboard/index.html) that demonstrates the event radar concept in a browser without needing a separate app.
+
+This gives contributors and visitors a quick visual summary of:
+
+- local and virtual opportunity filters
+- rank-based event filtering
+- contribution-first opportunity strategy
+- skill-fit and benefit summary
+
+## Why this project matters
+
+This project is designed for a simple idea:
+
+- find useful events before they are missed
+- prioritize learning and contribution over paying to attend
+- match opportunities to your skills and gaps
+- turn events into networking, portfolio, and career opportunities
+- support both public discovery and personal opportunity tracking
+
+## Public vs personal workflow
+
+### Public open-source layer
+
+The public repository is designed for contributors, source adapters, intelligence logic, scoring, and community improvements.
+
+### Private personal layer
+
+The personal workflow is intentionally separate and kept private for:
+
+- your city/location filters
+- your skill inventory
+- personal application history
+- follow-up and reminder flow
+- event attendance tracking
+- private notes, LinkedIn drafts, and achievement tracking
+
+This split keeps the project useful to the public while still serving your real personal use case.
+
 ## Project goal
 
 This project ingests event discovery data, normalizes it, validates sources, enriches each opportunity with intelligence, scores opportunities for fit, and preserves lifecycle state across the user journey.
