@@ -1,106 +1,99 @@
 # Event Opportunity Radar
 
-A product-first event intelligence system that helps you discover, rank, and act on the best opportunities around learning, contribution, networking, and career growth.
+A backend-first opportunity intelligence system for discovering, ranking, and acting on the best local and virtual events.
 
 <p align="center">
   <a href="dashboard/index.html">
     <img src="https://img.shields.io/badge/Public%20Dashboard-Open-brightgreen?style=for-the-badge" alt="Public dashboard" />
   </a>
   <a href="https://github.com/Pavan755/event-opportunity-radar">
-    <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge" alt="GitHub repository" />
+    <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge" alt="GitHub repo" />
   </a>
-  <a href="https://github.com/Pavan755/event-opportunity-radar/blob/main/CONTRIBUTING.md">
+  <a href="CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/Contribute-Open-yellow?style=for-the-badge" alt="Contribute" />
   </a>
 </p>
 
-## The product in one line
+## The story
 
-We do not just collect events. We filter the noise, rank the best opportunities, and turn discovery into action.
+Most people do not need another event list. They need a system that filters the signal, shows what is worth their time, and helps them decide what to do next.
 
-## Why this project exists
+This project turns scattered opportunities into a clear, ranked pipeline:
 
-Most people miss valuable opportunities because they are scattered across communities, meetups, GitHub pages, newsletters, and local groups.
+- discover events from local and online sources
+- normalize and validate them
+- score them based on learning, contribution, networking, and career value
+- surface the strongest opportunities first
+- keep personal follow-up workflows separate from the public project
 
-This project helps by turning that chaos into a simple system:
+## What is visible on the repo
 
-- discover relevant opportunities early
-- evaluate them by real value
-- rank them by fit, contribution, and learning potential
-- keep a personal workflow separate from the public project
-
-## Public opportunity showcase
-
-This repo is designed to show the product clearly and neatly, not just code internals.
-
-| Opportunity | Location | Type | Why it matters | Priority |
+| Opportunity | Region | Type | Why it matters | Priority |
 | --- | --- | --- | --- | --- |
 | Hyderabad AI Meetup | Telangana | Technical volunteer | Strong learning and networking path | A |
-| Bengaluru Tech Week | Bengaluru | Volunteer / operations | High exposure and strong local network | S |
-| Vizag AI Community Session | Andhra Pradesh | Community support | Great local ecosystem fit | A |
-| Hackathon Volunteer Program | Virtual | Hackathon support | Good for portfolio and build experience | A |
-| Open Source Contribution Sprint | Virtual | Open source contribution | High learning + contributor value | S |
-| Student Research Workshop | Andhra Pradesh | Event support | Learning + visibility with low friction | B |
+| Bengaluru Tech Week | Bengaluru | Volunteer / ops | Big visibility and local ecosystem access | S |
+| Vizag AI Community Session | Andhra Pradesh | Community support | Strong local fit and community exposure | A |
+| Hackathon Volunteer Program | Virtual | Hackathon support | Useful for portfolio and build experience | A |
+| Open Source Contribution Sprint | Virtual | Open source | High learning, contribution, and community value | S |
+| Student Research Workshop | Andhra Pradesh | Event support | Low-friction learning and visibility | B |
 
-This is the same pattern the public product should follow: small, clean, useful, and easy to scan.
+This is the same design principle used across the project: minimal, readable, and opportunity-first.
 
-## The workflow
+## How it works
 
 ### 1. Discover
-Find the right local and virtual opportunities without drowning in noise.
+Collect opportunities from sources and candidate event feeds.
 
-### 2. Evaluate
-Score opportunities by contribution value, learning value, networking value, and fit.
+### 2. Normalize
+Standardize the records so they can be compared fairly.
 
-### 3. Prioritize
-Focus on the events that provide the highest return for your time.
+### 3. Score
+Rank them by contribution, learning, networking, and personal fit.
 
 ### 4. Track
-Keep personal actions, reminders, and follow-up separate from the public project.
+Move opportunities through planned, registered, attended, and follow-up states.
 
-## Project value
+## Why this is a product
 
-This repo is built for:
+This is not just a script dump. It is a usable system for:
 
-- personal opportunity planning
-- local region-friendly discovery
-- contribution-first strategy
-- event follow-up and momentum building
-- a public repo that can be understood by contributors quickly
+- local opportunity discovery
+- event prioritization
+- volunteer and networking strategy
+- personal growth tracking
+- public repo visibility with a private workflow layer
 
-## Public vs personal split
+## Public vs personal
 
 ### Public layer
 
-The public repo is meant to show:
+The public layer is designed for:
 
-- the core product concept
-- the intelligence and ranking pipeline
-- the dashboard and contribution story
-- open-source verification and project architecture
+- project visibility
+- contributor onboarding
+- architecture explanation
+- public dashboard and product showcase
 
-### Private layer
+### Personal layer
 
-The personal workflow is intentionally separate and private for:
+The private layer is intentionally separate for:
 
-- specific city filters
-- your own skill inventory
-- application and attendance tracking
-- reminders and networking notes
-- private follow-up flow after events
+- city-specific filters
+- personal interest and skill tracking
+- personal reminders and follow-ups
+- application and attendance history
 
-## Architecture
+## Backend-first architecture
 
-The project is organized around a clean pipeline:
+The core system is built around production-style backend logic:
 
-1. discovery and source selection
-2. validation and normalization
-3. skill and opportunity intelligence
-4. scoring and ranking
-5. identity and lifecycle tracking
-6. private workflow tracking on top of the public engine
+- discovery and source selection
+- validation and normalization
+- skill intelligence and opportunity enrichment
+- scoring and ranking
+- identity and lifecycle tracking
 
-Core files:
+Key implementation files:
 
 - [apps-script/src/OpportunityRadarPipeline.gs](apps-script/src/OpportunityRadarPipeline.gs)
 - [apps-script/src/SkillIntelligence.gs](apps-script/src/SkillIntelligence.gs)
@@ -110,18 +103,18 @@ Core files:
 - [apps-script/src/OpportunityLifecycle.gs](apps-script/src/OpportunityLifecycle.gs)
 - [apps-script/src/OpportunityLifecycleSheetStore.gs](apps-script/src/OpportunityLifecycleSheetStore.gs)
 
-## Dashboard
+## Public dashboard
 
-The public dashboard is available here:
+The repo includes a lightweight public dashboard preview:
 
 - [dashboard/index.html](dashboard/index.html)
 - [dashboard/README.md](dashboard/README.md)
 
-This is the clean public front-end preview for the project.
+This keeps the project easy to understand even before someone dives into the backend.
 
 ## Verified status
 
-The core system has been validated locally with regression coverage for the opportunity intelligence and lifecycle flows.
+The system has been validated with local regression tests for the intelligence and lifecycle flows.
 
 ```bash
 node tools/run-opportunity-intelligence-test.js
@@ -131,7 +124,7 @@ node tools/run-opportunity-lifecycle-sheet-store-test.js
 node tools/run-opportunity-lifecycle-action-service-test.js
 ```
 
-Key validation outcomes:
+Passing results include:
 
 - OPPORTUNITY INTELLIGENCE: PASSED
 - OPPORTUNITY RADAR PIPELINE: PASSED
@@ -141,15 +134,15 @@ Key validation outcomes:
 ## Project structure
 
 ```text
-apps-script/      backend pipeline and Apps Script orchestration
-config/           source, scoring, and region configuration
-dashboard/        public showcase and UI preview
-data/             sample opportunity data
-docs/             architecture and workflow notes
-tools/            regression and validation scripts
-CONTRIBUTING.md   contributor guidance
-SECURITY.md       public-safe security policy
-LICENSE           MIT license
+apps-script/     core backend pipeline and logic
+config/          settings and scoring sources
+dashboard/       public showcase and UI preview
+data/            sample opportunity data
+docs/            architecture and workflow notes
+tools/           validation and regression runners
+CONTRIBUTING.md  contributor guide
+SECURITY.md      public-safe project security policy
+LICENSE          MIT license
 ```
 
 ## Repository
@@ -158,4 +151,4 @@ LICENSE           MIT license
 
 ## Final note
 
-This project is designed to look clean, read clearly, and communicate value immediately. The backend is the foundation, while the public-facing README and dashboard make the product story easy to understand for anyone visiting the repo.
+This project is intentionally built to look clean, read simply, and communicate real product value quickly. The backend is strong first; the public repo and dashboard make the story readable and presentable for others.
