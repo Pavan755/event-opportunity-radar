@@ -7,7 +7,13 @@ const fallbackOpportunities = [
     benefit: 'Strong learning + networking value',
     rank: 'A',
     applyUrl: 'https://www.meetup.com/',
-    officialUrl: 'https://www.meetup.com/'
+    officialUrl: 'https://www.meetup.com/',
+    outreachStrategy: 'Reach out with a short contribution note to the organizer or volunteer lead and ask how to help with event support or community tasks.',
+    contactProfiles: {
+      email: null,
+      linkedin: null,
+      social: []
+    }
   },
   {
     name: 'Bengaluru Tech Week',
@@ -17,7 +23,13 @@ const fallbackOpportunities = [
     benefit: 'Best local visibility and network access',
     rank: 'S',
     applyUrl: 'https://bengalurutechweek.com/',
-    officialUrl: 'https://bengalurutechweek.com/'
+    officialUrl: 'https://bengalurutechweek.com/',
+    outreachStrategy: 'Contact the organizing team with a clear offer: event support, documentation, logistics, or community help.',
+    contactProfiles: {
+      email: null,
+      linkedin: null,
+      social: []
+    }
   },
   {
     name: 'Open Source India',
@@ -27,7 +39,13 @@ const fallbackOpportunities = [
     benefit: 'Major developer conference with strong open-source visibility',
     rank: 'S',
     applyUrl: 'https://register.opensourceindia.in/',
-    officialUrl: 'https://www.opensourceindia.in/'
+    officialUrl: 'https://www.opensourceindia.in/',
+    outreachStrategy: 'Use the official registration/contact page and ask how contributors, volunteers, or community partners can support the event.',
+    contactProfiles: {
+      email: 'info@opensourceindia.in',
+      linkedin: null,
+      social: []
+    }
   },
   {
     name: 'Swecha DevDays Volunteers',
@@ -37,7 +55,13 @@ const fallbackOpportunities = [
     benefit: 'Hands-on local contribution with direct community impact',
     rank: 'A',
     applyUrl: 'https://events.swecha.org/DevDays/2026-volunteers-1/',
-    officialUrl: 'https://events.swecha.org/DevDays/2026-volunteers-1/'
+    officialUrl: 'https://events.swecha.org/DevDays/2026-volunteers-1/',
+    outreachStrategy: 'Approach the volunteer coordinator with a practical offer and ask for local contribution roles, field support, or logistics help.',
+    contactProfiles: {
+      email: null,
+      linkedin: null,
+      social: []
+    }
   }
 ];
 
@@ -51,8 +75,110 @@ const regionFilter = document.getElementById('regionFilter');
 const rankFilter = document.getElementById('rankFilter');
 const typeFilter = document.getElementById('typeFilter');
 const searchInput = document.getElementById('searchInput');
+const trackerForm = document.getElementById('trackerForm');
+const trackerRowsEl = document.getElementById('trackerRows');
+const trackerStorageKey = 'event-opportunity-radar-tracker';
 
 let opportunities = [...fallbackOpportunities];
+
+function getDefaultTrackerEntries() {
+  return [
+    {
+      opportunity: 'Open Source India',
+      contact: 'community team',
+      status: 'follow_up',
+      notes: 'Ask for volunteer or contributor role and share relevant GitHub profile.'
+    },
+    {
+      opportunity: 'Hyderabad AI Meetup',
+      contact: 'organizer',
+      status: 'not_contacted',
+      notes: 'Reach out with a short AI/ML contribution note.'
+    }
+  ];
+}
+
+function readTrackerEntries() {
+  try {
+    const raw = localStorage.getItem(trackerStorageKey);
+    if (!raw) return getDefaultTrackerEntries();
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) && parsed.length ? parsed : getDefaultTrackerEntries();
+  } catch (error) {
+    console.warn('Tracker fallback restored:', error.message);
+    return getDefaultTrackerEntries();
+  }
+}
+
+function writeTrackerEntries(entries) {
+  localStorage.setItem(trackerStorageKey, JSON.stringify(entries));
+}
+
+function formatTrackerStatus(value) {
+  const labels = {
+    not_contacted: 'Not contacted',
+    contacted: 'Contacted',
+    follow_up: 'Follow up',
+    accepted: 'Accepted',
+    declined: 'Declined'
+  };
+  return labels[value] || 'Not contacted';
+}
+
+function renderTrackerEntries() {
+  if (!trackerRowsEl) return;
+
+  const entries = readTrackerEntries();
+  if (!entries.length) {
+    trackerRowsEl.innerHTML = '<tr><td colspan="5" class="tracker-empty">No outreach tracked yet.</td></tr>';
+    return;
+  }
+
+  trackerRowsEl.innerHTML = entries
+    .map((entry, index) => `
+      <tr>
+        <td>${entry.opportunity || 'Opportunity'}</td>
+        <td>${entry.contact || 'Organizer'}</td>
+        <td><span class="tracker-status ${entry.status || 'not_contacted'}">${formatTrackerStatus(entry.status)}</span></td>
+        <td>${entry.notes ? entry.notes : '—'}</td>
+        <td><button type="button" class="tracker-delete" data-index="${index}">Remove</button></td>
+      </tr>
+    `)
+    .join('');
+}
+
+function handleTrackerSubmit(event) {
+  event.preventDefault();
+  if (!trackerForm) return;
+
+  const formData = new FormData(trackerForm);
+  const entry = {
+    opportunity: String(formData.get('opportunity') || '').trim(),
+    contact: String(formData.get('contact') || '').trim(),
+    status: String(formData.get('status') || 'not_contacted'),
+    notes: String(formData.get('notes') || '').trim()
+  };
+
+  if (!entry.opportunity || !entry.contact) return;
+
+  const entries = [entry, ...readTrackerEntries()].slice(0, 8);
+  writeTrackerEntries(entries);
+  renderTrackerEntries();
+  trackerForm.reset();
+}
+
+function handleTrackerDelete(event) {
+  const button = event.target.closest('.tracker-delete');
+  if (!button) return;
+
+  const index = Number(button.dataset.index);
+  if (Number.isNaN(index)) return;
+
+  const entries = readTrackerEntries();
+  entries.splice(index, 1);
+  writeTrackerEntries(entries);
+  renderTrackerEntries();
+}
 
 function deriveRegion(name, fallback = 'Virtual') {
   const normalized = String(name || '').toLowerCase();
@@ -92,6 +218,10 @@ function normalizeOpportunity(record) {
   const applyUrl = record.apply_url || record.official_url || record.url || null;
   const region = deriveRegion(record.name || record.title || summaryText);
   const valueScore = Number(record.value_score) || 75;
+  const contactEmail = record.contact_email || null;
+  const contactUrl = record.contact_url || record.contact_links?.[0] || null;
+  const linkedinUrl = record.linkedin_url || (Array.isArray(record.social_links) ? record.social_links.find((item) => /linkedin\.com\//i.test(item)) || null : null);
+  const outreachStrategy = record.outreach_strategy || 'Research the organizer, then contact them with a clear contribution offer and relevant skills.';
 
   return {
     id: record.id || `${record.name || 'opportunity'}-${Date.now()}`,
@@ -103,8 +233,12 @@ function normalizeOpportunity(record) {
     rank: deriveRank(valueScore),
     applyUrl,
     officialUrl: record.official_url || record.url || null,
+    contactEmail,
+    contactUrl,
+    linkedinUrl,
     verificationStatus: record.verification_status || 'needs_corroboration',
-    sourceType: record.source_type || 'community'
+    sourceType: record.source_type || 'community',
+    outreachStrategy
   };
 }
 
@@ -128,6 +262,14 @@ function renderCards() {
     .map((event) => {
       const actionUrl = event.applyUrl || event.officialUrl || '#';
       const actionLabel = event.applyUrl ? 'Apply now' : 'View source';
+      const contactChips = [
+        event.contactEmail ? `<span class="mini-chip">Email</span>` : '',
+        event.linkedinUrl ? `<span class="mini-chip">LinkedIn</span>` : '',
+        event.contactUrl ? `<span class="mini-chip">Contact</span>` : ''
+      ].filter(Boolean).join('');
+      const contactText = event.contactEmail || event.linkedinUrl || event.contactUrl
+        ? `Contact: ${event.contactEmail || event.linkedinUrl || event.contactUrl}`
+        : 'Contact: research organizer / volunteer lead';
 
       return `
         <article class="opportunity-card">
@@ -145,6 +287,10 @@ function renderCards() {
           </div>
 
           <p class="event-benefit">${event.benefit}</p>
+          <p class="contact-line">${contactText}</p>
+          <p class="strategy-line">${event.outreachStrategy}</p>
+
+          <div class="contact-row">${contactChips}</div>
 
           <div class="card-footer">
             <span class="verification-pill">${event.verificationStatus}</span>
@@ -188,5 +334,14 @@ async function loadOpportunities() {
   element.addEventListener('change', renderCards);
 });
 
+if (trackerForm) {
+  trackerForm.addEventListener('submit', handleTrackerSubmit);
+}
+
+if (trackerRowsEl) {
+  trackerRowsEl.addEventListener('click', handleTrackerDelete);
+}
+
 renderCards();
+renderTrackerEntries();
 loadOpportunities();

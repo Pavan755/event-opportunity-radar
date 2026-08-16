@@ -1,6 +1,6 @@
 # Event Opportunity Radar
 
-A practical opportunity intelligence system for discovering the right events, local communities, and contribution-led growth paths before time gets wasted.
+A practical opportunity intelligence system for discovering the right events, communities, social and web opportunities, and contribution-led growth paths before time gets wasted.
 
 <p align="center">
   <a href="https://pavan755.github.io/event-opportunity-radar/">
@@ -16,31 +16,141 @@ A practical opportunity intelligence system for discovering the right events, lo
 
 ## About this project
 
-I built this because I was tired of seeing good opportunities disappear in the noise.
+I built this because good opportunities are not missing—they are hidden across too many places.
 
-The problem was not that there were no events. The problem was that the best ones were scattered across multiple channels:
+The real problem is not only discovering events. It is discovering them across different sources and then knowing how to act on them properly:
 
-- meetup pages
-- local community groups
-- technical newsletters
-- hackathon announcements
-- GitHub posts
-- volunteer calls
-- social media updates
+- official websites
+- event platform pages
+- Meetup and community pages
+- public social updates and announcements
+- volunteer and organizer channels
+- contributor and community calls
+- people posting about opportunities before they become obvious
 
-Most people do not have a system to filter signal from noise. They either miss the valuable events entirely or spend too much time checking weak leads. I wanted something that helps a person decide quickly: which opportunities are worth my time, what fits my skills, and which ones actually create learning and network value.
+This project was built to solve that exact problem. It helps turn scattered digital noise into something actionable.
 
-This project is my answer to that problem.
+It does not stop at “here is a list of events.” It goes a step further:
 
-It helps people move from random discovery to structured decision-making:
+- discover from multiple web sources
+- validate which ones are real and useful
+- research the organizer or community lead
+- find the contact path
+- understand the best contribution strategy
+- decide whether it is worth contacting them and how to do it well
 
-- discover opportunities early
-- check whether they are real and relevant
-- understand what kind of value they create
-- decide where contribution and networking matter most
-- track what should be pursued next
+This is a research + outreach project, not just a static event tracker.
 
-This is not just a list of events. It is a decision layer for opportunity discovery.
+---
+
+## Product direction now
+
+The product is evolving into a system that helps people do three things well:
+
+1. find opportunity leads from different websites and online communities
+2. research who is organizing or leading the effort
+3. contact the right person with a clear contribution message
+
+That means the system is built to handle:
+
+- website discovery
+- community discovery
+- social post discovery
+- event page discovery
+- organizer and contributor contact research
+- email, LinkedIn, GitHub, and community profile discovery when available
+- outreach strategy generation based on the opportunity type
+
+This is the core shift: from tracking events to enabling contribution and outreach.
+
+---
+
+## How this helps people in a unique way
+
+A lot of tools say they help you find opportunities. This project is different because it tries to solve the actual follow-through problem.
+
+It helps people answer questions like:
+
+- Which communities and organizers are worth reaching out to?
+- What is the best path to contribute meaningfully?
+- Which opportunity is real, relevant, and worth my effort?
+- Where can I find the right contact person or lead?
+- How do I approach them without sounding random or generic?
+- What can I offer that is useful to the event or community?
+
+That is the real value.
+
+It reduces wasted effort, increases relevance, and turns discovery into action.
+
+---
+
+## Outreach and contact workflow
+
+The next direction of the product is to support outreach as part of the opportunity pipeline.
+
+The workflow is:
+
+1. discover candidate from website or social source
+2. inspect organizer or volunteer team details
+3. identify contact path, email, profile, or public handle
+4. understand the opportunity type and contribution need
+5. craft a short message based on skills and value offered
+6. follow up with the right organizer or contributor lead
+7. track whether they responded, accepted, or need a more tailored approach
+
+This is the practical difference between “event discovery” and “contribution strategy.”
+
+---
+
+## Multi-source discovery philosophy
+
+The system is designed to work across multiple discovery channels:
+
+- official websites
+- community pages
+- volunteer landing pages
+- platform-based event listings
+- public social posts
+- LinkedIn event and community activity
+- GitHub and contributor channels
+- organizer announcements and public calls
+
+The goal is simple: find real opportunities even when they are spread across many places.
+
+Instead of depending on only one source, the product is designed to make research across different surface areas look organized and useful.
+
+---
+
+## Contact readiness model
+
+The opportunity records include a contact-aware model, not just a URL list.
+
+Examples of the information we want to capture include:
+
+- organizer name
+- event or community lead
+- public email address if available
+- LinkedIn profile when visible
+- GitHub or other public profile
+- organizing team link
+- outreach strategy note
+
+This makes the process more useful for real contribution because the project is designed to help a user move from “I saw this” to “I can contact the right person.”
+
+---
+
+## What this makes possible
+
+This project can evolve into a real contribution engine that helps a person:
+
+- find technical and community opportunities from multiple sources
+- research the right organizers and contact points
+- send smarter contribution requests
+- understand how to position their skills to fit the event or project
+- avoid random messages and generic outreach
+- focus on opportunities with real community value and mutual benefit
+
+That is the actual product idea behind the project.
 
 ---
 
@@ -51,7 +161,9 @@ The idea came from a simple reality: people do not fail because they lack opport
 I wanted a system that would help with the actual problem in practice:
 
 - find opportunities around South India and relevant virtual spaces
+- find them across websites, communities, social posts, and open-source channels
 - rank them by learning, contribution, visibility, and network potential
+- collect contact routes such as organizer pages, emails, and LinkedIn links
 - separate weak signals from verified opportunities
 - make the process simple enough for a person to use without needing a complex workflow
 
@@ -60,26 +172,28 @@ That is why the project is designed around a lightweight stack:
 - public landing page and dashboard for exploration
 - lightweight source discovery and normalizer layer
 - verification-aware ranking logic
-- structured follow-up workflow
+- contributor outreach and contact discovery workflow
 - open-source architecture that can be improved by contributors
 
 It is intentionally not a huge custom agent or a heavy enterprise system.
-It is a clean, controllable, practical product.
+It is a clean, controllable, practical product designed for real contribution and outreach.
 
 ---
 
 ## How it works
 
-The system follows a simple flow:
+The system follows a simple but stronger flow:
 
-1. sources are discovered from official and community pages
+1. sources are discovered from official websites, event pages, community channels, and social media signals
 2. opportunity records are normalized and cleaned
-3. links, source signals, and context are validated
-4. value is scored based on learning, contribution, networking, and career upside
-5. the strongest opportunities are surfaced first
-6. users can act on them, follow up, and track progress
+3. apply links, email addresses, social links, and organizer paths are extracted
+4. links, source signals, and context are validated
+5. value is scored based on learning, contribution, networking, and career upside
+6. the strongest opportunities are surfaced first
+7. users can contact organizers, ask for contribution roles, and follow up with the right strategy
+8. the workflow can support real outreach and contribution requests
 
-This gives a practical edge: it reduces wasted effort and helps the person spend time on what is actually valuable.
+This gives a practical edge: it reduces wasted effort and helps the person spend time on what is actually valuable and reachable.
 
 ---
 
@@ -221,6 +335,10 @@ Examples of source types included in the discovery model:
 - official community event pages
 - regional tech event websites
 - volunteer and contribution portals
+- organizer and community social handles
+- LinkedIn and contact pages that help with outreach and contribution requests
+
+This product is now intentionally shaped around research + outreach, not just passive listing.
 
 ---
 

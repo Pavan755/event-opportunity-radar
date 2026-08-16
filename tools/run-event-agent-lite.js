@@ -97,12 +97,16 @@ function extractCandidateLinks(html, baseUrl) {
     apply_links: [],
     contact_links: [],
     contact_email: null,
+    linkedin_links: [],
+    social_links: [],
     deadline_text: null,
     best_apply_url: null,
-    best_contact_url: null
+    best_contact_url: null,
+    best_linkedin_url: null
   };
 
   const seen = new Set();
+  const emailSet = new Set();
 
   for (const match of matches) {
     const href = match[1];
@@ -117,7 +121,8 @@ function extractCandidateLinks(html, baseUrl) {
     const lower = normalized.toLowerCase();
     if (lower.startsWith('mailto:')) {
       const email = normalized.replace(/^mailto:/i, '').trim();
-      if (email && !result.contact_email) {
+      if (email && !emailSet.has(email)) {
+        emailSet.add(email);
         result.contact_email = email;
       }
       continue;
@@ -125,16 +130,35 @@ function extractCandidateLinks(html, baseUrl) {
 
     if (looksLikeAssetUrl(normalized)) continue;
 
+    if (/linkedin\.com\//i.test(lower) || /linkedin\.com\/in\//i.test(lower)) {
+      result.linkedin_links.push(normalized);
+      result.social_links.push(normalized);
+      continue;
+    }
+
+    if (/(twitter|x\.com|instagram|facebook|discord|slack|telegram|youtube|whatsapp)/i.test(lower)) {
+      result.social_links.push(normalized);
+    }
+
     if (score > 25 && /(apply|register|volunteer|join|submit|signup|become|participate)/i.test(`${linkText} ${normalized}`)) {
       result.apply_links.push({ url: normalized, score, text: sanitizeText(linkText) });
     }
 
-    if (score > 18 && /(contact|support|team|about|hello|reach|mail|community|organizer)/i.test(`${linkText} ${normalized}`)) {
+    if (score > 18 && /(contact|support|team|about|hello|reach|mail|community|organizer|lead|coordinator)/i.test(`${linkText} ${normalized}`)) {
       result.contact_links.push({ url: normalized, score, text: sanitizeText(linkText) });
     }
 
     if (/(deadline|last date|apply before|registration closes|submit before|registrations close)/i.test(`${linkText} ${normalized}`)) {
       result.deadline_text = sanitizeText(linkText || normalized) || result.deadline_text;
+    }
+  }
+
+  const emailMatches = [...html.matchAll(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi)];
+  for (const match of emailMatches) {
+    const email = String(match[0]).trim();
+    if (email && !emailSet.has(email)) {
+      emailSet.add(email);
+      result.contact_email = email;
     }
   }
 
@@ -146,6 +170,11 @@ function extractCandidateLinks(html, baseUrl) {
   if (result.contact_links.length > 0) {
     result.contact_links.sort((a, b) => b.score - a.score);
     result.best_contact_url = result.contact_links[0].url;
+  }
+
+  if (result.linkedin_links.length > 0) {
+    result.linkedin_links = [...new Set(result.linkedin_links)];
+    result.best_linkedin_url = result.linkedin_links[0];
   }
 
   return result;
@@ -178,9 +207,10 @@ async function main() {
       const organizerName = extractOrganizerName(html, source.name);
       const officialCandidate = links.best_apply_url || null;
       const contactCandidate = links.best_contact_url || null;
+      const linkedinCandidate = links.best_linkedin_url || null;
 
       const verificationStatus = source.verify
-        ? (officialCandidate || links.contact_email || contactCandidate ? 'verified_candidate' : 'needs_manual_verification')
+        ? (officialCandidate || links.contact_email || contactCandidate || linkedinCandidate ? 'verified_candidate' : 'needs_manual_verification')
         : 'needs_corroboration';
 
       discovered.push({
@@ -192,6 +222,8 @@ async function main() {
         apply_url: officialCandidate,
         contact_url: contactCandidate,
         contact_email: links.contact_email || null,
+        linkedin_url: linkedinCandidate,
+        social_links: [...new Set((links.social_links || []).slice(0, 5))],
         organizer_name: organizerName,
         contact_links: links.contact_links.slice(0, 5).map((item) => item.url),
         deadline_text: links.deadline_text || null,
@@ -200,14 +232,14 @@ async function main() {
         source_type: source.type,
         priority: source.priority,
         verification_status: verificationStatus,
-        value_score: Math.min(99, source.priority + (officialCandidate ? 10 : 0) + (links.contact_email ? 4 : 0) + (source.verify ? 8 : 2)),
+        value_score: Math.min(99, source.priority + (officialCandidate ? 10 : 0) + (links.contact_email ? 4 : 0) + (linkedinCandidate ? 5 : 0) + (source.verify ? 8 : 2)),
         summary: description,
         categories: source.category || [],
         discovered_at: new Date().toISOString(),
         status: verificationStatus,
         evidence_note: source.verify
-          ? (officialCandidate
-            ? 'Verified candidate: an official apply/register link and/or valid contact path were detected on the source page.'
+          ? (officialCandidate || links.contact_email || contactCandidate || linkedinCandidate
+            ? 'Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page.'
             : 'Official source found; action links were not confirmed enough for a real application path yet.')
           : 'Social or community source detected; action links require manual verification before use.'
       });

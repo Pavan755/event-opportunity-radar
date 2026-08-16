@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "agent": "event-agent-lite",
   "sources": [
     {
@@ -51,6 +51,56 @@
       "type": "github_repository",
       "verify": true,
       "category": ["open_source", "project", "dashboard"]
+    },
+    {
+      "id": "devfolio-communities",
+      "name": "Devfolio Community Calls",
+      "class": "event_platform",
+      "priority": 82,
+      "url": "https://devfolio.co/",
+      "type": "event_platform",
+      "verify": false,
+      "category": ["hackathon", "community", "builder"]
+    },
+    {
+      "id": "gdg-hyderabad",
+      "name": "GDG Hyderabad",
+      "class": "community",
+      "priority": 85,
+      "url": "https://gdg.community.dev/",
+      "type": "official_community_page",
+      "verify": false,
+      "category": ["community", "google", "technology"]
+    },
+    {
+      "id": "linkedin-events",
+      "name": "LinkedIn Event Discovery",
+      "class": "social",
+      "priority": 70,
+      "url": "https://www.linkedin.com/events/",
+      "type": "organizer_social_post",
+      "verify": false,
+      "category": ["networking", "professional", "community"]
+    },
+    {
+      "id": "indiafoss",
+      "name": "IndiaFOSS",
+      "class": "community",
+      "priority": 80,
+      "url": "https://indiafoss.net/",
+      "type": "official_community_page",
+      "verify": false,
+      "category": ["open_source", "community", "technology"]
+    },
+    {
+      "id": "x-community-posts",
+      "name": "Public Community Posts",
+      "class": "social",
+      "priority": 68,
+      "url": "https://x.com/explore",
+      "type": "community_social_post",
+      "verify": false,
+      "category": ["social", "event", "community"]
     }
   ]
 }
