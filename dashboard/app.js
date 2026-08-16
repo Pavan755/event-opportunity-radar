@@ -4,7 +4,7 @@ const opportunities = [
     region: 'Telangana',
     role: 'Technical Volunteer',
     skillFit: 'Python, AI/ML, community support',
-    benefit: 'Strong networking and technical learning',
+    benefit: 'Strong learning and networking path',
     rank: 'A'
   },
   {
@@ -12,7 +12,7 @@ const opportunities = [
     region: 'Bengaluru',
     role: 'Volunteer',
     skillFit: 'Event support, documentation, operations',
-    benefit: 'High networking and volunteer access',
+    benefit: 'Best local visibility and networking access',
     rank: 'S'
   },
   {
@@ -20,7 +20,7 @@ const opportunities = [
     region: 'Andhra Pradesh',
     role: 'Community Support',
     skillFit: 'Documentation, social media, event support',
-    benefit: 'Local network and learning exposure',
+    benefit: 'Great local ecosystem fit and exposure',
     rank: 'A'
   },
   {
@@ -28,7 +28,7 @@ const opportunities = [
     region: 'Virtual',
     role: 'Hackathon',
     skillFit: 'GitHub, docs, technical support',
-    benefit: 'Good for build + network path',
+    benefit: 'Strong project + portfolio path',
     rank: 'A'
   },
   {
@@ -36,7 +36,7 @@ const opportunities = [
     region: 'Virtual',
     role: 'Open Source',
     skillFit: 'GitHub, documentation, testing',
-    benefit: 'Great portfolio and community path',
+    benefit: 'High learning value with public portfolio impact',
     rank: 'S'
   },
   {
@@ -44,7 +44,23 @@ const opportunities = [
     region: 'Andhra Pradesh',
     role: 'Event Support',
     skillFit: 'Research docs, communication, support',
-    benefit: 'Learning and exposure with low friction',
+    benefit: 'Low-friction learning and visibility',
+    rank: 'B'
+  },
+  {
+    name: 'Data & AI Community Meet',
+    region: 'Telangana',
+    role: 'Community',
+    skillFit: 'AI literacy, presentations, networking',
+    benefit: 'Direct access to peers and practical learning',
+    rank: 'A'
+  },
+  {
+    name: 'Local Developer Build Day',
+    region: 'Bengaluru',
+    role: 'Event Support',
+    skillFit: 'Operations, logistics, community help',
+    benefit: 'Useful for visibility and follow-up opportunities',
     rank: 'B'
   }
 ];
