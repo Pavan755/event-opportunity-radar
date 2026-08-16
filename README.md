@@ -1,97 +1,119 @@
 # Event Opportunity Radar
 
-A backend-first opportunity intelligence system for discovering, ranking, and acting on the best local and virtual events.
+High-value events and build opportunities for Hyderabad, Bengaluru, Andhra Pradesh, Telangana, and relevant virtual programs.
 
 <p align="center">
   <a href="dashboard/index.html">
-    <img src="https://img.shields.io/badge/Public%20Dashboard-Open-brightgreen?style=for-the-badge" alt="Public dashboard" />
+    <img src="https://img.shields.io/badge/Live%20Dashboard-Open-brightgreen?style=for-the-badge" alt="Live dashboard" />
   </a>
   <a href="https://github.com/Pavan755/event-opportunity-radar">
     <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge" alt="GitHub repo" />
   </a>
-  <a href="CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/Contribute-Open-yellow?style=for-the-badge" alt="Contribute" />
-  </a>
 </p>
 
-## The story
+## Why this project matters
 
-Most people do not need another event list. They need a system that filters the signal, shows what is worth their time, and helps them decide what to do next.
+Finding valuable events is hard when they are scattered across communities, meetups, newsletters, hackathons, and local groups. This project helps turn that clutter into a simple opportunity radar.
 
-This project turns scattered opportunities into a clear, ranked pipeline:
+The goal is straightforward:
 
-- discover events from local and online sources
-- normalize and validate them
-- score them based on learning, contribution, networking, and career value
-- surface the strongest opportunities first
-- keep personal follow-up workflows separate from the public project
+- find the best opportunities early
+- focus on events with real learning and career value
+- prioritize contribution, networking, and growth
+- give people a better way to decide what is worth their time
 
-## What is visible on the repo
+## Target focus areas
 
-| Opportunity | Region | Type | Why it matters | Priority |
-| --- | --- | --- | --- | --- |
-| Hyderabad AI Meetup | Telangana | Technical volunteer | Strong learning and networking path | A |
-| Bengaluru Tech Week | Bengaluru | Volunteer / ops | Big visibility and local ecosystem access | S |
-| Vizag AI Community Session | Andhra Pradesh | Community support | Strong local fit and community exposure | A |
-| Hackathon Volunteer Program | Virtual | Hackathon support | Useful for portfolio and build experience | A |
-| Open Source Contribution Sprint | Virtual | Open source | High learning, contribution, and community value | S |
-| Student Research Workshop | Andhra Pradesh | Event support | Low-friction learning and visibility | B |
+The current product strategy is focused on the most relevant regions and communities:
 
-This is the same design principle used across the project: minimal, readable, and opportunity-first.
+- Hyderabad
+- Bengaluru
+- Andhra Pradesh
+- Telangana
+- virtual and hybrid opportunities
+
+These are the high-priority filters for the first phase because they match the strongest local opportunity paths.
+
+## Opportunity snapshot
+
+### Top opportunities to track
+
+#### Hyderabad AI Meetup
+- Region: Telangana
+- Type: Technical volunteer
+- Why it matters: strong learning path and networking with engaged builders
+- Priority: A
+
+#### Bengaluru Tech Week
+- Region: Bengaluru
+- Type: Volunteer / operations
+- Why it matters: excellent visibility, strong local ecosystem, and networking value
+- Priority: S
+
+#### Vizag AI Community Session
+- Region: Andhra Pradesh
+- Type: Community support
+- Why it matters: a local community fit with practical exposure and networking
+- Priority: A
+
+#### Hackathon Volunteer Program
+- Region: Virtual
+- Type: Hackathon support
+- Why it matters: useful for portfolio, project momentum, and collaboration
+- Priority: A
+
+#### Open Source Contribution Sprint
+- Region: Virtual
+- Type: Open source contribution
+- Why it matters: direct learning, contribution, and visible project growth
+- Priority: S
+
+#### Student Research Workshop
+- Region: Andhra Pradesh
+- Type: Event support
+- Why it matters: good low-friction learning and local visibility opportunity
+- Priority: B
+
+## What this product does
+
+This project helps users decide:
+
+- which events are worth attending
+- which opportunities match their skills and interests
+- which ones provide real networking or learning value
+- which ones should be tracked for follow-up and action
+
+It is built to make event discovery more strategic, not just more crowded.
 
 ## How it works
 
-### 1. Discover
-Collect opportunities from sources and candidate event feeds.
-
-### 2. Normalize
-Standardize the records so they can be compared fairly.
-
-### 3. Score
-Rank them by contribution, learning, networking, and personal fit.
-
-### 4. Track
-Move opportunities through planned, registered, attended, and follow-up states.
+1. Discover opportunities from sources and candidate feeds.
+2. Normalize and validate the records.
+3. Score them based on contribution, learning, network, and career value.
+4. Rank the strongest events and show the best matches first.
+5. Track them through completion and follow-up workflows.
 
 ## Why this is a product
 
-This is not just a script dump. It is a usable system for:
+This is a practical opportunity intelligence system, not just a code repo.
 
-- local opportunity discovery
-- event prioritization
-- volunteer and networking strategy
-- personal growth tracking
-- public repo visibility with a private workflow layer
+It combines:
 
-## Public vs personal
+- real event discovery logic
+- ranking and intelligence
+- region-specific prioritization
+- workflow tracking for follow-up and action
+- a clean frontend layer that makes the opportunity story easy to understand
 
-### Public layer
+## Backend-first structure
 
-The public layer is designed for:
+The backend is the foundation of the system and is built around a production-style pipeline:
 
-- project visibility
-- contributor onboarding
-- architecture explanation
-- public dashboard and product showcase
-
-### Personal layer
-
-The private layer is intentionally separate for:
-
-- city-specific filters
-- personal interest and skill tracking
-- personal reminders and follow-ups
-- application and attendance history
-
-## Backend-first architecture
-
-The core system is built around production-style backend logic:
-
-- discovery and source selection
+- discovery and source intake
 - validation and normalization
-- skill intelligence and opportunity enrichment
+- skill and opportunity intelligence
 - scoring and ranking
-- identity and lifecycle tracking
+- lifecycle tracking and persistence
 
 Key implementation files:
 
@@ -103,18 +125,18 @@ Key implementation files:
 - [apps-script/src/OpportunityLifecycle.gs](apps-script/src/OpportunityLifecycle.gs)
 - [apps-script/src/OpportunityLifecycleSheetStore.gs](apps-script/src/OpportunityLifecycleSheetStore.gs)
 
-## Public dashboard
+## Dashboard preview
 
-The repo includes a lightweight public dashboard preview:
+The public dashboard is available here:
 
 - [dashboard/index.html](dashboard/index.html)
 - [dashboard/README.md](dashboard/README.md)
 
-This keeps the project easy to understand even before someone dives into the backend.
+This gives a clear visual entry point for the project and makes the opportunity flow visible immediately.
 
 ## Verified status
 
-The system has been validated with local regression tests for the intelligence and lifecycle flows.
+The core engine has been validated locally with the project regression checks.
 
 ```bash
 node tools/run-opportunity-intelligence-test.js
@@ -124,25 +146,25 @@ node tools/run-opportunity-lifecycle-sheet-store-test.js
 node tools/run-opportunity-lifecycle-action-service-test.js
 ```
 
-Passing results include:
+Verified results include:
 
 - OPPORTUNITY INTELLIGENCE: PASSED
 - OPPORTUNITY RADAR PIPELINE: PASSED
 - LIFECYCLE ACTION SERVICE: PASSED
 - LIFECYCLE SHEET STORE: PASSED
 
-## Project structure
+## Repo structure
 
 ```text
-apps-script/     core backend pipeline and logic
-config/          settings and scoring sources
-dashboard/       public showcase and UI preview
-data/            sample opportunity data
-docs/            architecture and workflow notes
-tools/           validation and regression runners
-CONTRIBUTING.md  contributor guide
-SECURITY.md      public-safe project security policy
-LICENSE          MIT license
+apps-script/      core backend logic and pipeline
+config/           scoring and source config
+dashboard/        public landing-page dashboard
+data/             sample opportunity data
+docs/             architecture and workflow notes
+tools/            validation and regression scripts
+CONTRIBUTING.md   contributor guide
+SECURITY.md       security policy
+LICENSE           open-source license
 ```
 
 ## Repository
@@ -151,4 +173,4 @@ LICENSE          MIT license
 
 ## Final note
 
-This project is intentionally built to look clean, read simply, and communicate real product value quickly. The backend is strong first; the public repo and dashboard make the story readable and presentable for others.
+This project is designed to feel like a real opportunity product: targeted to the right locations, built around value-first decision making, and structured to show the strongest opportunities clearly and immediately.

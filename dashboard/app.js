@@ -1,49 +1,49 @@
 const opportunities = [
   {
     name: 'Hyderabad AI Meetup',
-    region: 'Telangana',
+    region: 'Hyderabad',
     role: 'Technical Volunteer',
-    skillFit: 'Python, AI/ML, community support',
-    benefit: 'Strong learning and networking path',
+    skillFit: 'AI, Python, community support',
+    benefit: 'Strong learning + networking value',
     rank: 'A'
   },
   {
     name: 'Bengaluru Tech Week',
     region: 'Bengaluru',
     role: 'Volunteer',
-    skillFit: 'Event support, documentation, operations',
-    benefit: 'Best local visibility and networking access',
+    skillFit: 'Event ops, docs, community support',
+    benefit: 'Best local visibility and network access',
     rank: 'S'
   },
   {
     name: 'Vizag AI Community Session',
     region: 'Andhra Pradesh',
-    role: 'Community Support',
-    skillFit: 'Documentation, social media, event support',
-    benefit: 'Great local ecosystem fit and exposure',
+    role: 'Community',
+    skillFit: 'Docs, community engagement, presentations',
+    benefit: 'Good local ecosystem exposure',
     rank: 'A'
   },
   {
     name: 'Hackathon Volunteer Program',
     region: 'Virtual',
     role: 'Hackathon',
-    skillFit: 'GitHub, docs, technical support',
-    benefit: 'Strong project + portfolio path',
+    skillFit: 'GitHub, event support, technical help',
+    benefit: 'Strong build + portfolio path',
     rank: 'A'
   },
   {
     name: 'Open Source Contribution Sprint',
     region: 'Virtual',
     role: 'Open Source',
-    skillFit: 'GitHub, documentation, testing',
-    benefit: 'High learning value with public portfolio impact',
+    skillFit: 'GitHub, PRs, docs, testing',
+    benefit: 'High learning value with public visibility',
     rank: 'S'
   },
   {
     name: 'Student Research Workshop',
     region: 'Andhra Pradesh',
     role: 'Event Support',
-    skillFit: 'Research docs, communication, support',
+    skillFit: 'Research writing, communication, support',
     benefit: 'Low-friction learning and visibility',
     rank: 'B'
   },
@@ -51,21 +51,21 @@ const opportunities = [
     name: 'Data & AI Community Meet',
     region: 'Telangana',
     role: 'Community',
-    skillFit: 'AI literacy, presentations, networking',
-    benefit: 'Direct access to peers and practical learning',
+    skillFit: 'AI literacy, networking, presentations',
+    benefit: 'Direct peer learning and practical exposure',
     rank: 'A'
   },
   {
     name: 'Local Developer Build Day',
     region: 'Bengaluru',
     role: 'Event Support',
-    skillFit: 'Operations, logistics, community help',
-    benefit: 'Useful for visibility and follow-up opportunities',
+    skillFit: 'Ops, logistics, community help',
+    benefit: 'Useful for visibility and follow-up paths',
     rank: 'B'
   }
 ];
 
-const tbody = document.getElementById('eventTableBody');
+const cardsGrid = document.getElementById('eventCardsGrid');
 const totalEventsEl = document.getElementById('totalEvents');
 const priorityCountEl = document.getElementById('priorityCount');
 const volunteerCountEl = document.getElementById('volunteerCount');
@@ -76,7 +76,7 @@ const rankFilter = document.getElementById('rankFilter');
 const typeFilter = document.getElementById('typeFilter');
 const searchInput = document.getElementById('searchInput');
 
-function renderTable() {
+function renderCards() {
   const regionValue = regionFilter.value;
   const rankValue = rankFilter.value;
   const typeValue = typeFilter.value;
@@ -86,23 +86,31 @@ function renderTable() {
     const matchesRegion = regionValue === 'all' || event.region === regionValue;
     const matchesRank = rankValue === 'all' || event.rank === rankValue;
     const matchesType = typeValue === 'all' || event.role === typeValue;
-    const searchText = [event.name, event.skillFit, event.benefit].join(' ').toLowerCase();
+    const searchText = [event.name, event.skillFit, event.benefit, event.region].join(' ').toLowerCase();
     const matchesSearch = !searchValue || searchText.includes(searchValue);
 
     return matchesRegion && matchesRank && matchesType && matchesSearch;
   });
 
-  tbody.innerHTML = filtered
+  cardsGrid.innerHTML = filtered
     .map((event) => {
       return `
-        <tr>
-          <td>${event.name}</td>
-          <td>${event.region}</td>
-          <td>${event.role}</td>
-          <td>${event.skillFit}</td>
-          <td>${event.benefit}</td>
-          <td><span class="rank-badge rank-${event.rank}">${event.rank}</span></td>
-        </tr>
+        <article class="opportunity-card">
+          <div class="card-header">
+            <div>
+              <div class="event-type">${event.role}</div>
+              <h3>${event.name}</h3>
+            </div>
+            <span class="rank-badge rank-${event.rank}">${event.rank}</span>
+          </div>
+
+          <div class="meta-row">
+            <span>${event.region}</span>
+            <span>${event.skillFit}</span>
+          </div>
+
+          <p class="event-benefit">${event.benefit}</p>
+        </article>
       `;
     })
     .join('');
@@ -118,8 +126,8 @@ function renderTable() {
 }
 
 [regionFilter, rankFilter, typeFilter, searchInput].forEach((element) => {
-  element.addEventListener('input', renderTable);
-  element.addEventListener('change', renderTable);
+  element.addEventListener('input', renderCards);
+  element.addEventListener('change', renderCards);
 });
 
-renderTable();
+renderCards();

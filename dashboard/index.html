@@ -13,26 +13,26 @@
           <div class="brand-mark">E</div>
           <div>
             <div class="brand-name">Event Opportunity Radar</div>
-            <div class="brand-subtitle">Contribution-first opportunity discovery</div>
+            <div class="brand-subtitle">South India opportunity intelligence</div>
           </div>
         </div>
         <nav class="nav">
           <a href="#overview">Overview</a>
           <a href="#filters">Filters</a>
           <a href="#opportunities">Opportunities</a>
-          <a href="#workflow">Workflow</a>
+          <a href="#workflow">Strategy</a>
         </nav>
       </header>
 
       <main>
         <section class="hero" id="overview">
           <div class="hero-copy">
-            <p class="eyebrow">Public event radar</p>
-            <h1>Find events where you can learn, contribute, and grow.</h1>
+            <p class="eyebrow">Opportunity radar</p>
+            <h1>Find the right events before your competitors do.</h1>
             <p class="hero-text">
-              Discover local and virtual opportunities that match your skills,
-              prioritize contribution over paying to attend, and track the journey
-              from discovery to networking and follow-up.
+              Discover high-value local and virtual opportunities in Hyderabad,
+              Bengaluru, Andhra Pradesh, Telangana, and nearby communities—ranked
+              by learning, contribution, networking, and career upside.
             </p>
             <div class="cta-row">
               <button class="primary">Explore opportunities</button>
@@ -42,16 +42,16 @@
 
           <div class="hero-panel">
             <div class="metric-card">
-              <span class="metric-label">Priority regions</span>
-              <strong>Andhra Pradesh + Telangana + Bengaluru</strong>
+              <span class="metric-label">Focus regions</span>
+              <strong>Hyderabad + Bengaluru + AP + Telangana</strong>
             </div>
             <div class="metric-card">
-              <span class="metric-label">Recommended approach</span>
+              <span class="metric-label">Core approach</span>
               <strong>Learn → Contribute → Network → Follow up</strong>
             </div>
             <div class="metric-card">
-              <span class="metric-label">Event rank model</span>
-              <strong>S / A / B / C / D</strong>
+              <span class="metric-label">Priority model</span>
+              <strong>S / A / B / C tracking</strong>
             </div>
           </div>
         </section>
@@ -59,7 +59,7 @@
         <section class="summary-grid">
           <div class="stat-box">
             <span class="stat-number" id="totalEvents">0</span>
-            <span class="stat-label">Live opportunities</span>
+            <span class="stat-label">Opportunities tracked</span>
           </div>
           <div class="stat-box">
             <span class="stat-number" id="priorityCount">0</span>
@@ -80,29 +80,29 @@
             <label for="regionFilter">Location</label>
             <select id="regionFilter">
               <option value="all">All regions</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Bengaluru">Bengaluru</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
               <option value="Telangana">Telangana</option>
-              <option value="Bengaluru">Bengaluru</option>
               <option value="Virtual">Virtual</option>
             </select>
           </div>
 
           <div class="filter-group">
-            <label for="rankFilter">Rank</label>
+            <label for="rankFilter">Priority</label>
             <select id="rankFilter">
-              <option value="all">All ranks</option>
+              <option value="all">All priorities</option>
               <option value="S">S</option>
               <option value="A">A</option>
               <option value="B">B</option>
               <option value="C">C</option>
-              <option value="D">D</option>
             </select>
           </div>
 
           <div class="filter-group">
-            <label for="typeFilter">Role</label>
+            <label for="typeFilter">Type</label>
             <select id="typeFilter">
-              <option value="all">All roles</option>
+              <option value="all">All types</option>
               <option value="Volunteer">Volunteer</option>
               <option value="Technical Volunteer">Technical Volunteer</option>
               <option value="Event Support">Event Support</option>
@@ -114,48 +114,34 @@
 
           <div class="filter-group search-box">
             <label for="searchInput">Search</label>
-            <input id="searchInput" type="text" placeholder="Search event or organizer" />
+            <input id="searchInput" type="text" placeholder="Search event or keyword" />
           </div>
         </section>
 
-        <section class="table-section" id="opportunities">
+        <section class="card-section" id="opportunities">
           <div class="section-head">
-            <h2>Opportunity shortlist</h2>
+            <h2>Priority opportunities</h2>
             <span class="legend">
-              <span><strong>S</strong> exceptional</span>
-              <span><strong>A</strong> strong fit</span>
-              <span><strong>B</strong> worth considering</span>
+              <span><strong>S</strong> strongest fit</span>
+              <span><strong>A</strong> high value</span>
+              <span><strong>B</strong> worth tracking</span>
             </span>
           </div>
 
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Event</th>
-                  <th>Location</th>
-                  <th>Role</th>
-                  <th>Skill fit</th>
-                  <th>Benefit</th>
-                  <th>Rank</th>
-                </tr>
-              </thead>
-              <tbody id="eventTableBody"></tbody>
-            </table>
-          </div>
+          <div class="cards-grid" id="eventCardsGrid"></div>
         </section>
 
         <section class="workflow-panel" id="workflow">
           <div class="workflow-head">
-            <h2>Recommended personal workflow</h2>
+            <h2>Recommended strategy</h2>
           </div>
 
           <div class="workflow-list">
             <div class="step">
               <span class="step-index">1</span>
               <div>
-                <h3>Learn First</h3>
-                <p>Use the skill gap to decide what to study before applying.</p>
+                <h3>Learn first</h3>
+                <p>Use the gap to decide what to study before applying or attending.</p>
               </div>
             </div>
 
@@ -163,7 +149,7 @@
               <span class="step-index">2</span>
               <div>
                 <h3>Contribute</h3>
-                <p>Offer documentation, support, technical help, or event operations.</p>
+                <p>Offer useful support, documentation, logistics, or technical help.</p>
               </div>
             </div>
 
@@ -171,15 +157,15 @@
               <span class="step-index">3</span>
               <div>
                 <h3>Network</h3>
-                <p>Talk to organizers, speakers, and volunteers with a clear reason.</p>
+                <p>Talk with speakers, organizers, and volunteers with a clear purpose.</p>
               </div>
             </div>
 
             <div class="step">
               <span class="step-index">4</span>
               <div>
-                <h3>Document</h3>
-                <p>Capture what you learned, what you built, and what you contributed.</p>
+                <h3>Track follow-up</h3>
+                <p>Capture what you learned, who you met, and what you want to do next.</p>
               </div>
             </div>
           </div>

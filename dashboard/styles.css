@@ -225,7 +225,7 @@ input {
   font-size: 0.96rem;
 }
 
-.table-section,
+.card-section,
 .workflow-panel {
   margin-top: 30px;
   border: 1px solid var(--border);
@@ -255,34 +255,63 @@ input {
   flex-wrap: wrap;
 }
 
-.table-wrap {
-  overflow-x: auto;
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding-bottom: 12px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 760px;
+.opportunity-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(24, 50, 68, 0.85), rgba(17, 33, 44, 0.9));
+  padding: 18px 16px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-th,
-td {
-  text-align: left;
-  padding: 14px 12px;
-  border-bottom: 1px solid var(--border);
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-th {
-  color: var(--muted);
-  font-weight: 700;
+.event-type {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.78rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.opportunity-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.event-benefit {
+  margin: 16px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .rank-badge {
   display: inline-block;
-  min-width: 50px;
+  min-width: 44px;
   text-align: center;
   padding: 6px 10px;
   border-radius: 999px;
