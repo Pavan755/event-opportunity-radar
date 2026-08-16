@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "agent": "event-agent-lite",
+  "sources": [
+    {
+      "id": "bengaluru-tech-week",
+      "name": "Bengaluru Tech Week",
+      "class": "official",
+      "priority": 100,
+      "url": "https://bengalurutechweek.com/",
+      "type": "official_event_website",
+      "verify": true,
+      "category": ["conference", "community", "technology"]
+    },
+    {
+      "id": "opensource-india",
+      "name": "Open Source India",
+      "class": "official",
+      "priority": 96,
+      "url": "https://www.opensourceindia.in/",
+      "type": "official_event_website",
+      "verify": true,
+      "category": ["conference", "open_source", "community"]
+    },
+    {
+      "id": "swecha-events",
+      "name": "Swecha DevDays Volunteers",
+      "class": "community",
+      "priority": 92,
+      "url": "https://events.swecha.org/DevDays/2026-volunteers-1/",
+      "type": "official_community_page",
+      "verify": true,
+      "category": ["community", "volunteer", "technology"]
+    },
+    {
+      "id": "hyderabad-aiml-meetup",
+      "name": "Hyderabad AI Meetup",
+      "class": "community",
+      "priority": 88,
+      "url": "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/",
+      "type": "community_social_post",
+      "verify": false,
+      "category": ["meetup", "ai_ml", "community"]
+    },
+    {
+      "id": "event-opportunity-radar",
+      "name": "Event Opportunity Radar Repo",
+      "class": "github",
+      "priority": 90,
+      "url": "https://github.com/Pavan755/event-opportunity-radar",
+      "type": "github_repository",
+      "verify": true,
+      "category": ["open_source", "project", "dashboard"]
+    }
+  ]
+}

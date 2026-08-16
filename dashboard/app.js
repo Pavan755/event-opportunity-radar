@@ -1,11 +1,13 @@
-const opportunities = [
+const fallbackOpportunities = [
   {
     name: 'Hyderabad AI Meetup',
     region: 'Hyderabad',
     role: 'Technical Volunteer',
     skillFit: 'AI, Python, community support',
     benefit: 'Strong learning + networking value',
-    rank: 'A'
+    rank: 'A',
+    applyUrl: 'https://www.meetup.com/',
+    officialUrl: 'https://www.meetup.com/'
   },
   {
     name: 'Bengaluru Tech Week',
@@ -13,55 +15,29 @@ const opportunities = [
     role: 'Volunteer',
     skillFit: 'Event ops, docs, community support',
     benefit: 'Best local visibility and network access',
-    rank: 'S'
+    rank: 'S',
+    applyUrl: 'https://bengalurutechweek.com/',
+    officialUrl: 'https://bengalurutechweek.com/'
   },
   {
-    name: 'Vizag AI Community Session',
-    region: 'Andhra Pradesh',
-    role: 'Community',
-    skillFit: 'Docs, community engagement, presentations',
-    benefit: 'Good local ecosystem exposure',
-    rank: 'A'
-  },
-  {
-    name: 'Hackathon Volunteer Program',
-    region: 'Virtual',
-    role: 'Hackathon',
-    skillFit: 'GitHub, event support, technical help',
-    benefit: 'Strong build + portfolio path',
-    rank: 'A'
-  },
-  {
-    name: 'Open Source Contribution Sprint',
-    region: 'Virtual',
-    role: 'Open Source',
-    skillFit: 'GitHub, PRs, docs, testing',
-    benefit: 'High learning value with public visibility',
-    rank: 'S'
-  },
-  {
-    name: 'Student Research Workshop',
-    region: 'Andhra Pradesh',
-    role: 'Event Support',
-    skillFit: 'Research writing, communication, support',
-    benefit: 'Low-friction learning and visibility',
-    rank: 'B'
-  },
-  {
-    name: 'Data & AI Community Meet',
-    region: 'Telangana',
-    role: 'Community',
-    skillFit: 'AI literacy, networking, presentations',
-    benefit: 'Direct peer learning and practical exposure',
-    rank: 'A'
-  },
-  {
-    name: 'Local Developer Build Day',
+    name: 'Open Source India',
     region: 'Bengaluru',
-    role: 'Event Support',
-    skillFit: 'Ops, logistics, community help',
-    benefit: 'Useful for visibility and follow-up paths',
-    rank: 'B'
+    role: 'Community',
+    skillFit: 'Open source, AI, developer community',
+    benefit: 'Major developer conference with strong open-source visibility',
+    rank: 'S',
+    applyUrl: 'https://register.opensourceindia.in/',
+    officialUrl: 'https://www.opensourceindia.in/'
+  },
+  {
+    name: 'Swecha DevDays Volunteers',
+    region: 'Hyderabad',
+    role: 'Volunteer',
+    skillFit: 'Community support, volunteer ops, local outreach',
+    benefit: 'Hands-on local contribution with direct community impact',
+    rank: 'A',
+    applyUrl: 'https://events.swecha.org/DevDays/2026-volunteers-1/',
+    officialUrl: 'https://events.swecha.org/DevDays/2026-volunteers-1/'
   }
 ];
 
@@ -75,6 +51,62 @@ const regionFilter = document.getElementById('regionFilter');
 const rankFilter = document.getElementById('rankFilter');
 const typeFilter = document.getElementById('typeFilter');
 const searchInput = document.getElementById('searchInput');
+
+let opportunities = [...fallbackOpportunities];
+
+function deriveRegion(name, fallback = 'Virtual') {
+  const normalized = String(name || '').toLowerCase();
+  if (normalized.includes('bengaluru')) return 'Bengaluru';
+  if (normalized.includes('hyderabad')) return 'Hyderabad';
+  if (normalized.includes('telangana')) return 'Telangana';
+  if (normalized.includes('andhra')) return 'Andhra Pradesh';
+  if (normalized.includes('virtual') || normalized.includes('online')) return 'Virtual';
+  return fallback;
+}
+
+function deriveRank(valueScore) {
+  if (valueScore >= 90) return 'S';
+  if (valueScore >= 75) return 'A';
+  if (valueScore >= 60) return 'B';
+  return 'C';
+}
+
+function deriveRole(record) {
+  const text = `${record.name || ''} ${record.summary || ''} ${record.categories || ''}`.toLowerCase();
+  if (text.includes('volunteer') || text.includes('support')) return 'Volunteer';
+  if (text.includes('hackathon')) return 'Hackathon';
+  if (text.includes('open source')) return 'Open Source';
+  if (text.includes('conference') || text.includes('meetup')) return 'Community';
+  return 'Community';
+}
+
+function deriveSkillFit(record) {
+  const categorySet = Array.isArray(record.categories) ? record.categories : [];
+  const sourceType = record.source_type ? String(record.source_type).replace(/_/g, ' ') : '';
+  const terms = [...categorySet, sourceType].filter(Boolean).slice(0, 3);
+  return terms.length ? terms.join(', ') : 'Community engagement';
+}
+
+function normalizeOpportunity(record) {
+  const summaryText = record.summary || 'High-value opportunity worth learning from and contributing to.';
+  const applyUrl = record.apply_url || record.official_url || record.url || null;
+  const region = deriveRegion(record.name || record.title || summaryText);
+  const valueScore = Number(record.value_score) || 75;
+
+  return {
+    id: record.id || `${record.name || 'opportunity'}-${Date.now()}`,
+    name: record.name || record.title || 'Opportunity',
+    region,
+    role: deriveRole(record),
+    skillFit: deriveSkillFit(record),
+    benefit: summaryText,
+    rank: deriveRank(valueScore),
+    applyUrl,
+    officialUrl: record.official_url || record.url || null,
+    verificationStatus: record.verification_status || 'needs_corroboration',
+    sourceType: record.source_type || 'community'
+  };
+}
 
 function renderCards() {
   const regionValue = regionFilter.value;
@@ -94,6 +126,9 @@ function renderCards() {
 
   cardsGrid.innerHTML = filtered
     .map((event) => {
+      const actionUrl = event.applyUrl || event.officialUrl || '#';
+      const actionLabel = event.applyUrl ? 'Apply now' : 'View source';
+
       return `
         <article class="opportunity-card">
           <div class="card-header">
@@ -110,6 +145,11 @@ function renderCards() {
           </div>
 
           <p class="event-benefit">${event.benefit}</p>
+
+          <div class="card-footer">
+            <span class="verification-pill">${event.verificationStatus}</span>
+            <a class="action-link" href="${actionUrl}" target="_blank" rel="noreferrer">${actionLabel}</a>
+          </div>
         </article>
       `;
     })
@@ -125,9 +165,28 @@ function renderCards() {
   virtualCountEl.textContent = String(virtual);
 }
 
+async function loadOpportunities() {
+  try {
+    const response = await fetch('../data/event-agent-lite.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const payload = await response.json();
+    const discovered = Array.isArray(payload.opportunities) ? payload.opportunities : [];
+    if (discovered.length > 0) {
+      opportunities = discovered.map(normalizeOpportunity);
+      renderCards();
+    }
+  } catch (error) {
+    console.warn('Dashboard data fallback activated:', error.message);
+    opportunities = [...fallbackOpportunities];
+    renderCards();
+  }
+}
+
 [regionFilter, rankFilter, typeFilter, searchInput].forEach((element) => {
   element.addEventListener('input', renderCards);
   element.addEventListener('change', renderCards);
 });
 
 renderCards();
+loadOpportunities();

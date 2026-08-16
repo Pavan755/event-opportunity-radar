@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-08-16T15:24:37.044Z",
+  "agent": "event-agent-lite",
+  "version": "1.0.0",
+  "total_sources": 5,
+  "total_records": 5,
+  "opportunities": [
+    {
+      "id": "bengaluru-tech-week",
+      "source_id": "bengaluru-tech-week",
+      "name": "Bengaluru Tech Week",
+      "title": "Bengaluru Tech Week 2026 | Bangalore Tech Week",
+      "official_url": "https://bengalurutechweek.com/",
+      "apply_url": null,
+      "contact_url": null,
+      "contact_email": null,
+      "organizer_name": "Bengaluru Tech Week",
+      "contact_links": [],
+      "deadline_text": null,
+      "url": "https://bengalurutechweek.com/",
+      "source_class": "official",
+      "source_type": "official_event_website",
+      "priority": 100,
+      "verification_status": "needs_manual_verification",
+      "value_score": 99,
+      "summary": "Bengaluru Tech Week 2026 runs from September 1-6 with independently hosted meetups, workshops, demos, office hours, mixers, and founder gatherings across the city.",
+      "categories": [
+        "conference",
+        "community",
+        "technology"
+      ],
+      "discovered_at": "2026-08-16T15:24:16.636Z",
+      "status": "needs_manual_verification",
+      "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
+    },
+    {
+      "id": "opensource-india",
+      "source_id": "opensource-india",
+      "name": "Open Source India",
+      "title": "Open Source India | India&#039;s #1 Developer Conference",
+      "official_url": "https://www.opensourceindia.in/",
+      "apply_url": "https://register.opensourceindia.in/",
+      "contact_url": "https://discord.gg/W3a68xcvRv",
+      "contact_email": "info@opensourceindia.in",
+      "organizer_name": "Open Source India",
+      "contact_links": [
+        "https://discord.gg/W3a68xcvRv",
+        "https://www.opensourceindia.in/contact-us",
+        "https://www.opensourceindia.in/contact-us/"
+      ],
+      "deadline_text": null,
+      "url": "https://www.opensourceindia.in/",
+      "source_class": "official",
+      "source_type": "official_event_website",
+      "priority": 96,
+      "verification_status": "verified_candidate",
+      "value_score": 99,
+      "summary": "Open Source India is India&#039;s #1 event for the entire software developer community, and the biggest open source event in Asia. Key Theme: AI and Open Source.",
+      "categories": [
+        "conference",
+        "open_source",
+        "community"
+      ],
+      "discovered_at": "2026-08-16T15:24:29.385Z",
+      "status": "verified_candidate",
+      "evidence_note": "Verified candidate: an official apply/register link and/or valid contact path were detected on the source page."
+    },
+    {
+      "id": "swecha-events",
+      "source_id": "swecha-events",
+      "name": "Swecha DevDays Volunteers",
+      "title": "Vounteers Meeting",
+      "official_url": "https://events.swecha.org/DevDays/2026-volunteers-1/",
+      "apply_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
+      "contact_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
+      "contact_email": null,
+      "organizer_name": "Swecha DevDays Volunteers",
+      "contact_links": [
+        "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
+        "https://events.swecha.org/redirect/?url=https%3A//swecha.org/contact-us%3A8_pNLgTsU7COyWjR06FS0_v96eyps6XeryXpBSJEeI4"
+      ],
+      "deadline_text": null,
+      "url": "https://events.swecha.org/DevDays/2026-volunteers-1/",
+      "source_class": "community",
+      "source_type": "official_community_page",
+      "priority": 92,
+      "verification_status": "verified_candidate",
+      "value_score": 99,
+      "summary": "Sun, July 12, 2026",
+      "categories": [
+        "community",
+        "volunteer",
+        "technology"
+      ],
+      "discovered_at": "2026-08-16T15:24:31.673Z",
+      "status": "verified_candidate",
+      "evidence_note": "Verified candidate: an official apply/register link and/or valid contact path were detected on the source page."
+    },
+    {
+      "id": "hyderabad-aiml-meetup",
+      "source_id": "hyderabad-aiml-meetup",
+      "name": "Hyderabad AI Meetup",
+      "title": "Aug 27 - AI, ML, and Computer Vision Meetup, Thu, Aug 27, 2026, 9:30 PM | Meetup",
+      "official_url": "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/",
+      "apply_url": "https://www.meetup.com/register/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fhyderabad-ai-machine-learning-and-computer-vision-meetup%2Fevents%2F314999446%2F",
+      "contact_url": "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/attendees/",
+      "contact_email": null,
+      "organizer_name": "Meetup",
+      "contact_links": [
+        "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/attendees/"
+      ],
+      "deadline_text": null,
+      "url": "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/",
+      "source_class": "community",
+      "source_type": "community_social_post",
+      "priority": 88,
+      "verification_status": "needs_corroboration",
+      "value_score": 99,
+      "summary": "Join our virtual meetup to hear talks from experts on cutting-edge topics across AI, ML, and computer vision. Date, Time, and Location Aug 27, 2026 9:00 AM - 11:00 AM PST",
+      "categories": [
+        "meetup",
+        "ai_ml",
+        "community"
+      ],
+      "discovered_at": "2026-08-16T15:24:32.090Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
+    },
+    {
+      "id": "event-opportunity-radar",
+      "source_id": "event-opportunity-radar",
+      "name": "Event Opportunity Radar Repo",
+      "title": "GitHub - Pavan755/event-opportunity-radar: An open-source event discovery and contribution radar for finding verified learning, volunteering, hackathon, networking, open-source, and career opportunities.",
+      "official_url": "https://github.com/Pavan755/event-opportunity-radar",
+      "apply_url": null,
+      "contact_url": "https://github.com/team",
+      "contact_email": null,
+      "organizer_name": "GitHub",
+      "contact_links": [
+        "https://github.com/team",
+        "https://support.github.com",
+        "https://github.com/orgs/community/discussions",
+        "https://github.com/enterprise/premium-support",
+        "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPavan755%2Fevent-opportunity-radar&amp;report=Pavan755+%28user%29"
+      ],
+      "deadline_text": null,
+      "url": "https://github.com/Pavan755/event-opportunity-radar",
+      "source_class": "github",
+      "source_type": "github_repository",
+      "priority": 90,
+      "verification_status": "verified_candidate",
+      "value_score": 98,
+      "summary": "An open-source event discovery and contribution radar for finding verified learning, volunteering, hackathon, networking, open-source, and career opportunities. - Pavan755/event-opportunity-radar",
+      "categories": [
+        "open_source",
+        "project",
+        "dashboard"
+      ],
+      "discovered_at": "2026-08-16T15:24:37.044Z",
+      "status": "verified_candidate",
+      "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
+    }
+  ]
+}

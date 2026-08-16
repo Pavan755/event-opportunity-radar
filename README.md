@@ -1,176 +1,247 @@
 # Event Opportunity Radar
 
-High-value events and build opportunities for Hyderabad, Bengaluru, Andhra Pradesh, Telangana, and relevant virtual programs.
+A practical opportunity intelligence system for discovering the right events, local communities, and contribution-led growth paths before time gets wasted.
 
 <p align="center">
+  <a href="https://pavan755.github.io/event-opportunity-radar/">
+    <img src="https://img.shields.io/badge/Live%20Site-Open-brightgreen?style=for-the-badge" alt="Live site" />
+  </a>
   <a href="dashboard/index.html">
-    <img src="https://img.shields.io/badge/Live%20Dashboard-Open-brightgreen?style=for-the-badge" alt="Live dashboard" />
+    <img src="https://img.shields.io/badge/Dashboard-View-brightgreen?style=for-the-badge" alt="Dashboard" />
   </a>
   <a href="https://github.com/Pavan755/event-opportunity-radar">
     <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge" alt="GitHub repo" />
   </a>
 </p>
 
-## Why this project matters
+## About this project
 
-Finding valuable events is hard when they are scattered across communities, meetups, newsletters, hackathons, and local groups. This project helps turn that clutter into a simple opportunity radar.
+I built this because I was tired of seeing good opportunities disappear in the noise.
 
-The goal is straightforward:
+The problem was not that there were no events. The problem was that the best ones were scattered across multiple channels:
 
-- find the best opportunities early
-- focus on events with real learning and career value
-- prioritize contribution, networking, and growth
-- give people a better way to decide what is worth their time
+- meetup pages
+- local community groups
+- technical newsletters
+- hackathon announcements
+- GitHub posts
+- volunteer calls
+- social media updates
 
-## Target focus areas
+Most people do not have a system to filter signal from noise. They either miss the valuable events entirely or spend too much time checking weak leads. I wanted something that helps a person decide quickly: which opportunities are worth my time, what fits my skills, and which ones actually create learning and network value.
 
-The current product strategy is focused on the most relevant regions and communities:
+This project is my answer to that problem.
 
-- Hyderabad
-- Bengaluru
-- Andhra Pradesh
-- Telangana
-- virtual and hybrid opportunities
+It helps people move from random discovery to structured decision-making:
 
-These are the high-priority filters for the first phase because they match the strongest local opportunity paths.
+- discover opportunities early
+- check whether they are real and relevant
+- understand what kind of value they create
+- decide where contribution and networking matter most
+- track what should be pursued next
 
-## Opportunity snapshot
+This is not just a list of events. It is a decision layer for opportunity discovery.
 
-### Top opportunities to track
+---
 
-#### Hyderabad AI Meetup
-- Region: Telangana
-- Type: Technical volunteer
-- Why it matters: strong learning path and networking with engaged builders
-- Priority: A
+## Why I built it this way
 
-#### Bengaluru Tech Week
-- Region: Bengaluru
-- Type: Volunteer / operations
-- Why it matters: excellent visibility, strong local ecosystem, and networking value
-- Priority: S
+The idea came from a simple reality: people do not fail because they lack opportunity; they fail because opportunity is hard to find, hard to rank, and hard to act on in time.
 
-#### Vizag AI Community Session
-- Region: Andhra Pradesh
-- Type: Community support
-- Why it matters: a local community fit with practical exposure and networking
-- Priority: A
+I wanted a system that would help with the actual problem in practice:
 
-#### Hackathon Volunteer Program
-- Region: Virtual
-- Type: Hackathon support
-- Why it matters: useful for portfolio, project momentum, and collaboration
-- Priority: A
+- find opportunities around South India and relevant virtual spaces
+- rank them by learning, contribution, visibility, and network potential
+- separate weak signals from verified opportunities
+- make the process simple enough for a person to use without needing a complex workflow
 
-#### Open Source Contribution Sprint
-- Region: Virtual
-- Type: Open source contribution
-- Why it matters: direct learning, contribution, and visible project growth
-- Priority: S
+That is why the project is designed around a lightweight stack:
 
-#### Student Research Workshop
-- Region: Andhra Pradesh
-- Type: Event support
-- Why it matters: good low-friction learning and local visibility opportunity
-- Priority: B
+- public landing page and dashboard for exploration
+- lightweight source discovery and normalizer layer
+- verification-aware ranking logic
+- structured follow-up workflow
+- open-source architecture that can be improved by contributors
 
-## What this product does
+It is intentionally not a huge custom agent or a heavy enterprise system.
+It is a clean, controllable, practical product.
 
-This project helps users decide:
-
-- which events are worth attending
-- which opportunities match their skills and interests
-- which ones provide real networking or learning value
-- which ones should be tracked for follow-up and action
-
-It is built to make event discovery more strategic, not just more crowded.
+---
 
 ## How it works
 
-1. Discover opportunities from sources and candidate feeds.
-2. Normalize and validate the records.
-3. Score them based on contribution, learning, network, and career value.
-4. Rank the strongest events and show the best matches first.
-5. Track them through completion and follow-up workflows.
+The system follows a simple flow:
 
-## Why this is a product
+1. sources are discovered from official and community pages
+2. opportunity records are normalized and cleaned
+3. links, source signals, and context are validated
+4. value is scored based on learning, contribution, networking, and career upside
+5. the strongest opportunities are surfaced first
+6. users can act on them, follow up, and track progress
 
-This is a practical opportunity intelligence system, not just a code repo.
+This gives a practical edge: it reduces wasted effort and helps the person spend time on what is actually valuable.
 
-It combines:
+---
 
-- real event discovery logic
-- ranking and intelligence
-- region-specific prioritization
-- workflow tracking for follow-up and action
-- a clean frontend layer that makes the opportunity story easy to understand
+## Unique value: how this helps people in a real way
 
-## Backend-first structure
+A lot of project ideas say “discover events faster.” That is generic and shallow.
 
-The backend is the foundation of the system and is built around a production-style pipeline:
+This project is different because it helps people answer real questions like:
 
-- discovery and source intake
-- validation and normalization
-- skill and opportunity intelligence
-- scoring and ranking
-- lifecycle tracking and persistence
+- Which event has the highest learning value for me?
+- Which one gives me a better contribution or networking path?
+- Which opportunities are worth attending locally in Hyderabad/Bengaluru/AP/Telangana?
+- Which ones are just noisy social posts and which ones are actually real?
+- What should I focus on before spending time and energy?
 
-Key implementation files:
+That is the real product value.
 
-- [apps-script/src/OpportunityRadarPipeline.gs](apps-script/src/OpportunityRadarPipeline.gs)
-- [apps-script/src/SkillIntelligence.gs](apps-script/src/SkillIntelligence.gs)
-- [apps-script/src/OpportunityIntelligence.gs](apps-script/src/OpportunityIntelligence.gs)
-- [apps-script/src/OpportunityScoring.gs](apps-script/src/OpportunityScoring.gs)
-- [apps-script/src/OpportunityIdentity.gs](apps-script/src/OpportunityIdentity.gs)
-- [apps-script/src/OpportunityLifecycle.gs](apps-script/src/OpportunityLifecycle.gs)
-- [apps-script/src/OpportunityLifecycleSheetStore.gs](apps-script/src/OpportunityLifecycleSheetStore.gs)
+The project turns scattered opportunity data into action-ready direction.
+It helps people become more intentional, more strategic, and more efficient with their time.
 
-## Dashboard preview
+---
 
-The public dashboard is available here:
+## Project pages and links
 
+### Public site
+- [index.html](index.html)
 - [dashboard/index.html](dashboard/index.html)
 - [dashboard/README.md](dashboard/README.md)
 
-This gives a clear visual entry point for the project and makes the opportunity flow visible immediately.
+### Product and architecture docs
+- [docs/architecture.md](docs/architecture.md)
+- [docs/scoring.md](docs/scoring.md)
+- [docs/verification.md](docs/verification.md)
+- [docs/workflows.md](docs/workflows.md)
 
-## Verified status
+### Core implementation
+- [apps-script/src/OpportunityRadarPipeline.gs](apps-script/src/OpportunityRadarPipeline.gs)
+- [apps-script/src/OpportunityScoring.gs](apps-script/src/OpportunityScoring.gs)
+- [apps-script/src/OpportunityLifecycle.gs](apps-script/src/OpportunityLifecycle.gs)
+- [apps-script/src/OpportunityPersonalTracker.gs](apps-script/src/OpportunityPersonalTracker.gs)
+- [apps-script/src/SourceRegistry.gs](apps-script/src/SourceRegistry.gs)
+- [apps-script/src/SourceNormalizer.gs](apps-script/src/SourceNormalizer.gs)
+- [apps-script/src/VerificationEvidence.gs](apps-script/src/VerificationEvidence.gs)
 
-The core engine has been validated locally with the project regression checks.
+### Configuration and data
+- [config/queries.json](config/queries.json)
+- [config/sources.json](config/sources.json)
+- [config/scoring.json](config/scoring.json)
+- [data/sample-events.json](data/sample-events.json)
+- [data/event-agent-lite.json](data/event-agent-lite.json)
 
-```bash
-node tools/run-opportunity-intelligence-test.js
-node tools/run-opportunity-radar-pipeline-test.js
-node tools/run-opportunity-lifecycle-test.js
-node tools/run-opportunity-lifecycle-sheet-store-test.js
-node tools/run-opportunity-lifecycle-action-service-test.js
-```
+---
 
-Verified results include:
+## How I built it
 
-- OPPORTUNITY INTELLIGENCE: PASSED
-- OPPORTUNITY RADAR PIPELINE: PASSED
-- LIFECYCLE ACTION SERVICE: PASSED
-- LIFECYCLE SHEET STORE: PASSED
+This project was built in layers so the idea could evolve from concept to a usable product without becoming fragile.
 
-## Repo structure
+### Phase 1: define the problem clearly
+The first step was understanding the actual pain:
 
-```text
-apps-script/      core backend logic and pipeline
-config/           scoring and source config
-dashboard/        public landing-page dashboard
-data/             sample opportunity data
-docs/             architecture and workflow notes
-tools/            validation and regression scripts
-CONTRIBUTING.md   contributor guide
-SECURITY.md       security policy
-LICENSE           open-source license
-```
+- too much scattered information
+- weak signal-to-noise ratio
+- no simple way to rank value
+- no structured follow-up after discovering opportunities
+
+### Phase 2: decide the product shape
+I kept the product focused on a real user need instead of building a generic tool. The emphasis is on:
+
+- local relevance
+- contribution-led growth
+- network value
+- clear opportunity ranking
+
+### Phase 3: build the discovery and validation pipeline
+The core work was around gathering sources, validating them, and converting raw data into structured records with intelligence and scoring.
+
+### Phase 4: build a public-facing product
+After the backend logic matured, I shaped a public presentation that is simple, clean, and easy to understand for contributors and visitors.
+
+### Phase 5: keep it open and extensible
+The project is intentionally structured so contributors can help improve:
+
+- source coverage
+- scoring rules
+- event categories
+- verification logic
+- dashboard UX
+- follow-up tracking
+
+---
+
+## Open for contribution
+
+This project is open to contributors who want to help improve the opportunity radar.
+
+You can contribute in many ways:
+
+- improve source discovery and validation logic
+- add better event scoring rules
+- suggest new communities and sources
+- improve dashboard UX and data presentation
+- strengthen verification quality
+- add follow-up tracking and priority workflows
+- help document the product better
+
+### Contribution flow
+
+1. Fork the repository
+2. Create a feature branch
+3. Improve a source, workflow, scoring model, or dashboard component
+4. Validate locally
+5. Open a clean pull request with context and reasoning
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for the full contributor guide.
+
+---
+
+## Source credits and acknowledgements
+
+This project is built on a set of public sources and community ecosystems that make the opportunity radar possible. Credits go to the communities and organizations that publish opportunities and maintain visibility into local and digital events.
+
+### Source categories used
+- official event websites
+- community meetup pages
+- regional developer groups
+- open-source project repositories
+- volunteer and contribution pages
+- public event and community announcements
+
+### Important note
+This project is built to respect the source ecosystem and surface the opportunities responsibly. It is designed to prioritize reliable, visible, and useful signals instead of generic social noise.
+
+The sources used here are not meant to be treated as a full database of all opportunities. They are a curated starting point for the product’s discovery layer and the public dashboard.
+
+Examples of source types included in the discovery model:
+- Meetup
+- GitHub repositories
+- open-source project pages
+- official community event pages
+- regional tech event websites
+- volunteer and contribution portals
+
+---
+
+## Why this matters beyond the code
+
+This is more than a project for me. It is a way to reduce wasted effort and improve visibility for people who want to learn, contribute, and grow in the right communities.
+
+The value is not just “finding more events.”
+The value is helping people find the right events at the right time and with the right intent.
+
+That is why I built it.
+That is why it is structured the way it is.
+And that is why it is useful in a real, practical sense.
+
+---
 
 ## Repository
 
 - GitHub: https://github.com/Pavan755/event-opportunity-radar
+- Live site: https://pavan755.github.io/event-opportunity-radar/
 
-## Final note
+## License
 
-This project is designed to feel like a real opportunity product: targeted to the right locations, built around value-first decision making, and structured to show the strongest opportunities clearly and immediately.
+This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.

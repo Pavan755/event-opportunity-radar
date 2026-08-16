@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Opportunity Radar</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Event Opportunity Radar helps discover high-value local and virtual opportunities in Hyderabad, Bengaluru, Andhra Pradesh, Telangana, and beyond."
+    />
+    <link rel="stylesheet" href="./dashboard/styles.css" />
   </head>
   <body>
     <div class="page-shell">
@@ -35,8 +39,8 @@
               by learning, contribution, networking, and career upside.
             </p>
             <div class="cta-row">
-              <a class="button primary" href="#opportunities">Explore opportunities</a>
-              <a class="button secondary" href="#workflow">View strategy</a>
+              <button class="primary">Explore opportunities</button>
+              <button class="secondary">View strategy</button>
             </div>
           </div>
 
@@ -131,21 +135,6 @@
           <div class="cards-grid" id="eventCardsGrid"></div>
         </section>
 
-        <section class="source-panel" id="sources">
-          <div class="workflow-head">
-            <h2>Planned discovery sources</h2>
-          </div>
-
-          <div class="source-grid">
-            <div class="source-item"><strong>Official websites</strong><span>Volunteer pages, event pages, registration pages.</span></div>
-            <div class="source-item"><strong>Community pages</strong><span>Developer groups, meetup communities, local tech organizations.</span></div>
-            <div class="source-item"><strong>GitHub & OSS</strong><span>Repositories, issues, discussions, contributor calls, event tooling.</span></div>
-            <div class="source-item"><strong>Social outreach</strong><span>Organizer posts, manager announcements, volunteer calls on social channels.</span></div>
-            <div class="source-item"><strong>Event platforms</strong><span>Eventbrite, Devfolio, Meetup, local conference listings.</span></div>
-            <div class="source-item"><strong>Evidence gate</strong><span>Only trusted sources reach the verified shortlist; social posts require corroboration.</span></div>
-          </div>
-        </section>
-
         <section class="workflow-panel" id="workflow">
           <div class="workflow-head">
             <h2>Recommended strategy</h2>
@@ -188,6 +177,6 @@
       </main>
     </div>
 
-    <script src="app.js"></script>
+    <script src="./dashboard/app.js"></script>
   </body>
 </html>
