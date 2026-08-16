@@ -153,6 +153,39 @@ function createOpportunityLifecycle(discoveryId) {
   };
 }
 
+
+/**
+ * Attach an initial lifecycle to every discovery record.
+ *
+ * The lifecycle remains keyed by discovery_id so it stays attached to
+ * the exact record the user is acting on. The record's opportunity_id,
+ * when present, is preserved alongside it for canonical grouping.
+ */
+function attachOpportunityLifecycles(records) {
+  if (!Array.isArray(records)) {
+    throw new Error(
+      'Opportunity lifecycle attachment requires an array.'
+    );
+  }
+
+
+  return records.map(function(record) {
+    if (!record || typeof record !== 'object') {
+      throw new Error(
+        'Opportunity lifecycle attachment requires record objects.'
+      );
+    }
+
+
+    return {
+      ...record,
+      lifecycle: createOpportunityLifecycle(
+        record.discovery_id
+      )
+    };
+  });
+}
+
 function transitionOpportunityLifecycle(
   lifecycle,
   toState,

@@ -51,6 +51,7 @@ const discoveryFiles = [
 ];
 
 const intelligenceFiles = [
+  'apps-script/src/OpportunityLifecycle.gs',
   'apps-script/src/SkillIntelligence.gs',
   'apps-script/src/OpportunityIntelligence.gs',
   'apps-script/src/OpportunityScoring.gs',
@@ -294,6 +295,15 @@ result.records.forEach(function(record) {
     'Every original result record must contain a valid opportunity_id.'
   );
 
+  assert(
+    record.lifecycle &&
+    record.lifecycle.discovery_id === record.discovery_id &&
+    record.lifecycle.state === 'new' &&
+    Array.isArray(record.lifecycle.history) &&
+    record.lifecycle.history.length === 1,
+    'Every original result record must contain a new lifecycle.'
+  );
+
   originalRecordsByDiscoveryId[record.discovery_id] = record;
 });
 
@@ -329,6 +339,13 @@ result.ranked_records.forEach(function(record) {
       originalRecord.opportunity_id,
     'opportunity_id must remain unchanged through ranking.'
   );
+
+  assert(
+    record.lifecycle &&
+    record.lifecycle.discovery_id === record.discovery_id &&
+    record.lifecycle.state === 'new',
+    'Every ranked record must preserve its lifecycle.'
+  );
 });
 
 console.log(
@@ -345,6 +362,10 @@ console.log(
 
 console.log(
   'INTEGRATION OPPORTUNITY IDENTITY: PASSED'
+);
+
+console.log(
+  'INTEGRATION OPPORTUNITY LIFECYCLE: PASSED'
 );
 console.log(
   'FULL DISCOVERY EXECUTION: PASSED'

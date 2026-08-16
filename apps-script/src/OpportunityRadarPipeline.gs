@@ -77,14 +77,20 @@ function runOpportunityRadarPipeline(
       discoveryResult.records
     );
 
-  const identityAwareDiscoveryResult = {
+  const lifecycleAwareRecords =
+    attachOpportunityLifecycles(
+      identityRecords
+    );
+
+
+  const lifecycleAwareDiscoveryResult = {
     ...discoveryResult,
-    records: identityRecords
+    records: lifecycleAwareRecords
   };
 
   const rankedResult =
     runOpportunityIntelligenceScoringPipeline(
-      identityAwareDiscoveryResult,
+      lifecycleAwareDiscoveryResult,
       skillProfile,
       skillModel,
       scoringConfig
