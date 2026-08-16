@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Opportunity Radar</title>
+    <meta
+      name="description"
+      content="Event Opportunity Radar helps discover high-value local and virtual opportunities in Hyderabad, Bengaluru, Andhra Pradesh, Telangana, and beyond."
+    />
+    <link rel="stylesheet" href="dashboard/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">E</div>
+          <div>
+            <div class="brand-name">Event Opportunity Radar</div>
+            <div class="brand-subtitle">South India opportunity intelligence</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#filters">Filters</a>
+          <a href="#opportunities">Opportunities</a>
+          <a href="#workflow">Strategy</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Opportunity radar</p>
+            <h1>Find the right events before your competitors do.</h1>
+            <p class="hero-text">
+              Discover high-value local and virtual opportunities in Hyderabad,
+              Bengaluru, Andhra Pradesh, Telangana, and nearby communities—ranked
+              by learning, contribution, networking, and career upside.
+            </p>
+            <div class="cta-row">
+              <button class="primary">Explore opportunities</button>
+              <button class="secondary">View strategy</button>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="metric-card">
+              <span class="metric-label">Focus regions</span>
+              <strong>Hyderabad + Bengaluru + AP + Telangana</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Core approach</span>
+              <strong>Learn → Contribute → Network → Follow up</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Priority model</span>
+              <strong>S / A / B / C tracking</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="summary-grid">
+          <div class="stat-box">
+            <span class="stat-number" id="totalEvents">0</span>
+            <span class="stat-label">Opportunities tracked</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" id="priorityCount">0</span>
+            <span class="stat-label">High-priority matches</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" id="volunteerCount">0</span>
+            <span class="stat-label">Volunteer routes</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" id="virtualCount">0</span>
+            <span class="stat-label">Virtual / hybrid</span>
+          </div>
+        </section>
+
+        <section class="filters" id="filters">
+          <div class="filter-group">
+            <label for="regionFilter">Location</label>
+            <select id="regionFilter">
+              <option value="all">All regions</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Virtual">Virtual</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="rankFilter">Priority</label>
+            <select id="rankFilter">
+              <option value="all">All priorities</option>
+              <option value="S">S</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="typeFilter">Type</label>
+            <select id="typeFilter">
+              <option value="all">All types</option>
+              <option value="Volunteer">Volunteer</option>
+              <option value="Technical Volunteer">Technical Volunteer</option>
+              <option value="Event Support">Event Support</option>
+              <option value="Hackathon">Hackathon</option>
+              <option value="Open Source">Open Source</option>
+              <option value="Community">Community</option>
+            </select>
+          </div>
+
+          <div class="filter-group search-box">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="text" placeholder="Search event or keyword" />
+          </div>
+        </section>
+
+        <section class="card-section" id="opportunities">
+          <div class="section-head">
+            <h2>Priority opportunities</h2>
+            <span class="legend">
+              <span><strong>S</strong> strongest fit</span>
+              <span><strong>A</strong> high value</span>
+              <span><strong>B</strong> worth tracking</span>
+            </span>
+          </div>
+
+          <div class="cards-grid" id="eventCardsGrid"></div>
+        </section>
+
+        <section class="workflow-panel" id="workflow">
+          <div class="workflow-head">
+            <h2>Recommended strategy</h2>
+          </div>
+
+          <div class="workflow-list">
+            <div class="step">
+              <span class="step-index">1</span>
+              <div>
+                <h3>Learn first</h3>
+                <p>Use the gap to decide what to study before applying or attending.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <span class="step-index">2</span>
+              <div>
+                <h3>Contribute</h3>
+                <p>Offer useful support, documentation, logistics, or technical help.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <span class="step-index">3</span>
+              <div>
+                <h3>Network</h3>
+                <p>Talk with speakers, organizers, and volunteers with a clear purpose.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <span class="step-index">4</span>
+              <div>
+                <h3>Track follow-up</h3>
+                <p>Capture what you learned, who you met, and what you want to do next.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="dashboard/app.js"></script>
+  </body>
+</html>
