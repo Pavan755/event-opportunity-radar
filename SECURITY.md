@@ -1,43 +1,78 @@
 # Security Policy
 
-## Supported versions
+## Supported version
 
-This project is currently maintained and validated in its active repository state. The focus is on the current codebase and the tested project pipeline.
+The actively maintained main branch is the supported version.
 
-## Reporting a security issue
+Security fixes are applied to current pipeline modules, workflow definitions, and documented local tooling.
 
-If you discover a security issue, please do not open a public issue with sensitive details.
+## Reporting a vulnerability
 
-Instead, report it privately by contacting the maintainer through the repository owner or maintainers as listed on GitHub.
+Do not open a public issue for sensitive security details.
 
-Please include:
+Report privately to repository maintainers through GitHub contact channels.
 
-- a clear description of the issue
-- the affected files or modules
-- an estimate of the impact
-- suggested remediation if known
+Include:
 
-## Important project-specific guidance
+- Clear vulnerability description.
+- Affected modules or files.
+- Potential impact and exploitability.
+- Suggested remediation, if available.
 
-This repository may contain:
+## Response targets
 
-- source URLs
-- event metadata
-- public discovery logic
-- examples and fixtures
+- Acknowledgement target: within 72 hours.
+- Triage target: severity and affected-surface assessment.
+- Remediation target: patch or mitigation guidance based on risk.
+- Disclosure target: coordinated public disclosure after fix availability.
 
-It should not contain:
+## Data and secrets policy
 
-- personal email addresses
-- private event notes
-- API tokens
-- credentials
-- private LinkedIn data
-- personal application drafts
-- confidential travel or contact data
+Repository content may include:
+
+- Public source URLs.
+- Event metadata.
+- Public discovery and scoring logic.
+- Test fixtures and examples.
+
+Repository content must not include:
+
+- API tokens or credentials.
+- Private personal contact data.
+- Confidential notes or private communications.
+- Secrets embedded in code, configs, or workflow logs.
+
+## Hardening checklist
+
+### Secrets and credentials
+
+- Keep secrets out of tracked files.
+- Use Apps Script PropertiesService and GitHub Secrets for sensitive runtime values.
+
+### Workflow security
+
+- Apply least-privilege permissions in each workflow.
+- Avoid executing untrusted workflow inputs in shell commands.
+- Pin third-party actions to trusted versions when possible.
+
+### External content safety
+
+- Validate and normalize external URLs before requests.
+- Do not execute untrusted remote content as code.
+- Keep verification evidence provenance attached to records.
+
+### Output and rendering safety
+
+- Avoid unsafe HTML rendering paths in dashboard and docs content.
+- Do not log tokens, credentials, or sensitive identifiers.
+
+### Maintenance hygiene
+
+- Review dependency and workflow updates regularly.
+- Run repository and dependency scans periodically.
 
 ## Public-safe contribution rule
 
-All code and documentation added to the repository should be safe to share publicly.
+All contributions must be safe for public repository visibility.
 
-If a change relies on private credentials, internal links, or user-specific personal data, it should be kept out of the public repository and handled in a private workflow.
+If a change depends on private credentials, private links, or personal sensitive data, keep that workflow outside the public repository.
