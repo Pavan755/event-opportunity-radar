@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T15:24:37.044Z",
+  "generated_at": "2026-08-17T08:50:27.023Z",
   "agent": "event-agent-lite",
-  "version": "1.0.0",
-  "total_sources": 5,
-  "total_records": 5,
+  "version": "1.1.0",
+  "total_sources": 10,
+  "total_records": 10,
   "opportunities": [
     {
       "id": "bengaluru-tech-week",
@@ -14,6 +14,8 @@
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
+      "linkedin_url": null,
+      "social_links": [],
       "organizer_name": "Bengaluru Tech Week",
       "contact_links": [],
       "deadline_text": null,
@@ -29,7 +31,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-08-16T15:24:16.636Z",
+      "discovered_at": "2026-08-17T08:50:20.516Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -42,6 +44,11 @@
       "apply_url": "https://register.opensourceindia.in/",
       "contact_url": "https://discord.gg/W3a68xcvRv",
       "contact_email": "info@opensourceindia.in",
+      "linkedin_url": null,
+      "social_links": [
+        "https://whatsapp.com/channel/0029VaAa34XFXUuZ3QGNTF3X",
+        "https://discord.gg/W3a68xcvRv"
+      ],
       "organizer_name": "Open Source India",
       "contact_links": [
         "https://discord.gg/W3a68xcvRv",
@@ -61,9 +68,9 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-08-16T15:24:29.385Z",
+      "discovered_at": "2026-08-17T08:50:20.715Z",
       "status": "verified_candidate",
-      "evidence_note": "Verified candidate: an official apply/register link and/or valid contact path were detected on the source page."
+      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
     {
       "id": "swecha-events",
@@ -74,6 +81,8 @@
       "apply_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
       "contact_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
       "contact_email": null,
+      "linkedin_url": null,
+      "social_links": [],
       "organizer_name": "Swecha DevDays Volunteers",
       "contact_links": [
         "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
@@ -92,9 +101,9 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-08-16T15:24:31.673Z",
+      "discovered_at": "2026-08-17T08:50:21.826Z",
       "status": "verified_candidate",
-      "evidence_note": "Verified candidate: an official apply/register link and/or valid contact path were detected on the source page."
+      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
     {
       "id": "hyderabad-aiml-meetup",
@@ -105,6 +114,14 @@
       "apply_url": "https://www.meetup.com/register/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fhyderabad-ai-machine-learning-and-computer-vision-meetup%2Fevents%2F314999446%2F",
       "contact_url": "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/attendees/",
       "contact_email": null,
+      "linkedin_url": "https://www.linkedin.com/in/qiuyutang/",
+      "social_links": [
+        "https://www.linkedin.com/in/qiuyutang/",
+        "https://www.linkedin.com/in/jianyang-gu-9235151b9/",
+        "https://www.linkedin.com/in/daniel-gural/",
+        "https://www.facebook.com/meetup/",
+        "https://twitter.com/Meetup/"
+      ],
       "organizer_name": "Meetup",
       "contact_links": [
         "https://www.meetup.com/hyderabad-ai-machine-learning-and-computer-vision-meetup/events/314999446/attendees/"
@@ -122,7 +139,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-08-16T15:24:32.090Z",
+      "discovered_at": "2026-08-17T08:50:22.255Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -135,6 +152,8 @@
       "apply_url": null,
       "contact_url": "https://github.com/team",
       "contact_email": null,
+      "linkedin_url": null,
+      "social_links": [],
       "organizer_name": "GitHub",
       "contact_links": [
         "https://github.com/team",
@@ -156,9 +175,191 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-08-16T15:24:37.044Z",
+      "discovered_at": "2026-08-17T08:50:22.948Z",
       "status": "verified_candidate",
-      "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
+      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
+    },
+    {
+      "id": "devfolio-communities",
+      "source_id": "devfolio-communities",
+      "name": "Devfolio Community Calls",
+      "title": "Devfolio - Your one application to the best hackathons",
+      "official_url": "https://devfolio.co/",
+      "apply_url": null,
+      "contact_url": null,
+      "contact_email": null,
+      "linkedin_url": "https://www.linkedin.com/company/devfolio/",
+      "social_links": [
+        "https://twitter.com/devfolio",
+        "https://nsb.dev/discord",
+        "https://www.linkedin.com/company/devfolio/"
+      ],
+      "organizer_name": "Devfolio",
+      "contact_links": [],
+      "deadline_text": null,
+      "url": "https://devfolio.co/",
+      "source_class": "event_platform",
+      "source_type": "event_platform",
+      "priority": 82,
+      "verification_status": "needs_corroboration",
+      "value_score": 89,
+      "summary": "Participate in a hackathon or even better, host one. Learn new skills, build things & get hired.",
+      "categories": [
+        "hackathon",
+        "community",
+        "builder"
+      ],
+      "discovered_at": "2026-08-17T08:50:24.766Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
+    },
+    {
+      "id": "gdg-hyderabad",
+      "source_id": "gdg-hyderabad",
+      "name": "GDG Hyderabad",
+      "title": "Google Developer Groups",
+      "official_url": "https://gdg.community.dev/",
+      "apply_url": "https://gdg.community.dev/accounts/signup/?next=/",
+      "contact_url": "https://gdg.community.dev/accounts/signup/?next=/",
+      "contact_email": "gdgSurrey@gmail.com",
+      "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
+      "social_links": [
+        "https://twitter.com/googledevgroups",
+        "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
+        "https://www.youtube.com/gdgs"
+      ],
+      "organizer_name": "Google Developer Groups",
+      "contact_links": [
+        "https://gdg.community.dev/accounts/signup/?next=/",
+        "https://developers.google.com/community/gdg",
+        "https://developers.google.com/community-guidelines",
+        "https://gdg.community.dev/search/",
+        "https://gdg.community.dev/chapters/"
+      ],
+      "deadline_text": null,
+      "url": "https://gdg.community.dev/",
+      "source_class": "community",
+      "source_type": "official_community_page",
+      "priority": 85,
+      "verification_status": "needs_corroboration",
+      "value_score": 99,
+      "summary": "GDG stands for Google Developers Groups and is a platform offered by Google Developers to support community-run developer groups.",
+      "categories": [
+        "community",
+        "google",
+        "technology"
+      ],
+      "discovered_at": "2026-08-17T08:50:25.462Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
+    },
+    {
+      "id": "linkedin-events",
+      "source_id": "linkedin-events",
+      "name": "LinkedIn Event Discovery",
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "official_url": "https://www.linkedin.com/events/",
+      "apply_url": null,
+      "contact_url": null,
+      "contact_email": null,
+      "linkedin_url": "https://www.linkedin.com/",
+      "social_links": [
+        "https://www.linkedin.com/",
+        "https://www.linkedin.com/signup/cold-join/",
+        "https://www.linkedin.com/legal/user-agreement/",
+        "https://www.linkedin.com/legal/privacy-policy/",
+        "https://www.linkedin.com/legal/cookie-policy/"
+      ],
+      "organizer_name": "LinkedIn",
+      "contact_links": [],
+      "deadline_text": null,
+      "url": "https://www.linkedin.com/events/",
+      "source_class": "social",
+      "source_type": "organizer_social_post",
+      "priority": 70,
+      "verification_status": "needs_corroboration",
+      "value_score": 77,
+      "summary": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.",
+      "categories": [
+        "networking",
+        "professional",
+        "community"
+      ],
+      "discovered_at": "2026-08-17T08:50:26.013Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
+    },
+    {
+      "id": "indiafoss",
+      "source_id": "indiafoss",
+      "name": "IndiaFOSS",
+      "title": "IndiaFOSS",
+      "official_url": "https://indiafoss.net/",
+      "apply_url": null,
+      "contact_url": "https://www.namecheap.com/support/knowledgebase/article.aspx/239/2201/how-can-i-renew-my-domain/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market",
+      "contact_email": null,
+      "linkedin_url": null,
+      "social_links": [],
+      "organizer_name": "IndiaFOSS",
+      "contact_links": [
+        "https://www.namecheap.com/support/knowledgebase/article.aspx/239/2201/how-can-i-renew-my-domain/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market",
+        "https://www.namecheap.com/support/knowledgebase/article.aspx/242/2207/what-is-the-domain-redemption-grace-period/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market"
+      ],
+      "deadline_text": null,
+      "url": "https://indiafoss.net/",
+      "source_class": "community",
+      "source_type": "official_community_page",
+      "priority": 80,
+      "verification_status": "needs_corroboration",
+      "value_score": 82,
+      "summary": "Public opportunity source discovered by Event Agent Lite.",
+      "categories": [
+        "open_source",
+        "community",
+        "technology"
+      ],
+      "discovered_at": "2026-08-17T08:50:26.804Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
+    },
+    {
+      "id": "x-community-posts",
+      "source_id": "x-community-posts",
+      "name": "Public Community Posts",
+      "title": "Public Community Posts",
+      "official_url": "https://x.com/explore",
+      "apply_url": null,
+      "contact_url": "https://help.x.com/using-x/x-supported-browsers",
+      "contact_email": null,
+      "linkedin_url": null,
+      "social_links": [
+        "https://help.x.com/using-x/x-supported-browsers",
+        "https://x.com/tos",
+        "https://x.com/privacy",
+        "https://support.x.com/articles/20170514",
+        "https://legal.twitter.com/imprint.html"
+      ],
+      "organizer_name": "Public Community Posts",
+      "contact_links": [
+        "https://help.x.com/using-x/x-supported-browsers",
+        "https://support.x.com/articles/20170514"
+      ],
+      "deadline_text": null,
+      "url": "https://x.com/explore",
+      "source_class": "social",
+      "source_type": "community_social_post",
+      "priority": 68,
+      "verification_status": "needs_corroboration",
+      "value_score": 70,
+      "summary": "We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.",
+      "categories": [
+        "social",
+        "event",
+        "community"
+      ],
+      "discovered_at": "2026-08-17T08:50:27.023Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
     }
   ]
 }
