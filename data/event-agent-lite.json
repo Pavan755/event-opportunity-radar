@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T08:43:01.188Z",
+  "generated_at": "2026-08-19T08:43:41.673Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -31,7 +31,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-08-18T08:42:55.501Z",
+      "discovered_at": "2026-08-19T08:43:30.092Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -68,7 +68,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-08-18T08:42:55.997Z",
+      "discovered_at": "2026-08-19T08:43:30.948Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-08-18T08:42:56.926Z",
+      "discovered_at": "2026-08-19T08:43:32.299Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -119,8 +119,8 @@
         "https://www.linkedin.com/in/qiuyutang/",
         "https://www.linkedin.com/in/jianyang-gu-9235151b9/",
         "https://www.linkedin.com/in/daniel-gural/",
-        "https://www.facebook.com/meetup/",
-        "https://twitter.com/Meetup/"
+        "https://www.linkedin.com/in/nevasini-sasikumar/",
+        "https://www.facebook.com/meetup/"
       ],
       "organizer_name": "Meetup",
       "contact_links": [
@@ -139,7 +139,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-08-18T08:42:57.247Z",
+      "discovered_at": "2026-08-19T08:43:35.047Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -175,7 +175,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-08-18T08:42:57.938Z",
+      "discovered_at": "2026-08-19T08:43:36.262Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -209,7 +209,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-08-18T08:42:59.628Z",
+      "discovered_at": "2026-08-19T08:43:37.168Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -221,7 +221,7 @@
       "official_url": "https://gdg.community.dev/",
       "apply_url": "https://gdg.community.dev/accounts/signup/?next=/",
       "contact_url": "https://gdg.community.dev/accounts/signup/?next=/",
-      "contact_email": "gdgSurrey@gmail.com",
+      "contact_email": "gdgyvr@gmail.com",
       "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
       "social_links": [
         "https://twitter.com/googledevgroups",
@@ -249,7 +249,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-08-18T08:43:00.322Z",
+      "discovered_at": "2026-08-19T08:43:38.927Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
       "id": "linkedin-events",
       "source_id": "linkedin-events",
       "name": "LinkedIn Event Discovery",
-      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "title": "Iniciar sesión en LinkedIn | LinkedIn",
       "official_url": "https://www.linkedin.com/events/",
       "apply_url": null,
       "contact_url": null,
@@ -279,13 +279,13 @@
       "priority": 70,
       "verification_status": "needs_corroboration",
       "value_score": 77,
-      "summary": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.",
+      "summary": "Inicia sesión en LinkedIn para estar en contacto con las personas que conoces, compartir ideas y avanzar profesionalmente.",
       "categories": [
         "networking",
         "professional",
         "community"
       ],
-      "discovered_at": "2026-08-18T08:43:00.678Z",
+      "discovered_at": "2026-08-19T08:43:40.201Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -318,7 +318,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-08-18T08:43:00.962Z",
+      "discovered_at": "2026-08-19T08:43:41.044Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -357,7 +357,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-08-18T08:43:01.188Z",
+      "discovered_at": "2026-08-19T08:43:41.673Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     }
