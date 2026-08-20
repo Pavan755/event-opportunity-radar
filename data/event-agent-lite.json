@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T08:43:41.673Z",
+  "generated_at": "2026-08-20T08:45:32.137Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -31,7 +31,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-08-19T08:43:30.092Z",
+      "discovered_at": "2026-08-20T08:45:26.136Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -68,7 +68,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-08-19T08:43:30.948Z",
+      "discovered_at": "2026-08-20T08:45:26.355Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-08-19T08:43:32.299Z",
+      "discovered_at": "2026-08-20T08:45:27.435Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -139,7 +139,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-08-19T08:43:35.047Z",
+      "discovered_at": "2026-08-20T08:45:27.754Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -175,7 +175,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-08-19T08:43:36.262Z",
+      "discovered_at": "2026-08-20T08:45:28.589Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -209,7 +209,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-08-19T08:43:37.168Z",
+      "discovered_at": "2026-08-20T08:45:30.435Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -249,7 +249,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-08-19T08:43:38.927Z",
+      "discovered_at": "2026-08-20T08:45:31.261Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
       "id": "linkedin-events",
       "source_id": "linkedin-events",
       "name": "LinkedIn Event Discovery",
-      "title": "Iniciar sesión en LinkedIn | LinkedIn",
+      "title": "LinkedIn Login, Sign in | LinkedIn",
       "official_url": "https://www.linkedin.com/events/",
       "apply_url": null,
       "contact_url": null,
@@ -279,13 +279,13 @@
       "priority": 70,
       "verification_status": "needs_corroboration",
       "value_score": 77,
-      "summary": "Inicia sesión en LinkedIn para estar en contacto con las personas que conoces, compartir ideas y avanzar profesionalmente.",
+      "summary": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.",
       "categories": [
         "networking",
         "professional",
         "community"
       ],
-      "discovered_at": "2026-08-19T08:43:40.201Z",
+      "discovered_at": "2026-08-20T08:45:31.658Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -318,7 +318,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-08-19T08:43:41.044Z",
+      "discovered_at": "2026-08-20T08:45:31.929Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -357,7 +357,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-08-19T08:43:41.673Z",
+      "discovered_at": "2026-08-20T08:45:32.137Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     }
