@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T12:02:57.873Z",
+  "generated_at": "2026-09-07T14:08:14.545Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -31,7 +31,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-06T12:02:51.993Z",
+      "discovered_at": "2026-09-07T14:07:58.826Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -68,7 +68,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-09-06T12:02:52.637Z",
+      "discovered_at": "2026-09-07T14:07:59.451Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-09-06T12:02:53.535Z",
+      "discovered_at": "2026-09-07T14:08:00.430Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -139,7 +139,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-09-06T12:02:53.904Z",
+      "discovered_at": "2026-09-07T14:08:00.873Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -175,7 +175,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-09-06T12:02:54.683Z",
+      "discovered_at": "2026-09-07T14:08:01.564Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -209,7 +209,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-09-06T12:02:56.369Z",
+      "discovered_at": "2026-09-07T14:08:03.404Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -249,7 +249,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-09-06T12:02:57.012Z",
+      "discovered_at": "2026-09-07T14:08:04.013Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -285,7 +285,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-09-06T12:02:57.418Z",
+      "discovered_at": "2026-09-07T14:08:04.324Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -293,34 +293,28 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
-      "title": "IndiaFOSS",
       "official_url": "https://indiafoss.net/",
       "apply_url": null,
-      "contact_url": "https://www.namecheap.com/support/knowledgebase/article.aspx/239/2201/how-can-i-renew-my-domain/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market",
+      "contact_url": null,
       "contact_email": null,
-      "linkedin_url": null,
-      "social_links": [],
       "organizer_name": "IndiaFOSS",
-      "contact_links": [
-        "https://www.namecheap.com/support/knowledgebase/article.aspx/239/2201/how-can-i-renew-my-domain/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market",
-        "https://www.namecheap.com/support/knowledgebase/article.aspx/242/2207/what-is-the-domain-redemption-grace-period/?utm_source=parkingpage&utm_medium=referral&utm_campaign=nc_market"
-      ],
+      "contact_links": [],
       "deadline_text": null,
       "url": "https://indiafoss.net/",
       "source_class": "community",
       "source_type": "official_community_page",
       "priority": 80,
-      "verification_status": "needs_corroboration",
-      "value_score": 82,
-      "summary": "Public opportunity source discovered by Event Agent Lite.",
+      "verification_status": "error",
+      "value_score": 0,
+      "summary": "Fetch failed: fetch failed",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-06T12:02:57.840Z",
-      "status": "needs_corroboration",
-      "evidence_note": "Social or community source detected; action links require manual verification before use."
+      "discovered_at": "2026-09-07T14:08:14.520Z",
+      "status": "error",
+      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
     {
       "id": "x-community-posts",
@@ -345,7 +339,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-09-06T12:02:57.873Z",
+      "discovered_at": "2026-09-07T14:08:14.545Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
