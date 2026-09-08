@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:08:14.545Z",
+  "generated_at": "2026-09-08T12:45:58.969Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -31,7 +31,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-07T14:07:58.826Z",
+      "discovered_at": "2026-09-08T12:45:51.648Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -68,7 +68,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-09-07T14:07:59.451Z",
+      "discovered_at": "2026-09-08T12:45:52.000Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-09-07T14:08:00.430Z",
+      "discovered_at": "2026-09-08T12:45:53.231Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -139,7 +139,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-09-07T14:08:00.873Z",
+      "discovered_at": "2026-09-08T12:45:54.037Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -175,7 +175,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-09-07T14:08:01.564Z",
+      "discovered_at": "2026-09-08T12:45:54.786Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -209,7 +209,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-09-07T14:08:03.404Z",
+      "discovered_at": "2026-09-08T12:45:56.669Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -249,7 +249,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-09-07T14:08:04.013Z",
+      "discovered_at": "2026-09-08T12:45:57.370Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -285,7 +285,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-09-07T14:08:04.324Z",
+      "discovered_at": "2026-09-08T12:45:57.807Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -293,28 +293,31 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
+      "title": "TOTO 4D: Link COLOKSGP Agen Resmi Betting Situs Togel Singapore & Hongkong Angka Jitu Terpercaya",
       "official_url": "https://indiafoss.net/",
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
-      "organizer_name": "IndiaFOSS",
+      "linkedin_url": null,
+      "social_links": [],
+      "organizer_name": "COLOKSGP",
       "contact_links": [],
       "deadline_text": null,
       "url": "https://indiafoss.net/",
       "source_class": "community",
       "source_type": "official_community_page",
       "priority": 80,
-      "verification_status": "error",
-      "value_score": 0,
-      "summary": "Fetch failed: fetch failed",
+      "verification_status": "needs_corroboration",
+      "value_score": 82,
+      "summary": "COLOKSGP buat yang berani main besar. Situs togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang nggak kaleng-kaleng. Udah waktunya berhenti buang duit di tempat bodong, pindah ke yang jelas hasilnya.",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-07T14:08:14.520Z",
-      "status": "error",
-      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
+      "discovered_at": "2026-09-08T12:45:58.936Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
     {
       "id": "x-community-posts",
@@ -339,7 +342,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-09-07T14:08:14.545Z",
+      "discovered_at": "2026-09-08T12:45:58.969Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
