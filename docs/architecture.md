@@ -40,10 +40,15 @@ Stable canonical mapping from discovery_id to opportunity_id.
 Skill and opportunity-context enrichment.
 
 - Decision boundary:
-Deterministic scoring and ranking.
+Action intelligence without numeric scoring: event windows, routes, roles,
+contacts, strategy, predictions, and guidance prompts.
 
 - Action boundary:
 Lifecycle states and follow-through operations.
+
+- Publication boundary:
+The production entrypoint projects ranked records into a stable dashboard row
+contract and can replace the durable `Opportunity Radar` sheet snapshot.
 
 ## Canonical data contracts
 
@@ -73,3 +78,13 @@ These should be treated as stable boundary contracts and progressively formalize
 3. Strengthen security controls and workflow permissions.
 4. Complete persistence and lifecycle integration.
 5. Expand dashboard and action surfaces.
+
+The production orchestration boundary is now available through
+`runProductionOpportunityRadarJob(config)`. It accepts injected configuration
+and adapters so scheduled Apps Script jobs can run the canonical pipeline
+without moving source credentials or policy into the scoring modules.
+
+The public production projection is score-free. Every date, role, or next-step
+recommendation is either a source-backed fact or explicitly labelled as a
+prediction with confidence and basis. The lightweight public updater runs twice
+daily at 08:00 and 20:00 India time when GitHub Actions is enabled.

@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root { --ink: #edf0df; --muted: #90968c; --bg: #0d100e; --panel: #151a15; --line: #2a3029; --lime: #c5ed4d; --amber: #ffb454; --display: 'Space Grotesk', sans-serif; --mono: 'DM Mono', monospace; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--display); }
+button, input, select { font: inherit; }
+::selection { color: var(--bg); background: var(--lime); }

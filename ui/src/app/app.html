@@ -1,0 +1,64 @@
+<div class="app-frame">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Event Opportunity Radar home">
+      <span class="brand-mark"><span></span><span></span><span></span></span>
+      <span class="brand-copy"><strong>RADAR / 01</strong><small>Event Opportunity Radar</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="#radar">Live radar</a><a href="#signals">Signals</a><a href="#strategy">Strategy</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="system-readout"><span class="pulse-dot"></span><span>LOCAL NODE / ONLINE</span><time>{{ currentTime }}</time></div>
+  </header>
+
+  <main id="top">
+    <section class="hero-grid" id="radar">
+      <div class="hero-copy">
+        <p class="kicker">Opportunity intelligence / South India</p>
+        <h1>Find the signal<br /><em>worth following.</em></h1>
+        <p class="hero-description">A focused radar for events, contribution routes, and communities that compound your skills. Discover first. Verify the signal. Move with intent.</p>
+        <div class="hero-actions"><button class="button button-primary" type="button" (click)="focusOpportunities()"><span class="button-icon">+</span> Scan opportunities</button><a class="text-link" href="#strategy">Read the field guide <span>-></span></a></div>
+      </div>
+      <div class="radar-console" aria-label="Radar system summary">
+        <div class="console-topline"><span>RADAR CONSOLE</span><span>V.2.6.0</span></div>
+        <div class="radar-display"><div class="radar-grid-lines"></div><div class="radar-sweep"></div><div class="radar-ring ring-one"></div><div class="radar-ring ring-two"></div><div class="radar-ring ring-three"></div><span class="radar-point point-a"></span><span class="radar-point point-b"></span><span class="radar-point point-c"></span><div class="radar-center">{{ totalEvents | number:'2.0-0' }}</div><span class="axis-label axis-north">N</span><span class="axis-label axis-east">E</span><span class="axis-label axis-south">S</span><span class="axis-label axis-west">W</span></div>
+        <div class="console-readouts"><div><span class="readout-label">LAST SCAN</span><strong>LIVE / AUTO REFRESH</strong></div><div><span class="readout-label">SIGNAL QUALITY</span><strong class="lime-text">{{ verifiedCount }} VERIFIED</strong></div></div>
+      </div>
+    </section>
+
+    <section class="signal-strip" id="signals" aria-label="Radar metrics">
+      <article class="signal-stat"><span class="stat-index">01</span><strong>{{ totalEvents }}</strong><span>tracked events</span></article><article class="signal-stat"><span class="stat-index">02</span><strong>{{ actionReadyCount }}</strong><span>action routes</span></article><article class="signal-stat"><span class="stat-index">03</span><strong>{{ verifiedCount }}</strong><span>verified sources</span></article><article class="signal-stat"><span class="stat-index">04</span><strong>{{ virtualCount }}</strong><span>remote / hybrid</span></article>
+    </section>
+
+    <section class="workspace-section" aria-labelledby="opportunity-heading">
+      <div class="section-intro"><div><p class="kicker">Curated transmission / continuously refreshed</p><h2 id="opportunity-heading">The opportunity field</h2></div><p class="section-note">Dates, routes, contacts, and practical next steps. Predictions are always labelled.</p></div>
+      <div class="filter-dock" aria-label="Opportunity filters"><label class="search-control"><span>SEARCH</span><input type="search" placeholder="event, skill, organizer..." [value]="query" (input)="setQuery($event)" /></label><label class="select-control"><span>REGION</span><select [value]="location" (change)="setLocation($event)"><option value="all">All regions</option>@for (item of locations; track item) { <option [value]="item">{{ item }}</option> }</select></label><label class="select-control"><span>SOURCE</span><select [value]="verification" (change)="setVerification($event)"><option value="all">All evidence</option><option value="verified_candidate">Verified candidates</option><option value="needs_manual_verification">Needs review</option></select></label><button class="clear-button" type="button" (click)="clearFilters()">Clear / {{ filteredOpportunities.length }}</button></div>
+      <div class="opportunity-layout">
+        <div class="opportunity-list">
+          @for (opportunity of filteredOpportunities; track opportunity.opportunity_id; let index = $index) {
+            <article class="opportunity-card" [class.selected]="selected?.opportunity_id === opportunity.opportunity_id" (click)="selectOpportunity(opportunity)">
+              <div class="card-index">{{ (index + 1).toString().padStart(2, '0') }}</div><div class="card-main"><div class="card-meta"><span>{{ opportunity.source_class | uppercase }}</span><span>{{ opportunity.location }}</span><span>{{ opportunity.date_text }}</span></div><h3>{{ opportunity.title }}</h3><p>{{ opportunity.summary }}</p><div class="card-tags">@for (category of opportunity.categories.slice(0, 3); track category) {<span>{{ category }}</span>}@if (opportunity.categories.length === 0) {<span>OPEN SIGNAL</span>}</div></div>
+              <div class="card-window"><span>WINDOW</span><strong>{{ opportunity.event_start_date || 'DATE TBC' }}</strong><small>{{ opportunity.event_end_date ? 'to ' + opportunity.event_end_date : opportunity.date_status | uppercase }}</small></div><div class="card-arrow">-></div>
+            </article>
+          } @empty { <div class="empty-state"><strong>No matching transmissions.</strong><span>Adjust the filters to widen your scan.</span></div> }
+        </div>
+        <aside class="inspect-panel" [class.has-selection]="selected">
+          @if (selected; as item) {
+            <div class="inspect-header"><span>INSPECT / {{ item.source_id }}</span><button type="button" (click)="selected = undefined" aria-label="Close opportunity details">x</button></div>
+            <p class="kicker">{{ item.verification_status | uppercase }} / {{ item.date_status | uppercase }}</p><h2>{{ item.title }}</h2><p class="inspect-summary">{{ item.summary }}</p>
+            <div class="detail-grid"><div><span>EVENT WINDOW</span><strong>{{ item.event_start_date || 'Unknown' }}<br />{{ item.event_end_date || 'End date unknown' }}</strong></div><div><span>APPLICATION DEADLINE</span><strong>{{ item.application_deadline || 'Not found' }}</strong></div><div><span>ORGANIZER</span><strong>{{ item.organizer }}</strong></div><div><span>CURRENT STATE</span><strong>{{ item.lifecycle_state | uppercase }}</strong></div></div>
+            <div class="role-box"><span class="readout-label">LIKELY PATHS / PREDICTED</span>@for (role of item.roles; track role.role) {<p><strong>{{ role.role }}</strong><small>{{ role.confidence }} confidence / {{ role.basis }}</small></p>}</div>
+            <div class="route-box"><span class="readout-label">HOW TO APPLY</span>@for (option of item.application_options; track option.label) {<div><a [href]="option.url || item.url" target="_blank" rel="noopener">{{ option.label }} <span>-></span></a><small>{{ option.status }}</small></div>}</div>
+            <div class="evidence-box"><span class="readout-label">CONTACT + EVIDENCE</span><p>{{ item.contacts.email || item.contacts.url || 'Use the source page contact route.' }}</p><p>{{ item.evidence_note }}</p></div>
+            <div class="inspect-actions">@if (item.url) {<a class="button button-primary" [href]="item.url" target="_blank" rel="noopener">Open source <span>-></span></a>}<label class="lifecycle-control"><span>LIFECYCLE</span><select [value]="item.lifecycle_state" (change)="changeLifecycle(item, $event)">@for (state of lifecycleOptions(item); track state) {<option [value]="state">{{ state | uppercase }}</option>}</select></label></div>
+            <div class="prompt-box"><div class="prompt-heading"><span class="readout-label">PROMPT FOR YOUR GPT / CHOOSE ONE</span><small>6 free, local prompts</small></div><div class="prompt-options">@for (prompt of item.prompts; track prompt; let promptIndex = $index) {<button type="button" [class.active]="selectedPromptIndex === promptIndex" (click)="choosePrompt(promptIndex)">0{{ promptIndex + 1 }}</button>}</div><p>{{ item.prompts[selectedPromptIndex] }}</p><button class="button button-quiet" type="button" (click)="copyPrompt(item.prompts[selectedPromptIndex])">Copy selected prompt</button></div>
+          } @else { <div class="inspect-placeholder"><span class="placeholder-cross">+</span><strong>Select a signal</strong><p>Inspect its evidence, routes, strategy, and next move.</p></div> }
+        </aside>
+      </div>
+    </section>
+
+    <section class="strategy-section" id="strategy"><div class="strategy-heading"><p class="kicker">Operating protocol</p><h2>Make the signal useful.</h2><p>Events become opportunities when you know what to ask, what to offer, and what to record next. This field guide keeps the process practical for first-time volunteers, contributors, and community participants.</p></div><div class="protocol-grid"><article><span>01 / LEARN</span><h3>Close the smallest gap.</h3><p>Read the source, confirm the dates, and use the prompt guide to prepare only what this signal requires.</p></article><article><span>02 / CONTRIBUTE</span><h3>Arrive with an offer.</h3><p>Choose one realistic role such as documentation, event support, technical help, media, or community coordination. Ask before assuming a position exists.</p></article><article><span>03 / FOLLOW UP</span><h3>Turn attendance into proof.</h3><p>Capture what changed, who you met, and the next concrete action while the signal is fresh. Never turn a prediction into a claim.</p></article></div></section>
+
+    <section class="contact-section" id="contact"><div class="contact-copy"><p class="kicker">Open transmission</p><h2>Help improve the radar.</h2><p>Have a source we should track, a contribution idea, a correction, or a better way to help people find meaningful opportunities? Send it through. This is a small public project and useful signals are welcome.</p><div class="contact-links"><a href="https://github.com/Pavan755/event-opportunity-radar" target="_blank" rel="noopener">View the open project <span>-></span></a><a href="https://github.com/Pavan755/event-opportunity-radar/issues" target="_blank" rel="noopener">Suggest an opportunity <span>-></span></a></div></div><form class="contact-form" (submit)="$event.preventDefault(); submitContact()"><label><span>YOUR NAME</span><input name="name" required placeholder="How should we call you?" /></label><label><span>MESSAGE</span><textarea name="message" required rows="5" placeholder="Suggestion, contribution, correction, or opportunity..." ></textarea></label><button class="button button-primary" type="submit">Send transmission <span>-></span></button>@if (contactSent) {<p class="form-success">Draft received locally. Please use the project issue link to send it to the maintainers.</p>}</form></section>
+  </main>
+  <footer class="footer"><span>EVENT OPPORTUNITY RADAR / PUBLIC NODE</span><span>DISCOVER -> VERIFY -> CONTRIBUTE -> BUILD EVIDENCE</span></footer>
+</div>

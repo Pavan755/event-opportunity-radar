@@ -48,6 +48,36 @@
         ? null
         : String(record.location).trim(),
 
+    event_start_date:
+      record.event_start_date || null,
+
+    event_end_date:
+      record.event_end_date || null,
+
+    application_deadline:
+      record.application_deadline ||
+      record.deadline_text ||
+      null,
+
+    apply_url:
+      record.apply_url || null,
+
+    contact_url:
+      record.contact_url || null,
+
+    contact_email:
+      record.contact_email || null,
+
+    contact_links:
+      Array.isArray(record.contact_links)
+        ? record.contact_links.slice()
+        : [],
+
+    categories:
+      Array.isArray(record.categories)
+        ? record.categories.slice()
+        : [],
+
     raw_text:
       record.raw_text == null
         ? null

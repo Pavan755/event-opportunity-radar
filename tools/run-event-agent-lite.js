@@ -54,6 +54,21 @@ function extractOrganizerName(html, fallbackName) {
   return fallbackName || 'Unknown organizer';
 }
 
+function extractDateWindow(text) {
+  const value = sanitizeText(text);
+  const range = value.match(/\b((?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?(?:,?\s*(20\d{2}))?/i);
+  if (!range) {
+    return { start_date: null, end_date: null, status: 'unknown' };
+  }
+
+  const year = range[3] || null;
+  const start = `${range[1]}${year ? `, ${year}` : ''}`;
+  const end = range[2]
+    ? `${range[1].replace(/\s+\d{1,2}$/, '')} ${range[2]}${year ? `, ${year}` : ''}`
+    : null;
+  return { start_date: start, end_date: end, status: 'predicted' };
+}
+
 function normalizeAbsoluteUrl(baseUrl, candidate) {
   if (!candidate) return null;
   const trimmed = candidate.trim();
@@ -208,6 +223,7 @@ async function main() {
       const officialCandidate = links.best_apply_url || null;
       const contactCandidate = links.best_contact_url || null;
       const linkedinCandidate = links.best_linkedin_url || null;
+        const dateWindow = extractDateWindow(`${title} ${description}`);
 
       const verificationStatus = source.verify
         ? (officialCandidate || links.contact_email || contactCandidate || linkedinCandidate ? 'verified_candidate' : 'needs_manual_verification')
@@ -230,9 +246,11 @@ async function main() {
         url: source.url,
         source_class: source.class,
         source_type: source.type,
-        priority: source.priority,
+        event_start_date: dateWindow.start_date,
+        event_end_date: dateWindow.end_date,
+        application_deadline: links.deadline_text || null,
+        date_status: dateWindow.status,
         verification_status: verificationStatus,
-        value_score: Math.min(99, source.priority + (officialCandidate ? 10 : 0) + (links.contact_email ? 4 : 0) + (linkedinCandidate ? 5 : 0) + (source.verify ? 8 : 2)),
         summary: description,
         categories: source.category || [],
         discovered_at: new Date().toISOString(),
@@ -258,9 +276,11 @@ async function main() {
         url: source.url,
         source_class: source.class,
         source_type: source.type,
-        priority: source.priority,
+        event_start_date: null,
+        event_end_date: null,
+        application_deadline: null,
+        date_status: 'unknown',
         verification_status: 'error',
-        value_score: 0,
         summary: `Fetch failed: ${error.message}`,
         categories: source.category || [],
         discovered_at: new Date().toISOString(),
@@ -285,7 +305,7 @@ async function main() {
   console.log('EVENT AGENT LITE: DISCOVERY RUN COMPLETE');
   console.log(`Processed ${discovered.length} sources.`);
   discovered.forEach((entry) => {
-    console.log(`${entry.name} | ${entry.status} | ${entry.priority}`);
+    console.log(`${entry.name} | ${entry.status} | ${entry.event_start_date || 'date unknown'}`);
   });
 }
 

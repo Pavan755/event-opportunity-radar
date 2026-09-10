@@ -44,6 +44,10 @@ const suites = [
   {
     name: 'Opportunity radar pipeline',
     script: 'tools/run-opportunity-radar-pipeline-test.js'
+  },
+  {
+    name: 'Production opportunity radar entrypoint',
+    script: 'tools/run-production-opportunity-radar-entrypoint-test.js'
   }
 ];
 

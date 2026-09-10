@@ -27,10 +27,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload static site
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install UI dependencies
+        run: npm ci --prefix ui
+
+      - name: Build Angular UI
+        run: npm run build --prefix ui -- --base-href /event-opportunity-radar/
+
+      - name: Upload Angular site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ui/dist/ui
 
       - name: Deploy to GitHub Pages
         id: deployment

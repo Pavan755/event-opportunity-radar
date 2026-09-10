@@ -91,3 +91,26 @@
 
   return result;
 }
+
+/**
+ * Run the complete radar job from an Apps Script trigger or manual run.
+ *
+ * Callers provide the loaded configuration and adapters. When a bound
+ * spreadsheet is available, the canonical ranked projection is published to
+ * the Opportunity Radar sheet automatically.
+ */
+function runProductionOpportunityRadarJob(config) {
+  const jobConfig = {
+    ...config
+  };
+
+  if (!jobConfig.publisher &&
+      typeof SpreadsheetApp !== 'undefined') {
+    jobConfig.publisher =
+      createOpportunityRadarSheetPublisher(
+        SpreadsheetApp.getActiveSpreadsheet()
+      );
+  }
+
+  return runProductionOpportunityRadar(jobConfig);
+}

@@ -2,7 +2,9 @@ name: Event Agent Lite
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    # 08:00 and 20:00 IST refresh windows (UTC is four and a half hours earlier).
+    - cron: '30 2 * * *'
+    - cron: '30 14 * * *'
   workflow_dispatch:
 
 permissions:
