@@ -41,7 +41,7 @@ jobs:
       - name: Upload Angular site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ui/dist/ui
+          path: ui/dist/ui/browser
 
       - name: Deploy to GitHub Pages
         id: deployment
