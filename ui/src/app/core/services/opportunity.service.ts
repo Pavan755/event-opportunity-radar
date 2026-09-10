@@ -81,6 +81,14 @@ export class OpportunityService {
     return this.lifecycleStore.setState(opportunityId, nextState);
   }
 
+  getAllLifecycleStates(): LifecycleState[] {
+    return ['new', 'considering', 'planned', 'registered', 'accepted', 'attended', 'follow_up', 'contribution', 'documented', 'dismissed', 'cancelled', 'withdrawn'];
+  }
+
+  toggleBookmark(opportunityId: string): boolean {
+    return this.lifecycleStore.toggleBookmark(opportunityId);
+  }
+
   getAllowedTransitions(currentState: LifecycleState): LifecycleState[] {
     return this.lifecycleStore.getAllowedTransitions(currentState);
   }
@@ -113,6 +121,7 @@ export class OpportunityService {
       summary: raw.summary ?? 'No summary available.',
       evidence_note: raw.evidence_note ?? 'No evidence note available.',
       lifecycle_state: lifecycle,
+      bookmarked: this.lifecycleStore.isBookmarked(opportunityId),
       categories: raw.categories ?? [],
       discovered_at: raw.discovered_at ?? null
       ,event_start_date: raw.event_start_date ?? null

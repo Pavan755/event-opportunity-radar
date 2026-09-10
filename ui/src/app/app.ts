@@ -11,7 +11,7 @@ import { OpportunityService } from './core/services/opportunity.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App implements OnInit, OnDestroy {
-  private readonly contactDestination = 'YOUR_GMAIL_ADDRESS@gmail.com';
+  private readonly contactDestination = 'bandarupavan282004@gmail.com';
   private readonly opportunityService = inject(OpportunityService);
   private readonly changeDetector = inject(ChangeDetectorRef);
 
@@ -76,7 +76,12 @@ export class App implements OnInit, OnDestroy {
   }
 
   lifecycleOptions(item: OpportunityRecord): OpportunityRecord['lifecycle_state'][] {
-    return [item.lifecycle_state, ...this.opportunityService.getAllowedTransitions(item.lifecycle_state)];
+    return this.opportunityService.getAllLifecycleStates();
+  }
+
+  toggleBookmark(item: OpportunityRecord): void {
+    item.bookmarked = this.opportunityService.toggleBookmark(item.opportunity_id);
+    this.selected = { ...item };
   }
 
   choosePrompt(index: number): void { this.selectedPromptIndex = index; }

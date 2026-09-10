@@ -8,6 +8,7 @@ export type LifecycleState =
   | 'new'
   | 'considering'
   | 'planned'
+  | 'registered'
   | 'accepted'
   | 'attended'
   | 'follow_up'
@@ -16,6 +17,11 @@ export type LifecycleState =
   | 'dismissed'
   | 'cancelled'
   | 'withdrawn';
+
+export const ALL_LIFECYCLE_STATES: LifecycleState[] = [
+  'new', 'considering', 'planned', 'registered', 'accepted', 'attended',
+  'follow_up', 'contribution', 'documented', 'dismissed', 'cancelled', 'withdrawn'
+];
 
 export interface OpportunityRecord {
   discovery_id: string;
@@ -32,6 +38,7 @@ export interface OpportunityRecord {
   summary: string;
   evidence_note: string;
   lifecycle_state: LifecycleState;
+  bookmarked: boolean;
   categories: string[];
   discovered_at: string | null;
   event_start_date: string | null;
