@@ -97,9 +97,18 @@ export class App implements OnInit, OnDestroy {
     const name = String(values.get('name') || '').trim();
     const email = String(values.get('email') || '').trim();
     const message = String(values.get('message') || '').trim();
-    const subject = encodeURIComponent(`Radar suggestion from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nReply email: ${email}\n\n${message}`);
-    window.location.href = `mailto:${this.contactDestination}?subject=${subject}&body=${body}`;
+    const subject = encodeURIComponent(`Event Opportunity Radar suggestion from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nReply email: ${email}\n\nMessage:\n${message}\n\n` +
+      'Please reply to the sender email above. This message was sent from Event Opportunity Radar.'
+    );
+    const gmailComposeUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(this.contactDestination)}` +
+      `&su=${subject}&body=${body}`;
+    const gmailWindow = window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
+    if (!gmailWindow) {
+      window.location.href = gmailComposeUrl;
+    }
     this.contactSent = true;
   }
 
