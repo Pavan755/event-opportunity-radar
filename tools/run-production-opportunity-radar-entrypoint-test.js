@@ -141,6 +141,6 @@ assert(published.length === 1, 'Publisher must receive dashboard rows.');
 
 console.log('PRODUCTION ENTRYPOINT: PASSED');
 console.log('CANONICAL ACTION RESULT: PASSED');
-console.log('DASHBOARD PROJECTION: PASSED');
+console.log('ACTION PROJECTION: PASSED');
 console.log('PUBLISHER INTEGRATION: PASSED');
 console.log('LOCAL PRODUCTION OPPORTUNITY RADAR ENTRYPOINT TEST: PASSED');

@@ -11,6 +11,7 @@ import { OpportunityService } from './core/services/opportunity.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App implements OnInit, OnDestroy {
+  private readonly contactDestination = 'YOUR_GMAIL_ADDRESS@gmail.com';
   private readonly opportunityService = inject(OpportunityService);
   private readonly changeDetector = inject(ChangeDetectorRef);
 
@@ -84,7 +85,18 @@ export class App implements OnInit, OnDestroy {
     void navigator.clipboard?.writeText(prompt);
   }
 
-  submitContact(): void { this.contactSent = true; }
+  submitContact(event: Event): void {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const values = new FormData(form);
+    const name = String(values.get('name') || '').trim();
+    const email = String(values.get('email') || '').trim();
+    const message = String(values.get('message') || '').trim();
+    const subject = encodeURIComponent(`Radar suggestion from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nReply email: ${email}\n\n${message}`);
+    window.location.href = `mailto:${this.contactDestination}?subject=${subject}&body=${body}`;
+    this.contactSent = true;
+  }
 
   private updateClock(): void { this.currentTime = new Intl.DateTimeFormat(undefined, { hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(new Date()); this.changeDetector.markForCheck(); }
 }

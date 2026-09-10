@@ -4,7 +4,7 @@ Event Opportunity Radar is an evidence-aware opportunity intelligence system.
 
 It is designed to help you move from noisy discovery to practical action:
 
-Discover -> Verify -> Understand -> Score -> Rank -> Act
+Discover -> Verify -> Understand -> Choose a path -> Act
 
 ## What this project solves
 
@@ -21,8 +21,8 @@ This project is focused on a harder and more useful question:
 - Multi-source discovery across heterogeneous channels.
 - Policy-aware evidence and verification context.
 - Canonical identity model that separates discovery_id from opportunity_id.
-- Personal skill intelligence for relevance-aware ranking.
-- Deterministic scoring and ranking pipeline.
+- Action intelligence for dates, roles, applications, contacts, and guidance.
+- Explicit separation between verified facts and predictions.
 - Lifecycle foundation for follow-through after discovery.
 
 ## Architecture at a glance
@@ -47,7 +47,7 @@ Detailed architecture: [docs/architecture.md](docs/architecture.md)
 - [config](config): Source, scoring, query, location, and skill configuration.
 - [tools](tools): Local deterministic test and regression runners.
 - [data](data): Fixtures and generated artifacts.
-- [dashboard](dashboard): Static dashboard assets.
+- [ui](ui): The Angular application and deployed public interface.
 - [docs](docs): Architecture, workflows, scoring, verification, and context docs.
 
 ## Quality gate and CI
@@ -101,7 +101,7 @@ Current priority order:
 
 This project is maintained by the repository owner and community contributors.
 
-The product direction is practical opportunity intelligence: identify meaningful opportunities early, validate trust signals, rank personal relevance, and support real follow-through.
+The product direction is practical opportunity intelligence: identify meaningful opportunities early, validate trust signals, show realistic contribution paths, and support real follow-through.
 
 Repository home: [GitHub repository](https://github.com/Pavan755/event-opportunity-radar)
 
