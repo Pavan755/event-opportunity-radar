@@ -44,8 +44,10 @@ flowchart TD
 
 The repository includes clean, data-only navigation screenshots generated from the local app:
 
-- [Desktop radar](screenshots/01-radar-desktop.png)
-- [Mobile radar](screenshots/02-radar-mobile.png)
+- [Desktop radar screenshot](screenshots/01-radar-desktop.png)
+- [Desktop labeled navigation](screenshots/01-radar-desktop-annotated.svg)
+- [Mobile radar screenshot](screenshots/02-radar-mobile.png)
+- [Mobile labeled navigation](screenshots/02-radar-mobile-annotated.svg)
 
 Refresh them from the deployed app when the visual system changes:
 

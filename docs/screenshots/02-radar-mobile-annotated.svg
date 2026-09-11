@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="9024" viewBox="0 0 1200 9024" role="img" aria-labelledby="title desc">
+  <title id="title">Annotated mobile Event Opportunity Radar guide</title>
+  <desc id="desc">Mobile screenshot with numbered arrows explaining the responsive navigation and controls.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c5ed4d"/></marker>
+    <style>
+      .label { font: 700 25px 'DM Mono', monospace; fill: #c5ed4d; letter-spacing: 1px; }
+      .detail { font: 20px 'DM Mono', monospace; fill: #edf0df; }
+      .line { stroke: #c5ed4d; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .tag { fill: #151a15; stroke: #c5ed4d; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+  <rect width="1200" height="9024" fill="#0d100e"/>
+  <image x="0" y="0" width="586" height="9024" preserveAspectRatio="none" xlink:href="02-radar-mobile.png"/>
+  <g transform="translate(630 120)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">01 / COMPACT HEADER</text><text class="detail" x="20" y="70">Brand and device time</text><text class="detail" x="20" y="98">stay visible on mobile.</text><text class="detail" x="20" y="126">Scroll for the radar.</text><path class="line" d="M0 100 L-55 -55"/></g>
+  <g transform="translate(630 720)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">02 / SCAN BUTTON</text><text class="detail" x="20" y="70">Jumps to signals</text><text class="detail" x="20" y="98">without hunting.</text><text class="detail" x="20" y="126">Primary action.</text><path class="line" d="M0 95 L-100 20"/></g>
+  <g transform="translate(630 1450)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">03 / RADAR DISPLAY</text><text class="detail" x="20" y="70">A quick visual scan</text><text class="detail" x="20" y="98">before reading cards.</text><text class="detail" x="20" y="126">Same hierarchy, smaller screen.</text><path class="line" d="M0 95 L-95 10"/></g>
+  <g transform="translate(630 2600)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">04 / SIGNAL CARDS</text><text class="detail" x="20" y="70">One column keeps</text><text class="detail" x="20" y="98">dates and titles readable.</text><text class="detail" x="20" y="126">Tap a card to inspect.</text><path class="line" d="M0 95 L-70 0"/></g>
+  <g transform="translate(630 4650)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">05 / INSPECT PANEL</text><text class="detail" x="20" y="70">Routes, contacts,</text><text class="detail" x="20" y="98">roles, and evidence.</text><text class="detail" x="20" y="126">Scroll inside the page.</text><path class="line" d="M0 95 L-75 10"/></g>
+  <g transform="translate(630 6500)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">06 / SIX PROMPTS</text><text class="detail" x="20" y="70">Tap 01-06, then copy</text><text class="detail" x="20" y="98">the prompt to your GPT.</text><text class="detail" x="20" y="126">No paid API required.</text><path class="line" d="M0 95 L-90 0"/></g>
+  <g transform="translate(630 7900)"><rect class="tag" width="520" height="150"/><text class="label" x="20" y="36">07 / CONTACT FORM</text><text class="detail" x="20" y="70">Name, email, message.</text><text class="detail" x="20" y="98">Open Gmail Compose</text><text class="detail" x="20" y="126">with the context ready.</text><path class="line" d="M0 95 L-95 0"/></g>
+</svg>
