@@ -19,9 +19,9 @@ flowchart TD
   G --> H[Verification Evidence]
   H --> I[Opportunity Identity]
   I --> J[Skill Intelligence]
-  J --> K[Opportunity Intelligence]
-  K --> L[Scoring]
-  L --> M[Ranking]
+  J --> K[Action Intelligence]
+  K --> L[Dates + Routes + Roles]
+  L --> M[Guidance + Prompts]
   M --> N[Lifecycle Foundation]
 ```
 
@@ -47,7 +47,7 @@ contacts, strategy, predictions, and guidance prompts.
 Lifecycle states and follow-through operations.
 
 - Publication boundary:
-The production entrypoint projects ranked records into a stable dashboard row
+ The production entrypoint projects action records into a stable dashboard row
 contract and can replace the durable `Opportunity Radar` sheet snapshot.
 
 ## Canonical data contracts
@@ -65,10 +65,10 @@ These should be treated as stable boundary contracts and progressively formalize
 
 ## Why this model scales
 
-- Adapter independence allows source expansion without scoring rewrites.
+- Adapter independence allows source expansion without UI rewrites.
 - Evidence-aware records improve ranking trust and explainability.
 - Canonical identity reduces duplicate tracking and fragmented history.
-- Deterministic scoring keeps behavior testable and regression-safe.
+- Explicit fact/prediction labels keep guidance testable and trustworthy.
 - Lifecycle foundation aligns discovery with measurable outcomes.
 
 ## Current modernization focus

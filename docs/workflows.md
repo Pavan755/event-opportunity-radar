@@ -24,7 +24,7 @@ contents: read.
 Location: [.github/workflows/event-agent-lite.yml](../.github/workflows/event-agent-lite.yml)
 
 - Trigger:
-Daily schedule and manual dispatch.
+Twice-daily schedule at 08:00 and 20:00 India time, plus manual dispatch.
 - Purpose:
 Run event-agent-lite process and commit updated data artifact.
 - Permissions:
