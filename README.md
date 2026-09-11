@@ -243,6 +243,20 @@ The UI is one responsive page organized as: identity and radar console, signal m
 - Social and aggregator sources are discovery leads, not automatic verification.
 - Read [SECURITY.md](SECURITY.md) before reporting a vulnerability.
 
+## References and Credits
+
+This project is original repository code built with and documented using these public technologies and references:
+
+- [Angular documentation](https://angular.dev/): frontend framework and build tooling.
+- [TypeScript documentation](https://www.typescriptlang.org/docs/): frontend language and type contracts.
+- [Google Apps Script documentation](https://developers.google.com/apps-script): backend runtime and Sheets integration model.
+- [GitHub Actions documentation](https://docs.github.com/actions): quality, refresh, and deployment workflows.
+- [GitHub Pages documentation](https://docs.github.com/pages): static hosting and deployment model.
+- [Mermaid documentation](https://mermaid.js.org/): architecture and workflow diagrams.
+- [Google Fonts](https://fonts.google.com/): `Space Grotesk` and `DM Mono` typography used by the UI.
+
+No external application code was copied into the product. Source links, event metadata, and organizer references remain subject to their original publishers' terms and are treated as evidence inputs, not ownership claims.
+
 ## Contributing
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), run the quality gate, and keep changes focused on one boundary. New sources should include policy metadata and deterministic tests where possible.

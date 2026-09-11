@@ -80,16 +80,11 @@ These modules are present under:
 - apps-script/src/OpportunityPersonalSheetStore.gs
 - apps-script/src/OpportunityRadarPipeline.gs
 
-## Real current gap
+## Current product boundary
 
-The project is not yet fully integrated as a single production flow that turns discovered events into a complete ranked, evidence-backed dashboard with a real personal workflow.
+The project now runs as a production flow that turns discovered events into evidence-backed action records with a real personal workflow.
 
-The codebase has the architecture pieces, but the final wiring layer is still missing or incomplete:
-
-- discovery source execution is not yet connected to a clean production schedule
-- source selection and verification are not yet exposed as a single master pipeline
-- the public dashboard is present, but it still needs a consistent data source and evidence model
-- a complete event application and follow-up workflow is not yet fully automated
+The public Angular radar consumes the generated discovery artifact and labels source-backed facts separately from predictions. The remaining work is product expansion: more verified sources, richer date extraction, and deeper private persistence for personal applications and follow-up.
 
 ## Region priorities
 
