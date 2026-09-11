@@ -248,9 +248,6 @@ Repository operations guide: [docs/github-project-guide.md](docs/github-project-
 - [User navigation guide](docs/user-guide.md)
 - [Visual and screenshot guide](docs/visual-guide.md)
 
-![Radar desktop preview](docs/screenshots/01-radar-desktop.png)
-
-![Radar mobile preview](docs/screenshots/02-radar-mobile.png)
 
 The UI is one responsive page organized as: identity and radar console, signal metrics, opportunity field, inspect panel, strategy protocol, and contact transmission.
 

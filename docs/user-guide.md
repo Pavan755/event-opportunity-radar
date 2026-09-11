@@ -2,7 +2,7 @@
 
 > A visual walkthrough of the deployed radar. Start with the desktop or mobile preview, then follow the numbered navigation path.
 
-[Open the live app](https://pavan755.github.io/event-opportunity-radar/) · [Desktop screenshot](screenshots/01-radar-desktop.png) · [Mobile screenshot](screenshots/02-radar-mobile.png)
+[Open the live app](https://pavan755.github.io/event-opportunity-radar/)
 
 ## Navigation at a glance
 
@@ -15,10 +15,6 @@ flowchart LR
 	E --> F[Strategy]
 	F --> G[Contact]
 ```
-
-![Desktop radar navigation](screenshots/01-radar-desktop.png)
-
-![Mobile radar navigation](screenshots/02-radar-mobile.png)
 
 ## 1. Open the Radar
 
