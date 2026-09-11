@@ -35,6 +35,32 @@ Discover -> Verify -> Understand -> Choose a path -> Act -> Follow up
 
 The system distinguishes source-backed facts from predictions. A predicted role, date, or next step is labelled as such and should be confirmed with the organizer.
 
+## Why I Built This
+
+I started building Event Opportunity Radar because I realized that finding opportunities was not the hardest part. Finding the right opportunities and knowing what to do with them was.
+
+I wanted a system that could help me discover technical events, hackathons, volunteering roles, open-source contribution paths, learning programs, networking opportunities, and other ways to gain real experience. Those opportunities are scattered across official websites, GitHub, event platforms, community pages, organizer websites, and social posts.
+
+Radar is built to move from:
+
+```text
+I found something.
+  ->
+This is trustworthy and relevant.
+  ->
+Here is a realistic path to participate.
+  ->
+Here is what I should do next.
+```
+
+I built it for myself first, but the problem is not unique to me. The public project is intended to help students and early-career people turn scattered signals into meaningful action:
+
+```text
+Learn -> Contribute -> Network -> Build evidence -> Follow up
+```
+
+Full origin story and product philosophy: [docs/why-i-built-radar.md](docs/why-i-built-radar.md)
+
 ## What Users Can Do
 
 1. Open the [Live App](https://pavan755.github.io/event-opportunity-radar/).
