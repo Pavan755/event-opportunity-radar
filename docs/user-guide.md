@@ -1,5 +1,25 @@
 # User Guide
 
+> A visual walkthrough of the deployed radar. Start with the desktop or mobile preview, then follow the numbered navigation path.
+
+[Open the live app](https://pavan755.github.io/event-opportunity-radar/) · [Desktop screenshot](screenshots/01-radar-desktop.png) · [Mobile screenshot](screenshots/02-radar-mobile.png)
+
+## Navigation at a glance
+
+```mermaid
+flowchart LR
+	A[Live radar] --> B[Signals]
+	B --> C[Opportunity field]
+	C --> D[Inspect a signal]
+	D --> E[Choose prompt + lifecycle]
+	E --> F[Strategy]
+	F --> G[Contact]
+```
+
+![Desktop radar navigation](screenshots/01-radar-desktop.png)
+
+![Mobile radar navigation](screenshots/02-radar-mobile.png)
+
 ## 1. Open the Radar
 
 Use the live app: [pavan755.github.io/event-opportunity-radar](https://pavan755.github.io/event-opportunity-radar/).
@@ -16,6 +36,8 @@ The radar console gives a visual overview of the current public artifact. The me
 - remote or hybrid signals
 
 These are operational counts, not quality scores.
+
+The top navigation anchors are interactive: **Live radar** returns to the hero, **Signals** jumps to the metrics and opportunity field, **Strategy** opens the operating protocol, and **Contact** opens the suggestion form.
 
 ## 3. Find a Signal
 
@@ -41,6 +63,14 @@ The inspection panel contains:
 - six generated prompts
 
 Unknown values are intentionally shown as unknown. Confirm them on the source page before acting.
+
+The inspect panel is the main decision surface. Use it in this order:
+
+1. Confirm the source and evidence label.
+2. Read the event window and application deadline.
+3. Review predicted contribution paths.
+4. Choose a verified application route or organizer contact route.
+5. Select a lifecycle state and bookmark the signal.
 
 ## 5. Use the Prompt Set
 
@@ -87,6 +117,21 @@ At the bottom of the page:
 1. Enter your name.
 2. Enter your reply email.
 3. Write a suggestion, correction, contribution idea, or source lead.
-4. Select **Open Gmail draft**.
+4. Select **Open Gmail compose**.
 
-The app opens Gmail Compose addressed to `bandarupavan282004@gmail.com` with the subject and message context filled in. You still review and send the email yourself.
+The app opens Gmail Compose addressed to `bandarupavan282004@gmail.com` with the subject, sender reply email, and message context filled in. You still review and send the email yourself.
+
+## Feature checklist
+
+| Feature | Where to find it | What it does |
+| --- | --- | --- |
+| Live scan | Hero | Jumps to the opportunity field |
+| Search | Opportunity field | Finds events, skills, categories, and organizers |
+| Region filter | Opportunity field | Narrows signals by location |
+| Evidence filter | Opportunity field | Separates verified candidates from review-needed signals |
+| Inspect panel | Select a card | Shows dates, routes, roles, contacts, and guidance |
+| Prompt chooser | Inspect panel | Selects one of six copyable GPT prompts |
+| Lifecycle selector | Inspect panel | Chooses any current workflow state |
+| Bookmark | Inspect panel | Saves a signal in the current browser |
+| Strategy | Bottom protocol section | Explains learn, contribute, and follow-up actions |
+| Contact | Bottom form | Opens Gmail Compose with structured context |

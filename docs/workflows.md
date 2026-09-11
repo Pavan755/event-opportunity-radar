@@ -1,5 +1,17 @@
 # Repository Workflows
 
+## Workflow map
+
+```mermaid
+flowchart TD
+	A[Push or manual dispatch] --> B[Quality gate]
+	A --> C[Angular build]
+	C --> D[GitHub Pages deployment]
+	E[08:00 / 20:00 IST schedule] --> F[Event Agent Lite]
+	F --> G[Commit refreshed JSON]
+	G --> C
+```
+
 ## Workflow goals
 
 - Enforce deterministic validation on pull requests and pushes.
@@ -61,3 +73,11 @@ node tools/run-opportunity-scoring-integration-test.js
 - Keep unstable network-heavy checks out of required PR gates.
 - Add only deterministic suites to [tools/run-ci-quality-gate.js](../tools/run-ci-quality-gate.js).
 - Use workflow-specific permissions instead of broad defaults.
+
+## Interactive GitHub surfaces
+
+- [Actions](https://github.com/Pavan755/event-opportunity-radar/actions): inspect runs, logs, and manual dispatch buttons.
+- [Deployments](https://github.com/Pavan755/event-opportunity-radar/deployments): open the latest `github-pages` environment URL.
+- [Releases](https://github.com/Pavan755/event-opportunity-radar/releases): create a tagged public milestone when a version is ready.
+- [Issues](https://github.com/Pavan755/event-opportunity-radar/issues): report a source correction or suggest an opportunity.
+- [Contributors](https://github.com/Pavan755/event-opportunity-radar/graphs/contributors): see project participation.

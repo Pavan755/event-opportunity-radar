@@ -7,6 +7,16 @@
 [![Deploy](https://img.shields.io/badge/Deploy-GitHub%20Pages-22272e?style=flat-square)](.github/workflows/deploy-pages.yml)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
+### Project controls
+
+[Open the app](https://pavan755.github.io/event-opportunity-radar/) ·
+[Browse source](https://github.com/Pavan755/event-opportunity-radar) ·
+[Issues](https://github.com/Pavan755/event-opportunity-radar/issues) ·
+[Actions](https://github.com/Pavan755/event-opportunity-radar/actions) ·
+[Deployments](https://github.com/Pavan755/event-opportunity-radar/deployments) ·
+[Releases](https://github.com/Pavan755/event-opportunity-radar/releases) ·
+[Contributors](https://github.com/Pavan755/event-opportunity-radar/graphs/contributors)
+
 ## Live App
 
 **https://pavan755.github.io/event-opportunity-radar/**
@@ -204,11 +214,17 @@ To deploy manually:
 3. Confirm repository Settings -> Pages uses **GitHub Actions**.
 4. Open the deployment URL shown in the `github-pages` environment.
 
+Repository operations guide: [docs/github-project-guide.md](docs/github-project-guide.md)
+
 ## Visual Documentation
 
 - [Open the live radar](https://pavan755.github.io/event-opportunity-radar/)
 - [User navigation guide](docs/user-guide.md)
 - [Visual and screenshot guide](docs/visual-guide.md)
+
+![Radar desktop preview](docs/screenshots/01-radar-desktop.png)
+
+![Radar mobile preview](docs/screenshots/02-radar-mobile.png)
 
 The UI is one responsive page organized as: identity and radar console, signal metrics, opportunity field, inspect panel, strategy protocol, and contact transmission.
 

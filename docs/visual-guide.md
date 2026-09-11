@@ -42,7 +42,12 @@ flowchart TD
 
 ## Screenshot capture checklist
 
-The repository intentionally does not commit browser-specific screenshots. Capture fresh screenshots from the deployed app so they match the current data artifact:
+The repository includes clean, data-only navigation screenshots generated from the local app:
+
+- [Desktop radar](screenshots/01-radar-desktop.png)
+- [Mobile radar](screenshots/02-radar-mobile.png)
+
+Refresh them from the deployed app when the visual system changes:
 
 1. Open the [live app](https://pavan755.github.io/event-opportunity-radar/).
 2. Capture the hero and radar console at desktop width.
@@ -51,7 +56,7 @@ The repository intentionally does not commit browser-specific screenshots. Captu
 5. Capture the contact form with the Gmail Compose action visible.
 6. Repeat the hero and opportunity field at a mobile width.
 
-Suggested filenames if screenshots are added later:
+Keep these filenames stable so README and guide links remain valid:
 
 ```text
 docs/screenshots/01-hero-radar-desktop.png
