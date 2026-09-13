@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T17:23:06.298Z",
+  "generated_at": "2026-09-13T07:37:40.877Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-12T17:22:59.226Z",
+      "discovered_at": "2026-09-13T07:37:33.887Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-09-12T17:22:59.563Z",
+      "discovered_at": "2026-09-13T07:37:34.355Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -107,7 +107,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-09-12T17:23:00.738Z",
+      "discovered_at": "2026-09-13T07:37:35.407Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -147,7 +147,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-09-12T17:23:01.217Z",
+      "discovered_at": "2026-09-13T07:37:35.833Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -185,7 +185,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-09-12T17:23:02.224Z",
+      "discovered_at": "2026-09-13T07:37:36.530Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -221,7 +221,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-09-12T17:23:04.032Z",
+      "discovered_at": "2026-09-13T07:37:38.078Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -263,7 +263,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-09-12T17:23:04.852Z",
+      "discovered_at": "2026-09-13T07:37:38.802Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -276,13 +276,12 @@
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
-      "linkedin_url": "https://www.linkedin.com/",
+      "linkedin_url": "https://www.linkedin.com/legal/user-agreement",
       "social_links": [
-        "https://www.linkedin.com/",
-        "https://www.linkedin.com/legal/user-agreement/",
-        "https://www.linkedin.com/legal/privacy-policy/",
-        "https://www.linkedin.com/help/linkedin/answer/a403269/",
-        "https://www.linkedin.com/legal/cookie-policy/"
+        "https://www.linkedin.com/legal/user-agreement",
+        "https://www.linkedin.com/legal/privacy-policy",
+        "https://www.linkedin.com/legal/cookie-policy",
+        "https://www.linkedin.com/signup/cold-join?session_redirect&#61;%2Fevents%2F"
       ],
       "organizer_name": "LinkedIn",
       "contact_links": [],
@@ -301,7 +300,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-09-12T17:23:05.134Z",
+      "discovered_at": "2026-09-13T07:37:39.151Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -333,7 +332,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-12T17:23:06.224Z",
+      "discovered_at": "2026-09-13T07:37:40.803Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -362,7 +361,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-09-12T17:23:06.298Z",
+      "discovered_at": "2026-09-13T07:37:40.877Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
