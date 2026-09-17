@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T18:20:50.775Z",
+  "generated_at": "2026-09-17T07:56:59.009Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-16T18:20:42.563Z",
+      "discovered_at": "2026-09-17T07:56:41.980Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -41,22 +41,12 @@
       "id": "opensource-india",
       "source_id": "opensource-india",
       "name": "Open Source India",
-      "title": "Open Source India | India&#039;s #1 Open Source Event",
       "official_url": "https://www.opensourceindia.in/",
-      "apply_url": "https://register.opensourceindia.in/",
-      "contact_url": "https://discord.gg/W3a68xcvRv",
-      "contact_email": "info@opensourceindia.in",
-      "linkedin_url": null,
-      "social_links": [
-        "https://whatsapp.com/channel/0029VaAa34XFXUuZ3QGNTF3X",
-        "https://discord.gg/W3a68xcvRv"
-      ],
+      "apply_url": null,
+      "contact_url": null,
+      "contact_email": null,
       "organizer_name": "Open Source India",
-      "contact_links": [
-        "https://discord.gg/W3a68xcvRv",
-        "https://www.opensourceindia.in/contact-us",
-        "https://www.opensourceindia.in/contact-us/"
-      ],
+      "contact_links": [],
       "deadline_text": null,
       "url": "https://www.opensourceindia.in/",
       "source_class": "official",
@@ -65,16 +55,16 @@
       "event_end_date": null,
       "application_deadline": null,
       "date_status": "unknown",
-      "verification_status": "verified_candidate",
-      "summary": "Asia&#039;s leading open-source conference for developers, DevOps teams, AI engineers, founders, architects and technology leaders.",
+      "verification_status": "error",
+      "summary": "Fetch failed: fetch failed",
       "categories": [
         "conference",
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-09-16T18:20:43.196Z",
-      "status": "verified_candidate",
-      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
+      "discovered_at": "2026-09-17T07:56:52.283Z",
+      "status": "error",
+      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
     {
       "id": "swecha-events",
@@ -107,7 +97,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-09-16T18:20:44.083Z",
+      "discovered_at": "2026-09-17T07:56:53.156Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -147,7 +137,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-09-16T18:20:44.665Z",
+      "discovered_at": "2026-09-17T07:56:53.393Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -185,7 +175,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-09-16T18:20:45.374Z",
+      "discovered_at": "2026-09-17T07:56:54.039Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -221,7 +211,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-09-16T18:20:47.303Z",
+      "discovered_at": "2026-09-17T07:56:55.665Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -263,7 +253,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-09-16T18:20:47.829Z",
+      "discovered_at": "2026-09-17T07:56:56.257Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -301,7 +291,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-09-16T18:20:48.379Z",
+      "discovered_at": "2026-09-17T07:56:56.614Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -333,7 +323,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-16T18:20:50.723Z",
+      "discovered_at": "2026-09-17T07:56:58.976Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -362,7 +352,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-09-16T18:20:50.775Z",
+      "discovered_at": "2026-09-17T07:56:59.009Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
