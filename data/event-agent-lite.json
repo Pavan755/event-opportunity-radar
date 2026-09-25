@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T18:36:29.457Z",
+  "generated_at": "2026-09-25T08:08:21.917Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-24T18:36:21.262Z",
+      "discovered_at": "2026-09-25T08:07:25.824Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-09-24T18:36:21.754Z",
+      "discovered_at": "2026-09-25T08:07:26.354Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -107,7 +107,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-09-24T18:36:22.554Z",
+      "discovered_at": "2026-09-25T08:07:27.197Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -147,7 +147,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-09-24T18:36:23.168Z",
+      "discovered_at": "2026-09-25T08:07:28.099Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -185,7 +185,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-09-24T18:36:23.980Z",
+      "discovered_at": "2026-09-25T08:07:29.558Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -221,7 +221,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-09-24T18:36:24.969Z",
+      "discovered_at": "2026-09-25T08:07:30.384Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -233,7 +233,7 @@
       "official_url": "https://gdg.community.dev/",
       "apply_url": "https://gdg.community.dev/accounts/signup/?next=/",
       "contact_url": "https://gdg.community.dev/accounts/signup/?next=/",
-      "contact_email": "gdgyvr@gmail.com",
+      "contact_email": "gdgsaskatoon@gmail.com",
       "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
       "social_links": [
         "https://twitter.com/googledevgroups",
@@ -263,7 +263,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-09-24T18:36:25.575Z",
+      "discovered_at": "2026-09-25T08:07:30.848Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -301,7 +301,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-09-24T18:36:25.921Z",
+      "discovered_at": "2026-09-25T08:07:31.259Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -309,14 +309,11 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
-      "title": "TOTO 4D: Situs COLOKSGP Agen Resmi Betting Link Togel Singapore & Hongkong Angka Jitu Terpercaya",
       "official_url": "https://indiafoss.net/",
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
-      "linkedin_url": null,
-      "social_links": [],
-      "organizer_name": "COLOKSGP",
+      "organizer_name": "IndiaFOSS",
       "contact_links": [],
       "deadline_text": null,
       "url": "https://indiafoss.net/",
@@ -326,16 +323,16 @@
       "event_end_date": null,
       "application_deadline": null,
       "date_status": "unknown",
-      "verification_status": "needs_corroboration",
-      "summary": "COLOKSGP untuk yang berani main besar. Situs togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang bukan kaleng-kaleng. Udah waktunya bermain di situs resmi terpercaya, pindah ke yang jelas hasilnya.",
+      "verification_status": "error",
+      "summary": "Fetch failed: HTTP 520 for https://indiafoss.net/",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-09-24T18:36:29.414Z",
-      "status": "needs_corroboration",
-      "evidence_note": "Social or community source detected; action links require manual verification before use."
+      "discovered_at": "2026-09-25T08:08:21.879Z",
+      "status": "error",
+      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
     {
       "id": "x-community-posts",
@@ -362,7 +359,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-09-24T18:36:29.457Z",
+      "discovered_at": "2026-09-25T08:08:21.917Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
