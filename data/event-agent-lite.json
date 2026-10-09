@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T20:03:22.896Z",
+  "generated_at": "2026-10-09T09:30:33.563Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-08T20:03:15.641Z",
+      "discovered_at": "2026-10-09T09:30:25.335Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-08T20:03:16.095Z",
+      "discovered_at": "2026-10-09T09:30:25.901Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -107,7 +107,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-08T20:03:17.131Z",
+      "discovered_at": "2026-10-09T09:30:27.016Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -147,7 +147,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-08T20:03:17.446Z",
+      "discovered_at": "2026-10-09T09:30:27.409Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -185,7 +185,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-08T20:03:18.581Z",
+      "discovered_at": "2026-10-09T09:30:28.321Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -221,7 +221,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-08T20:03:19.353Z",
+      "discovered_at": "2026-10-09T09:30:30.101Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -263,7 +263,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-08T20:03:19.930Z",
+      "discovered_at": "2026-10-09T09:30:30.734Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -301,7 +301,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-08T20:03:20.365Z",
+      "discovered_at": "2026-10-09T09:30:31.209Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -333,7 +333,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-08T20:03:22.818Z",
+      "discovered_at": "2026-10-09T09:30:33.539Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -362,7 +362,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-08T20:03:22.896Z",
+      "discovered_at": "2026-10-09T09:30:33.563Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
