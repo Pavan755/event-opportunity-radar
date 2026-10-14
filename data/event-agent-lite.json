@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T07:57:12.728Z",
+  "generated_at": "2026-10-14T18:49:07.230Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-14T07:57:05.431Z",
+      "discovered_at": "2026-10-14T18:48:58.558Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-14T07:57:05.785Z",
+      "discovered_at": "2026-10-14T18:48:59.154Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-14T07:57:06.503Z",
+      "discovered_at": "2026-10-14T18:48:59.959Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-14T07:57:06.947Z",
+      "discovered_at": "2026-10-14T18:49:00.595Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-14T07:57:07.868Z",
+      "discovered_at": "2026-10-14T18:49:01.490Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-14T07:57:09.939Z",
+      "discovered_at": "2026-10-14T18:49:03.367Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-14T07:57:10.574Z",
+      "discovered_at": "2026-10-14T18:49:04.217Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -270,12 +270,13 @@
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
-      "linkedin_url": "https://www.linkedin.com/legal/user-agreement",
+      "linkedin_url": "https://www.linkedin.com/",
       "social_links": [
-        "https://www.linkedin.com/legal/user-agreement",
-        "https://www.linkedin.com/legal/privacy-policy",
-        "https://www.linkedin.com/legal/cookie-policy",
-        "https://www.linkedin.com/signup/cold-join?session_redirect&#61;%2Fevents%2F"
+        "https://www.linkedin.com/",
+        "https://www.linkedin.com/signup/cold-join/?fromLogin=true",
+        "https://www.linkedin.com/legal/user-agreement/",
+        "https://www.linkedin.com/legal/privacy-policy/",
+        "https://www.linkedin.com/legal/cookie-policy/"
       ],
       "organizer_name": "LinkedIn",
       "contact_links": [],
@@ -294,7 +295,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-14T07:57:10.925Z",
+      "discovered_at": "2026-10-14T18:49:04.675Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -302,7 +303,7 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
-      "title": "COLOKSGP | Link Resmi Agen Toto 4D Togel Singapore & Hongkong Angka Jitu",
+      "title": "COLOKSGP | Pasaran Resmi Toto 4D Agen Togel COLOK SGP & HK Angka Jitu",
       "official_url": "https://indiafoss.net/",
       "apply_url": null,
       "contact_url": null,
@@ -320,13 +321,13 @@
       "application_deadline": null,
       "date_status": "unknown",
       "verification_status": "needs_corroboration",
-      "summary": "COLOKSGP menyediakan link resmi agen toto 4D untuk pasaran Togel Singapore dan Hongkong dengan angka jitu. Simak panduan navigasi pasaran, jadwal result, dan catatan angka yang dapat ditelusuri pemain dewasa setiap hari.",
+      "summary": "COLOKSGP menyajikan pasaran resmi Toto 4D untuk agen togel COLOK Singapore dan Hongkong dengan angka jitu. Simak catatan perbandingan karakter dua pasaran, jadwal result, dan pola angka yang bisa ditelusuri pemain dewasa.",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-14T07:57:12.700Z",
+      "discovered_at": "2026-10-14T18:49:07.199Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -355,7 +356,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-14T07:57:12.727Z",
+      "discovered_at": "2026-10-14T18:49:07.230Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
