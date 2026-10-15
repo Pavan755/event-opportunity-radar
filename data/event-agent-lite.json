@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:41:22.724Z",
+  "generated_at": "2026-10-15T18:32:12.638Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-15T07:41:15.205Z",
+      "discovered_at": "2026-10-15T18:32:03.973Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-15T07:41:15.760Z",
+      "discovered_at": "2026-10-15T18:32:04.480Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-15T07:41:16.626Z",
+      "discovered_at": "2026-10-15T18:32:05.477Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-15T07:41:16.990Z",
+      "discovered_at": "2026-10-15T18:32:05.919Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-15T07:41:18.013Z",
+      "discovered_at": "2026-10-15T18:32:06.983Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-15T07:41:19.250Z",
+      "discovered_at": "2026-10-15T18:32:09.119Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -227,7 +227,7 @@
       "official_url": "https://gdg.community.dev/",
       "apply_url": "https://gdg.community.dev/accounts/signup/?next=/",
       "contact_url": "https://gdg.community.dev/accounts/signup/?next=/",
-      "contact_email": "gdgsaskatoon@gmail.com",
+      "contact_email": "gdg.sanjose@gmail.com",
       "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
       "social_links": [
         "https://twitter.com/googledevgroups",
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-15T07:41:19.801Z",
+      "discovered_at": "2026-10-15T18:32:09.695Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -294,7 +294,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-15T07:41:20.101Z",
+      "discovered_at": "2026-10-15T18:32:10.079Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -326,7 +326,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-15T07:41:22.629Z",
+      "discovered_at": "2026-10-15T18:32:12.490Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -355,7 +355,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-15T07:41:22.724Z",
+      "discovered_at": "2026-10-15T18:32:12.638Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
