@@ -3,7 +3,7 @@
     id: 'test-source-001',
     name: 'Test Source',
     type: 'organizer_social_profile',
-    source_class: 'social',
+    class: 'social',
     priority: 100
   };
 
@@ -39,7 +39,7 @@
     throw new Error('Source type normalization failed.');
   }
 
-  if (normalized.source_class !== source.source_class) {
+  if (normalized.source_class !== source.class) {
     throw new Error('Source class normalization failed.');
   }
 
