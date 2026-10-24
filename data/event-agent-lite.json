@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T18:38:13.154Z",
+  "generated_at": "2026-10-24T07:33:23.678Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-23T18:37:56.669Z",
+      "discovered_at": "2026-10-24T07:33:09.778Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-23T18:37:57.320Z",
+      "discovered_at": "2026-10-24T07:33:10.134Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -80,36 +80,30 @@
       "id": "swecha-events",
       "source_id": "swecha-events",
       "name": "Swecha DevDays Volunteers",
-      "title": "Vounteers Meeting",
       "official_url": "https://events.swecha.org/DevDays/2026-volunteers-1/",
-      "apply_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
-      "contact_url": "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
+      "apply_url": null,
+      "contact_url": null,
       "contact_email": null,
-      "linkedin_url": null,
-      "social_links": [],
       "organizer_name": "Swecha DevDays Volunteers",
-      "contact_links": [
-        "https://events.swecha.org/DevDays/2026-volunteers-1/&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#101;&#97;&#99;&#104;&#117;&#115;&#91;&#97;&#116;&#93;&#115;&#119;&#101;&#99;&#104;&#97;&#91;&#100;&#111;&#116;&#93;&#110;&#101;&#116;",
-        "https://events.swecha.org/redirect/?url=https%3A//swecha.org/contact-us%3A8_pNLgTsU7COyWjR06FS0_v96eyps6XeryXpBSJEeI4"
-      ],
+      "contact_links": [],
       "deadline_text": null,
       "url": "https://events.swecha.org/DevDays/2026-volunteers-1/",
       "source_class": "community",
       "source_type": "official_community_page",
-      "event_start_date": "July 12, 2026",
+      "event_start_date": null,
       "event_end_date": null,
       "application_deadline": null,
-      "date_status": "predicted",
-      "verification_status": "verified_candidate",
-      "summary": "Sun, July 12, 2026",
+      "date_status": "unknown",
+      "verification_status": "error",
+      "summary": "Fetch failed: HTTP 502 for https://events.swecha.org/DevDays/2026-volunteers-1/",
       "categories": [
         "community",
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-23T18:37:58.272Z",
-      "status": "verified_candidate",
-      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
+      "discovered_at": "2026-10-24T07:33:16.265Z",
+      "status": "error",
+      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
     {
       "id": "hyderabad-aiml-meetup",
@@ -147,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-23T18:37:58.610Z",
+      "discovered_at": "2026-10-24T07:33:16.685Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -185,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-23T18:37:59.425Z",
+      "discovered_at": "2026-10-24T07:33:17.606Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -221,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-23T18:38:01.102Z",
+      "discovered_at": "2026-10-24T07:33:18.510Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -263,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-23T18:38:01.572Z",
+      "discovered_at": "2026-10-24T07:33:19.264Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -300,7 +294,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-23T18:38:01.989Z",
+      "discovered_at": "2026-10-24T07:33:19.574Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -338,7 +332,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-23T18:38:13.085Z",
+      "discovered_at": "2026-10-24T07:33:23.650Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -367,7 +361,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-23T18:38:13.154Z",
+      "discovered_at": "2026-10-24T07:33:23.678Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
