@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:03:17.202Z",
+  "generated_at": "2026-10-26T20:04:36.358Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-26T08:03:01.727Z",
+      "discovered_at": "2026-10-26T20:04:17.889Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-26T08:03:02.226Z",
+      "discovered_at": "2026-10-26T20:04:18.464Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-26T08:03:08.065Z",
+      "discovered_at": "2026-10-26T20:04:29.092Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-26T08:03:09.238Z",
+      "discovered_at": "2026-10-26T20:04:29.999Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-26T08:03:10.224Z",
+      "discovered_at": "2026-10-26T20:04:31.175Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-26T08:03:12.269Z",
+      "discovered_at": "2026-10-26T20:04:32.067Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-26T08:03:12.779Z",
+      "discovered_at": "2026-10-26T20:04:32.617Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -294,7 +294,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-26T08:03:13.093Z",
+      "discovered_at": "2026-10-26T20:04:32.960Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -302,15 +302,15 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
-      "title": "TOTO 4D: Link COLOKSGP Agen Toto Betting Situs Togel Singapore & Hongkong Angka Jitu Terpercaya",
+      "title": "TOTO 4D: Situs COLOKSGP Agen Resmi Betting Link Togel Singapore & Hongkossng Angka Jitu Terpercaya",
       "official_url": "https://indiafoss.net/",
       "apply_url": "https://www.envato.com/careers/",
       "contact_url": "https://www.envato.com/careers/",
       "contact_email": null,
       "linkedin_url": null,
       "social_links": [
-        "https://coloksupertajirvvip.com/forgot/passwordaudio/instagram+reel",
-        "https://coloksupertajirvvip.com/forgot/passwordgraphics/youtube",
+        "https://coloksupertajirvvip.com/audio/instagram+reel",
+        "https://coloksupertajirvvip.com/graphics/youtube",
         "https://www.youtube.com/@envatotuts"
       ],
       "organizer_name": "COLOKSGP",
@@ -326,13 +326,13 @@
       "application_deadline": null,
       "date_status": "unknown",
       "verification_status": "needs_corroboration",
-      "summary": "COLOKSGP buat yang berani main besar. Link togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang bukan kaleng-kaleng. Udah saaatnya stop keluarin duit di tempat bodong, pindah ke yang resmi hasilnya.",
+      "summary": "COLOKSGP buat yang berani main besar. Situs togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang bukan kaleng-kaleng. Udah saaatnya stop keluarin duit di tempat bodong, pindah ke yang resmi hasilnya.",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-26T08:03:17.126Z",
+      "discovered_at": "2026-10-26T20:04:36.280Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -361,7 +361,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-26T08:03:17.202Z",
+      "discovered_at": "2026-10-26T20:04:36.358Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
