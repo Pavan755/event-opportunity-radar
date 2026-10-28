@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:55:08.293Z",
+  "generated_at": "2026-10-28T19:47:06.371Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-28T08:54:48.247Z",
+      "discovered_at": "2026-10-28T19:46:56.119Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-10-28T08:54:48.660Z",
+      "discovered_at": "2026-10-28T19:46:56.589Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-10-28T08:55:00.120Z",
+      "discovered_at": "2026-10-28T19:46:58.043Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-10-28T08:55:00.526Z",
+      "discovered_at": "2026-10-28T19:46:58.476Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -159,10 +159,10 @@
       "organizer_name": "GitHub",
       "contact_links": [
         "https://github.com/team",
-        "https://support.github.com",
-        "https://github.com/orgs/community/discussions",
         "https://github.com/enterprise/premium-support",
-        "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPavan755%2Fevent-opportunity-radar&amp;report=Pavan755+%28user%29"
+        "https://github.com/orgs/community/discussions",
+        "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPavan755%2Fevent-opportunity-radar&amp;report=Pavan755+%28user%29",
+        "https://github.community/"
       ],
       "deadline_text": null,
       "url": "https://github.com/Pavan755/event-opportunity-radar",
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-10-28T08:55:01.507Z",
+      "discovered_at": "2026-10-28T19:46:59.382Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-10-28T08:55:03.334Z",
+      "discovered_at": "2026-10-28T19:47:01.087Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-10-28T08:55:03.898Z",
+      "discovered_at": "2026-10-28T19:47:01.710Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -294,7 +294,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-10-28T08:55:04.395Z",
+      "discovered_at": "2026-10-28T19:47:02.100Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -332,7 +332,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-10-28T08:55:08.247Z",
+      "discovered_at": "2026-10-28T19:47:06.309Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -361,7 +361,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-10-28T08:55:08.293Z",
+      "discovered_at": "2026-10-28T19:47:06.371Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
