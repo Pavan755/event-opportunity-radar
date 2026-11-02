@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T19:04:49.659Z",
+  "generated_at": "2026-11-02T09:52:00.521Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-01T19:04:38.839Z",
+      "discovered_at": "2026-11-02T09:51:48.480Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-11-01T19:04:39.301Z",
+      "discovered_at": "2026-11-02T09:51:48.883Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-11-01T19:04:41.919Z",
+      "discovered_at": "2026-11-02T09:51:53.420Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-11-01T19:04:42.606Z",
+      "discovered_at": "2026-11-02T09:51:53.777Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-11-01T19:04:43.503Z",
+      "discovered_at": "2026-11-02T09:51:54.861Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-11-01T19:04:45.394Z",
+      "discovered_at": "2026-11-02T09:51:56.616Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-11-01T19:04:45.969Z",
+      "discovered_at": "2026-11-02T09:51:57.231Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -294,7 +294,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-11-01T19:04:46.299Z",
+      "discovered_at": "2026-11-02T09:51:57.550Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -309,8 +309,8 @@
       "contact_email": null,
       "linkedin_url": null,
       "social_links": [
-        "https://coloktangerang.com/referralaudio/instagram+reel",
-        "https://coloktangerang.com/referralgraphics/youtube",
+        "https://www.coloktangerang.com/audio/instagram+reel",
+        "https://www.coloktangerang.com/graphics/youtube",
         "https://www.youtube.com/@envatotuts"
       ],
       "organizer_name": "COLOKSGP",
@@ -326,13 +326,13 @@
       "application_deadline": null,
       "date_status": "unknown",
       "verification_status": "needs_corroboration",
-      "summary": "COLOKSGP buat yang berani main besar. Link togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang bukan kaleng-kaleng. Udah saaatnya stop keluarin duit di tempat bodong, pindah ke yang resmi hasilnya.",
+      "summary": "COLOKSGP buat yang berani main besar. Situs togel Singapore & Hongkong serta bandar toto macau dengan angka hoki Togel Online pilihan dan peluang menang yang bukan kaleng-kaleng. Udah saaatnya stop keluarin duit di tempat bodong, pindah ke yang resmi hasilnya.",
       "categories": [
         "open_source",
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-01T19:04:49.592Z",
+      "discovered_at": "2026-11-02T09:52:00.400Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -361,7 +361,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-11-01T19:04:49.659Z",
+      "discovered_at": "2026-11-02T09:52:00.521Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
