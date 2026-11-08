@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:59:41.856Z",
+  "generated_at": "2026-11-08T09:25:41.834Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-07T18:59:27.274Z",
+      "discovered_at": "2026-11-08T09:25:20.926Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-11-07T18:59:27.626Z",
+      "discovered_at": "2026-11-08T09:25:21.378Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-11-07T18:59:34.432Z",
+      "discovered_at": "2026-11-08T09:25:23.275Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-11-07T18:59:34.918Z",
+      "discovered_at": "2026-11-08T09:25:24.498Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -149,21 +149,12 @@
       "id": "event-opportunity-radar",
       "source_id": "event-opportunity-radar",
       "name": "Event Opportunity Radar Repo",
-      "title": "GitHub - Pavan755/event-opportunity-radar: An open-source event discovery and contribution radar for finding verified learning, volunteering, hackathon, networking, open-source, and career opportunities.",
       "official_url": "https://github.com/Pavan755/event-opportunity-radar",
       "apply_url": null,
-      "contact_url": "https://github.com/team",
+      "contact_url": null,
       "contact_email": null,
-      "linkedin_url": null,
-      "social_links": [],
-      "organizer_name": "GitHub",
-      "contact_links": [
-        "https://github.com/team",
-        "https://github.com/enterprise/premium-support",
-        "https://github.com/orgs/community/discussions",
-        "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPavan755%2Fevent-opportunity-radar&amp;report=Pavan755+%28user%29",
-        "https://github.community/"
-      ],
+      "organizer_name": "Event Opportunity Radar Repo",
+      "contact_links": [],
       "deadline_text": null,
       "url": "https://github.com/Pavan755/event-opportunity-radar",
       "source_class": "github",
@@ -172,16 +163,16 @@
       "event_end_date": null,
       "application_deadline": null,
       "date_status": "unknown",
-      "verification_status": "verified_candidate",
-      "summary": "An open-source event discovery and contribution radar for finding verified learning, volunteering, hackathon, networking, open-source, and career opportunities. - Pavan755/event-opportunity-radar",
+      "verification_status": "error",
+      "summary": "Fetch failed: HTTP 504 for https://github.com/Pavan755/event-opportunity-radar",
       "categories": [
         "open_source",
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-11-07T18:59:35.715Z",
-      "status": "verified_candidate",
-      "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
+      "discovered_at": "2026-11-08T09:25:35.578Z",
+      "status": "error",
+      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
     {
       "id": "devfolio-communities",
@@ -215,7 +206,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-11-07T18:59:37.547Z",
+      "discovered_at": "2026-11-08T09:25:37.337Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -227,7 +218,7 @@
       "official_url": "https://gdg.community.dev/",
       "apply_url": "https://gdg.community.dev/accounts/signup/?next=/",
       "contact_url": "https://gdg.community.dev/accounts/signup/?next=/",
-      "contact_email": "TC@2x.png",
+      "contact_email": "gdg.fremont@gmail.com",
       "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
       "social_links": [
         "https://twitter.com/googledevgroups",
@@ -257,7 +248,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-11-07T18:59:38.217Z",
+      "discovered_at": "2026-11-08T09:25:38.033Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -286,7 +277,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-11-07T18:59:38.350Z",
+      "discovered_at": "2026-11-08T09:25:38.289Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -325,7 +316,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-07T18:59:41.816Z",
+      "discovered_at": "2026-11-08T09:25:41.781Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -354,7 +345,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-11-07T18:59:41.856Z",
+      "discovered_at": "2026-11-08T09:25:41.834Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
