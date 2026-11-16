@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:05:22.407Z",
+  "generated_at": "2026-11-16T23:28:20.715Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-16T10:05:09.270Z",
+      "discovered_at": "2026-11-16T23:28:11.696Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-11-16T10:05:09.876Z",
+      "discovered_at": "2026-11-16T23:28:12.000Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-11-16T10:05:16.395Z",
+      "discovered_at": "2026-11-16T23:28:13.276Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-11-16T10:05:16.950Z",
+      "discovered_at": "2026-11-16T23:28:13.625Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-11-16T10:05:17.952Z",
+      "discovered_at": "2026-11-16T23:28:14.337Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-11-16T10:05:19.443Z",
+      "discovered_at": "2026-11-16T23:28:16.187Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -227,7 +227,7 @@
       "official_url": "https://gdg.community.dev/",
       "apply_url": null,
       "contact_url": "https://developers.google.com/community/gdg",
-      "contact_email": "gdgsaskatoon@gmail.com",
+      "contact_email": "gdgburnabybc@gmail.com",
       "linkedin_url": "https://www.linkedin.com/showcase/community-groups-program-gdg/about/",
       "social_links": [
         "https://twitter.com/googledevgroups",
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-11-16T10:05:19.927Z",
+      "discovered_at": "2026-11-16T23:28:17.656Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -286,7 +286,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-11-16T10:05:20.093Z",
+      "discovered_at": "2026-11-16T23:28:17.819Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -318,7 +318,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-16T10:05:22.371Z",
+      "discovered_at": "2026-11-16T23:28:20.630Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -347,7 +347,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-11-16T10:05:22.407Z",
+      "discovered_at": "2026-11-16T23:28:20.715Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
