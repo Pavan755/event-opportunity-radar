@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:01:21.846Z",
+  "generated_at": "2026-11-17T22:34:37.773Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-17T11:01:10.016Z",
+      "discovered_at": "2026-11-17T22:34:23.754Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-11-17T11:01:10.547Z",
+      "discovered_at": "2026-11-17T22:34:24.176Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-11-17T11:01:15.234Z",
+      "discovered_at": "2026-11-17T22:34:30.439Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-11-17T11:01:15.495Z",
+      "discovered_at": "2026-11-17T22:34:30.866Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-11-17T11:01:16.556Z",
+      "discovered_at": "2026-11-17T22:34:31.863Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-11-17T11:01:18.534Z",
+      "discovered_at": "2026-11-17T22:34:33.657Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-11-17T11:01:19.088Z",
+      "discovered_at": "2026-11-17T22:34:34.353Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -286,7 +286,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-11-17T11:01:19.316Z",
+      "discovered_at": "2026-11-17T22:34:34.606Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -296,7 +296,7 @@
       "name": "IndiaFOSS",
       "title": "TOTO 4D: Link COLOKSGP Agen Resmi Betting Situs Togel Singapore & Hongkong Angka Jitu Terpercaya",
       "official_url": "https://indiafoss.net/",
-      "apply_url": null,
+      "apply_url": "https://colokcilegon.com/register",
       "contact_url": null,
       "contact_email": null,
       "linkedin_url": null,
@@ -318,7 +318,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-17T11:01:21.820Z",
+      "discovered_at": "2026-11-17T22:34:37.559Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -326,11 +326,14 @@
       "id": "x-community-posts",
       "source_id": "x-community-posts",
       "name": "Public Community Posts",
+      "title": "X - The Everything App",
       "official_url": "https://x.com/explore",
       "apply_url": null,
       "contact_url": null,
       "contact_email": null,
-      "organizer_name": "Public Community Posts",
+      "linkedin_url": null,
+      "social_links": [],
+      "organizer_name": "X (formerly Twitter)",
       "contact_links": [],
       "deadline_text": null,
       "url": "https://x.com/explore",
@@ -340,16 +343,16 @@
       "event_end_date": null,
       "application_deadline": null,
       "date_status": "unknown",
-      "verification_status": "error",
-      "summary": "Fetch failed: HTTP 403 for https://x.com/explore",
+      "verification_status": "needs_corroboration",
+      "summary": "Public opportunity source discovered by Event Agent Lite.",
       "categories": [
         "social",
         "event",
         "community"
       ],
-      "discovered_at": "2026-11-17T11:01:21.846Z",
-      "status": "error",
-      "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
+      "discovered_at": "2026-11-17T22:34:37.773Z",
+      "status": "needs_corroboration",
+      "evidence_note": "Social or community source detected; action links require manual verification before use."
     }
   ]
 }
