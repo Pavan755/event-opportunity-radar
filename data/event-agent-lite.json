@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:09:15.290Z",
+  "generated_at": "2026-11-22T20:48:09.373Z",
   "agent": "event-agent-lite",
   "version": "1.1.0",
   "total_sources": 10,
@@ -33,7 +33,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-22T10:09:07.857Z",
+      "discovered_at": "2026-11-22T20:48:02.753Z",
       "status": "needs_manual_verification",
       "evidence_note": "Official source found; action links were not confirmed enough for a real application path yet."
     },
@@ -72,7 +72,7 @@
         "open_source",
         "community"
       ],
-      "discovered_at": "2026-11-22T10:09:08.334Z",
+      "discovered_at": "2026-11-22T20:48:03.124Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -101,7 +101,7 @@
         "volunteer",
         "technology"
       ],
-      "discovered_at": "2026-11-22T10:09:08.961Z",
+      "discovered_at": "2026-11-22T20:48:03.794Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -141,7 +141,7 @@
         "ai_ml",
         "community"
       ],
-      "discovered_at": "2026-11-22T10:09:09.433Z",
+      "discovered_at": "2026-11-22T20:48:04.265Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -179,7 +179,7 @@
         "project",
         "dashboard"
       ],
-      "discovered_at": "2026-11-22T10:09:10.238Z",
+      "discovered_at": "2026-11-22T20:48:05.023Z",
       "status": "verified_candidate",
       "evidence_note": "Verified candidate: an official apply/register link, contact route, or organizer outreach path was detected on the source page."
     },
@@ -215,7 +215,7 @@
         "community",
         "builder"
       ],
-      "discovered_at": "2026-11-22T10:09:12.199Z",
+      "discovered_at": "2026-11-22T20:48:06.854Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -257,7 +257,7 @@
         "google",
         "technology"
       ],
-      "discovered_at": "2026-11-22T10:09:12.766Z",
+      "discovered_at": "2026-11-22T20:48:07.423Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -286,7 +286,7 @@
         "professional",
         "community"
       ],
-      "discovered_at": "2026-11-22T10:09:12.939Z",
+      "discovered_at": "2026-11-22T20:48:07.530Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     },
@@ -294,9 +294,9 @@
       "id": "indiafoss",
       "source_id": "indiafoss",
       "name": "IndiaFOSS",
-      "title": "TOTO 4D: Link COLOKSGP Agen Resmi Betting Situs Togel Singapore & Hongkong Angka Jitu Terpercaya",
+      "title": "TOTO 4D: Situs COLOKSGP Agen Resmi Betting Link Togel Singapore & Hongkong Angka Jitu Terpercaya",
       "official_url": "https://indiafoss.net/",
-      "apply_url": "https://colokcilegon.com/register",
+      "apply_url": null,
       "contact_url": null,
       "contact_email": null,
       "linkedin_url": null,
@@ -318,7 +318,7 @@
         "community",
         "technology"
       ],
-      "discovered_at": "2026-11-22T10:09:15.236Z",
+      "discovered_at": "2026-11-22T20:48:09.324Z",
       "status": "needs_corroboration",
       "evidence_note": "Social or community source detected; action links require manual verification before use."
     },
@@ -347,7 +347,7 @@
         "event",
         "community"
       ],
-      "discovered_at": "2026-11-22T10:09:15.290Z",
+      "discovered_at": "2026-11-22T20:48:09.373Z",
       "status": "error",
       "evidence_note": "Could not retrieve source page; no verified application or contact link available yet."
     }
